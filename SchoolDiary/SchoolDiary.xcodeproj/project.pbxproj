@@ -12,6 +12,15 @@
 		2634D247227788230085F783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D245227788230085F783 /* Main.storyboard */; };
 		2634D249227788240085F783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634D248227788240085F783 /* Assets.xcassets */; };
 		2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D24A227788240085F783 /* LaunchScreen.storyboard */; };
+		A97F00002278C3DA00D8700F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFF2278C3DA00D8700F /* Meal.swift */; };
+		A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00012278CDAF00D8700F /* DateExtensions.swift */; };
+		A97F00042278CE8D00D8700F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00032278CE8D00D8700F /* Activity.swift */; };
+		A97F00072278CEDB00D8700F /* Bathroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00062278CEDB00D8700F /* Bathroom.swift */; };
+		A97FFFF62278C1AE00D8700F /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFF52278C1AE00D8700F /* Child.swift */; };
+		A97FFFF82278C26100D8700F /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFF72278C26100D8700F /* Parent.swift */; };
+		A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFF92278C2AE00D8700F /* Medicine.swift */; };
+		A97FFFFC2278C30500D8700F /* Allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFB2278C30500D8700F /* Allergy.swift */; };
+		A97FFFFE2278C34D00D8700F /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFD2278C34D00D8700F /* Diary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		2634D248227788240085F783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2634D24B227788240085F783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2634D24D227788240085F783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97F00012278CDAF00D8700F /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		A97F00032278CE8D00D8700F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = SchoolDiary/Model/Activity.swift; sourceTree = SOURCE_ROOT; };
+		A97F00062278CEDB00D8700F /* Bathroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
+		A97FFFF52278C1AE00D8700F /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Child.swift; path = SchoolDiary/Model/Child.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFF72278C26100D8700F /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Parent.swift; path = SchoolDiary/Model/Parent.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFF92278C2AE00D8700F /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Medicine.swift; path = SchoolDiary/Model/Medicine.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFFB2278C30500D8700F /* Allergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Allergy.swift; path = SchoolDiary/Model/Allergy.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFFD2278C34D00D8700F /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Diary.swift; path = SchoolDiary/Model/Diary.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFFF2278C3DA00D8700F /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = SchoolDiary/Model/Meal.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 		2634D240227788230085F783 /* SchoolDiary */ = {
 			isa = PBXGroup;
 			children = (
+				A97F00082278D2BD00D8700F /* Extensions */,
 				26AEF4BE22778B2700C3FC03 /* Model */,
 				26AEF4BD22778B0200C3FC03 /* Support */,
 				26AEF4BA22778A6F00C3FC03 /* Controller */,
@@ -92,8 +111,24 @@
 		26AEF4BE22778B2700C3FC03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A97FFFF52278C1AE00D8700F /* Child.swift */,
+				A97FFFF72278C26100D8700F /* Parent.swift */,
+				A97FFFF92278C2AE00D8700F /* Medicine.swift */,
+				A97FFFFB2278C30500D8700F /* Allergy.swift */,
+				A97FFFFD2278C34D00D8700F /* Diary.swift */,
+				A97FFFFF2278C3DA00D8700F /* Meal.swift */,
+				A97F00032278CE8D00D8700F /* Activity.swift */,
+				A97F00062278CEDB00D8700F /* Bathroom.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A97F00082278D2BD00D8700F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A97F00012278CDAF00D8700F /* DateExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97F00042278CE8D00D8700F /* Activity.swift in Sources */,
+				A97FFFFE2278C34D00D8700F /* Diary.swift in Sources */,
 				2634D244227788230085F783 /* ViewController.swift in Sources */,
+				A97FFFF82278C26100D8700F /* Parent.swift in Sources */,
+				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
+				A97F00072278CEDB00D8700F /* Bathroom.swift in Sources */,
+				A97F00002278C3DA00D8700F /* Meal.swift in Sources */,
+				A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */,
 				2634D242227788230085F783 /* AppDelegate.swift in Sources */,
+				A97FFFFC2278C30500D8700F /* Allergy.swift in Sources */,
+				A97FFFF62278C1AE00D8700F /* Child.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
