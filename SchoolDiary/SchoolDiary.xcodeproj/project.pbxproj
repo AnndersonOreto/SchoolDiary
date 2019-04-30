@@ -12,6 +12,15 @@
 		2634D247227788230085F783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D245227788230085F783 /* Main.storyboard */; };
 		2634D249227788240085F783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634D248227788240085F783 /* Assets.xcassets */; };
 		2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D24A227788240085F783 /* LaunchScreen.storyboard */; };
+		A97F00002278C3DA00D8700F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFF2278C3DA00D8700F /* Meal.swift */; };
+		A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00012278CDAF00D8700F /* DateExtensions.swift */; };
+		A97F00042278CE8D00D8700F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00032278CE8D00D8700F /* Activity.swift */; };
+		A97F00072278CEDB00D8700F /* Bathroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00062278CEDB00D8700F /* Bathroom.swift */; };
+		A97FFFF62278C1AE00D8700F /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFF52278C1AE00D8700F /* Child.swift */; };
+		A97FFFF82278C26100D8700F /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFF72278C26100D8700F /* Parent.swift */; };
+		A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFF92278C2AE00D8700F /* Medicine.swift */; };
+		A97FFFFC2278C30500D8700F /* Allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFB2278C30500D8700F /* Allergy.swift */; };
+		A97FFFFE2278C34D00D8700F /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFD2278C34D00D8700F /* Diary.swift */; };
 		26D72EB4227B5565001201AD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D72EB3227B5565001201AD /* LoginController.swift */; };
 		AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB590296227B81AA00E5000A /* GridTableViewCell.swift */; };
 		AB590299227BC03300E5000A /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB590298227BC03300E5000A /* GridCollectionViewCell.swift */; };
@@ -28,6 +37,15 @@
 		2634D248227788240085F783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2634D24B227788240085F783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2634D24D227788240085F783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97F00012278CDAF00D8700F /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		A97F00032278CE8D00D8700F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = SchoolDiary/Model/Activity.swift; sourceTree = SOURCE_ROOT; };
+		A97F00062278CEDB00D8700F /* Bathroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
+		A97FFFF52278C1AE00D8700F /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Child.swift; path = SchoolDiary/Model/Child.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFF72278C26100D8700F /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Parent.swift; path = SchoolDiary/Model/Parent.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFF92278C2AE00D8700F /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Medicine.swift; path = SchoolDiary/Model/Medicine.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFFB2278C30500D8700F /* Allergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Allergy.swift; path = SchoolDiary/Model/Allergy.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFFD2278C34D00D8700F /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Diary.swift; path = SchoolDiary/Model/Diary.swift; sourceTree = SOURCE_ROOT; };
+		A97FFFFF2278C3DA00D8700F /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = SchoolDiary/Model/Meal.swift; sourceTree = SOURCE_ROOT; };
 		26D72EB3227B5565001201AD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AB590296227B81AA00E5000A /* GridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTableViewCell.swift; sourceTree = "<group>"; };
 		AB590298227BC03300E5000A /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +128,14 @@
 		26AEF4BE22778B2700C3FC03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A97FFFF52278C1AE00D8700F /* Child.swift */,
+				A97FFFF72278C26100D8700F /* Parent.swift */,
+				A97FFFF92278C2AE00D8700F /* Medicine.swift */,
+				A97FFFFB2278C30500D8700F /* Allergy.swift */,
+				A97FFFFD2278C34D00D8700F /* Diary.swift */,
+				A97FFFFF2278C3DA00D8700F /* Meal.swift */,
+				A97F00032278CE8D00D8700F /* Activity.swift */,
+				A97F00062278CEDB00D8700F /* Bathroom.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				AB6FB3902278C4F0008FBD30 /* UIView.swift */,
+				A97F00012278CDAF00D8700F /* DateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,6 +221,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97F00042278CE8D00D8700F /* Activity.swift in Sources */,
+				A97FFFFE2278C34D00D8700F /* Diary.swift in Sources */,
+				2634D244227788230085F783 /* ViewController.swift in Sources */,
+				A97FFFF82278C26100D8700F /* Parent.swift in Sources */,
+				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
+				A97F00072278CEDB00D8700F /* Bathroom.swift in Sources */,
+				A97F00002278C3DA00D8700F /* Meal.swift in Sources */,
+				A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */,
+				2634D242227788230085F783 /* AppDelegate.swift in Sources */,
+				A97FFFFC2278C30500D8700F /* Allergy.swift in Sources */,
+				A97FFFF62278C1AE00D8700F /* Child.swift in Sources */,
 				AB6FB3912278C4F0008FBD30 /* UIView.swift in Sources */,
 				AB59029B227BC3DE00E5000A /* MyTabBarController.swift in Sources */,
 				AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */,
