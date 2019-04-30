@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable extension UIView{
+extension UIView{
 
     @IBInspectable
     var cornerRadius: CGFloat {
