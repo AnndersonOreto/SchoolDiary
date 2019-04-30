@@ -12,6 +12,7 @@
 		2634D247227788230085F783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D245227788230085F783 /* Main.storyboard */; };
 		2634D249227788240085F783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634D248227788240085F783 /* Assets.xcassets */; };
 		2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D24A227788240085F783 /* LaunchScreen.storyboard */; };
+		C78E09432278BEE800017896 /* Backbone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78E09422278BEE800017896 /* Backbone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2634D248227788240085F783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2634D24B227788240085F783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2634D24D227788240085F783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C78E09422278BEE800017896 /* Backbone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Backbone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +56,11 @@
 		2634D240227788230085F783 /* SchoolDiary */ = {
 			isa = PBXGroup;
 			children = (
-				26AEF4BE22778B2700C3FC03 /* Model */,
 				26AEF4BD22778B0200C3FC03 /* Support */,
+				26AEF4BE22778B2700C3FC03 /* Model */,
+				26AEF4BB22778A9500C3FC03 /* View */,
 				26AEF4BA22778A6F00C3FC03 /* Controller */,
 				2634D248227788240085F783 /* Assets.xcassets */,
-				26AEF4BB22778A9500C3FC03 /* View */,
 			);
 			path = SchoolDiary;
 			sourceTree = "<group>";
@@ -76,6 +78,7 @@
 			children = (
 				2634D245227788230085F783 /* Main.storyboard */,
 				2634D24A227788240085F783 /* LaunchScreen.storyboard */,
+				C78E09422278BEE800017896 /* Backbone.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */,
 				2634D249227788240085F783 /* Assets.xcassets in Resources */,
 				2634D247227788230085F783 /* Main.storyboard in Resources */,
+				C78E09432278BEE800017896 /* Backbone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
