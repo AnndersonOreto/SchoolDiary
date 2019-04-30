@@ -8,9 +8,8 @@
 
 import UIKit
 
-@IBDesignable
-extension UIView{
-    
+@IBDesignable extension UIView{
+
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -21,5 +20,6 @@ extension UIView{
             layer.masksToBounds = newValue > 0
         }
     }
+    
 }
 
