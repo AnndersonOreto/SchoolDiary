@@ -112,9 +112,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-fundo-login1x" translatesAutoresizingMaskIntoConstraints="NO" id="Umb-C3-OQW">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xs-nRg">
-                                <rect key="frame" x="0.0" y="717" width="414" height="179"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCj-2b-h3l">
                                 <rect key="frame" x="0.0" y="254" width="320" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,27 +123,16 @@
                                 <rect key="frame" x="38" y="96" width="244" height="158"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="awf-3Y-q4S">
-<<<<<<< HEAD
                                 <rect key="frame" x="38" y="480.5" width="338" height="225"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar como:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjg-qS-AZD">
                                         <rect key="frame" x="0.0" y="0.0" width="338" height="51"/>
-=======
-                                <rect key="frame" x="38" y="314" width="244" height="146.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar como:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjg-qS-AZD">
-                                        <rect key="frame" x="0.0" y="0.0" width="244" height="31.5"/>
->>>>>>> d64b06c87025cce15ad41da320bb60593880437a
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail ou CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uYa-NO-W8B">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="58" width="338" height="51"/>
-=======
-                                        <rect key="frame" x="0.0" y="38.5" width="244" height="31.5"/>
->>>>>>> d64b06c87025cce15ad41da320bb60593880437a
                                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -158,11 +144,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jo0-HW-joB">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="116" width="338" height="51"/>
-=======
-                                        <rect key="frame" x="0.0" y="77" width="244" height="31"/>
->>>>>>> d64b06c87025cce15ad41da320bb60593880437a
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -174,11 +156,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVb-Th-YzD">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="174" width="338" height="51"/>
-=======
-                                        <rect key="frame" x="0.0" y="115" width="244" height="31.5"/>
->>>>>>> d64b06c87025cce15ad41da320bb60593880437a
                                         <color key="backgroundColor" red="0.47450980392156861" green="0.75294117647058822" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Entrar">
@@ -192,13 +170,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
-<<<<<<< HEAD
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xs-nRg">
                                 <rect key="frame" x="0.0" y="705.5" width="414" height="176.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-=======
->>>>>>> d64b06c87025cce15ad41da320bb60593880437a
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
