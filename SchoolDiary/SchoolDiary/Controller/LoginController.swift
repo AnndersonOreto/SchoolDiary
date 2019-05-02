@@ -23,7 +23,7 @@ class LoginController: UIViewController {
         let password = "teste1"
         
         if nameTextField.text == login && passwordTextField.text == password {
-            
+            performSegue(withIdentifier: "goToBackbone", sender: sender)
         }
         
     }
