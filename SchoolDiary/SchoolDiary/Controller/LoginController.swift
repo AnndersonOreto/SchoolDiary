@@ -11,7 +11,21 @@ import UIKit
 
 class LoginController: UIViewController {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func submitButton(_ sender: UIButton) {
+        let login = "teste1@teste1.com"
+        let password = "teste1"
+        
+        if nameTextField.text == login && passwordTextField.text == password {
+            
+        }
+        
+    }
+    
 }
