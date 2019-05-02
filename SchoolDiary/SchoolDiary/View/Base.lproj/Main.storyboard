@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="136.875" y="137.32394366197184"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="i0b-gA-DAP">
             <objects>
-                <viewController id="4n1-as-YSn" sceneMemberID="viewController">
+                <viewController id="4n1-as-YSn" customClass="LoginController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dVY-kX-lsf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,6 +205,9 @@
                                                 <real key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="submitButton:" destination="4n1-as-YSn" eventType="touchUpInside" id="z1Z-Pg-IfH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -229,6 +232,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mR0-dk-IWA"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Jo0-HW-joB" id="hjL-bV-Lel"/>
+                        <outlet property="passwordTextField" destination="293-ds-BjO" id="FyW-TT-yjH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Edq-C0-h5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
