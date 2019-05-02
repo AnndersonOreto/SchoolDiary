@@ -12,10 +12,13 @@
 		2634D247227788230085F783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D245227788230085F783 /* Main.storyboard */; };
 		2634D249227788240085F783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634D248227788240085F783 /* Assets.xcassets */; };
 		2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D24A227788240085F783 /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
 		26D72EB4227B5565001201AD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D72EB3227B5565001201AD /* LoginController.swift */; };
 		AB095AD62278D7980022DA42 /* PaddinPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB095AD52278D7980022DA42 /* PaddinPlaceHolder.swift */; };
 		AB6FB3912278C4F0008FBD30 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6FB3902278C4F0008FBD30 /* UIView.swift */; };
+=======
 		C78E09432278BEE800017896 /* Backbone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78E09422278BEE800017896 /* Backbone.storyboard */; };
+>>>>>>> Backbone
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +29,13 @@
 		2634D248227788240085F783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2634D24B227788240085F783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2634D24D227788240085F783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		26D72EB3227B5565001201AD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AB095AD52278D7980022DA42 /* PaddinPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddinPlaceHolder.swift; sourceTree = "<group>"; };
 		AB6FB3902278C4F0008FBD30 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+=======
 		C78E09422278BEE800017896 /* Backbone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Backbone.storyboard; sourceTree = "<group>"; };
+>>>>>>> Backbone
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,11 @@
 		2634D240227788230085F783 /* SchoolDiary */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				AB6FB3922278C4F7008FBD30 /* Extensions */,
+				26AEF4BE22778B2700C3FC03 /* Model */,
+=======
+>>>>>>> Backbone
 				26AEF4BD22778B0200C3FC03 /* Support */,
 				26AEF4BE22778B2700C3FC03 /* Model */,
 				26AEF4BB22778A9500C3FC03 /* View */,
@@ -86,8 +96,11 @@
 			children = (
 				2634D245227788230085F783 /* Main.storyboard */,
 				2634D24A227788240085F783 /* LaunchScreen.storyboard */,
+<<<<<<< HEAD
 				AB095AD52278D7980022DA42 /* PaddinPlaceHolder.swift */,
+=======
 				C78E09422278BEE800017896 /* Backbone.storyboard */,
+>>>>>>> Backbone
 			);
 			path = View;
 			sourceTree = "<group>";
