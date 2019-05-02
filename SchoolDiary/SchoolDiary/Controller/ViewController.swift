@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
-        cell.textLabel?.text = itemsOfSection[indexPath.section][indexPath.row]
+        cell.textLabel?.text = itemsOfSection[indexPath.section][indexPath.row] 
         
         return cell
     }

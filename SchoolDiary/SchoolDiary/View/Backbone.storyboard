@@ -93,7 +93,7 @@
                                 <state key="normal" image="calendario1x"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto-crianca-1x" translatesAutoresizingMaskIntoConstraints="NO" id="Vj1-jF-bi3" userLabel="childPhoto">
-                                <rect key="frame" x="103" y="60.5" width="208" height="120"/>
+                                <rect key="frame" x="103" y="61" width="208" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="childName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzV-Lz-fKu">
                                 <rect key="frame" x="166" y="180.5" width="82" height="20.5"/>
