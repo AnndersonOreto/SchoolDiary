@@ -14,6 +14,7 @@
 		2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D24A227788240085F783 /* LaunchScreen.storyboard */; };
 		26D72EB4227B5565001201AD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D72EB3227B5565001201AD /* LoginController.swift */; };
 		AB095AD62278D7980022DA42 /* PaddinPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB095AD52278D7980022DA42 /* PaddinPlaceHolder.swift */; };
+		AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB590296227B81AA00E5000A /* GridTableViewCell.swift */; };
 		AB6FB3912278C4F0008FBD30 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6FB3902278C4F0008FBD30 /* UIView.swift */; };
 		C78E09432278BEE800017896 /* Backbone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78E09422278BEE800017896 /* Backbone.storyboard */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		2634D24D227788240085F783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D72EB3227B5565001201AD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AB095AD52278D7980022DA42 /* PaddinPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddinPlaceHolder.swift; sourceTree = "<group>"; };
+		AB590296227B81AA00E5000A /* GridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTableViewCell.swift; sourceTree = "<group>"; };
 		AB6FB3902278C4F0008FBD30 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		C78E09422278BEE800017896 /* Backbone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Backbone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 			children = (
 				2634D243227788230085F783 /* ViewController.swift */,
 				26D72EB3227B5565001201AD /* LoginController.swift */,
+				AB590296227B81AA00E5000A /* GridTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB6FB3912278C4F0008FBD30 /* UIView.swift in Sources */,
+				AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */,
 				AB095AD62278D7980022DA42 /* PaddinPlaceHolder.swift in Sources */,
 				2634D244227788230085F783 /* ViewController.swift in Sources */,
 				2634D242227788230085F783 /* AppDelegate.swift in Sources */,

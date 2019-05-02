@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-    
+    let cellGridView = GridTableViewCell()
     @IBOutlet weak var tableView: UITableView!
     
     //Section of Table view (each section is a cell)
@@ -46,8 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
 //        cell.textLabel?.text = itemsOfSection[indexPath.section][indexPath.row]
-        cell.textLabel?.text = "TEY"
-        
+//        cell.textLabel?.text = "TEY"
         return cell
     }
     
