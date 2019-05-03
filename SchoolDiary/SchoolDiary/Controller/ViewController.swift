@@ -36,8 +36,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let _ = Storage()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
-        tableView.tableHeaderView?.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
+        tableView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+        tableView.tableHeaderView?.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         
         guard let child = Storage.children.first else {
             print("Child not found.")
