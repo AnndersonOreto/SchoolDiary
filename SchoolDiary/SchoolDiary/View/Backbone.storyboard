@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Hoje-->
         <scene sceneID="SJQ-hO-laE">
             <objects>
                 <viewController id="TAB-8h-ZJv" customClass="ViewController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,13 +80,12 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="242" id="3ro-qV-lxd" customClass="GridTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="242"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ro-qV-lxd" id="C2w-WO-KaL">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ro-qV-lxd" id="C2w-WO-KaL">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nde-2J-qeR">
                                                     <rect key="frame" x="16" y="16" width="390" height="217.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="217.5" id="ugK-Hm-oF5"/>
                                                     </constraints>
@@ -97,20 +96,25 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="teste" id="zIM-dI-dxy">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gridCell" id="zIM-dI-dxy" customClass="GridCollectionViewCell" customModule="SchoolDiary" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="108" height="124"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="108" height="124"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </view>
-                                                            <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="nde-2J-qeR" secondAttribute="bottom" constant="8" id="20y-rQ-9Mp"/>
+                                                <constraint firstAttribute="bottom" secondItem="nde-2J-qeR" secondAttribute="bottom" constant="16" id="20y-rQ-9Mp"/>
                                                 <constraint firstAttribute="trailing" secondItem="nde-2J-qeR" secondAttribute="trailing" constant="8" id="RNX-Ao-XTZ"/>
                                                 <constraint firstItem="nde-2J-qeR" firstAttribute="leading" secondItem="C2w-WO-KaL" secondAttribute="leading" constant="16" id="YH8-Zh-SN1"/>
                                                 <constraint firstItem="nde-2J-qeR" firstAttribute="top" secondItem="C2w-WO-KaL" secondAttribute="top" constant="16" id="dye-ac-Rbj"/>
@@ -138,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gkx-vh-42T" firstAttribute="bottom" secondItem="GR1-iD-NsF" secondAttribute="bottom" id="1hN-bY-FQi"/>
                             <constraint firstItem="uFA-nE-MVu" firstAttribute="centerX" secondItem="Sze-h2-oQ1" secondAttribute="centerX" id="2TZ-8S-rfS"/>
@@ -170,7 +174,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oFW-Ps-hJe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="209-6L-r0N"/>
+                    <tabBarItem key="tabBarItem" title="Hoje" id="209-6L-r0N" customClass="TabBarItem" customModule="SchoolDiary" customModuleProvider="target"/>
                     <connections>
                         <outlet property="tableView" destination="nup-Pi-bid" id="wds-Az-Em2"/>
                     </connections>
@@ -179,47 +183,84 @@
             </objects>
             <point key="canvasLocation" x="-5753.6231884057979" y="-1232.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Mensagens-->
         <scene sceneID="9Yo-vl-SnW">
             <objects>
                 <viewController id="mqk-PZ-248" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPU-qd-4Tb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="E7N-0b-SCg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="j8m-Q0-MZ8"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Mensagens" id="j8m-Q0-MZ8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tJ-gM-gHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5749" y="-491"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Saúde-->
+        <scene sceneID="zDe-LK-P9V">
+            <objects>
+                <viewController id="yaP-wp-kUT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9F9-ie-aHU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zra-jZ-1mb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Saúde" image="saude1x" selectedImage="saude1x" id="yUv-9n-rSh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fe-EP-zMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5750" y="235"/>
+        </scene>
+        <!--Agenda-->
+        <scene sceneID="Sk1-9X-tgl">
+            <objects>
+                <viewController id="dHi-tM-dku" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sc9-2W-B2i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OgE-aJ-jng"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="Agenda" image="calendar1x" selectedImage="calendar1x" id="NBt-2o-Ae9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocu-cc-9cA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5754" y="932"/>
+        </scene>
+        <!--My Tab Bar Controller-->
         <scene sceneID="imK-kN-QqH">
             <objects>
-                <tabBarController id="ri0-SB-s2a" sceneMemberID="viewController">
+                <tabBarController id="ri0-SB-s2a" customClass="MyTabBarController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8mv-uV-UJh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <outlet property="myTabBar" destination="8mv-uV-UJh" id="hpf-H8-kZW"/>
                         <segue destination="TAB-8h-ZJv" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
                         <segue destination="mqk-PZ-248" kind="relationship" relationship="viewControllers" id="glN-GR-mIA"/>
+                        <segue destination="yaP-wp-kUT" kind="relationship" relationship="viewControllers" id="2nF-x0-p61"/>
+                        <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="LhJ-on-8JV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jnt-Zd-bM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7144" y="-836"/>
+            <point key="canvasLocation" x="-7036" y="-133"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow-1x" width="13" height="21"/>
         <image name="cabecalho1x" width="375" height="220"/>
+        <image name="calendar1x" width="30" height="30"/>
         <image name="calendario1x" width="24" height="24"/>
         <image name="foto-crianca-1x" width="114.5" height="120"/>
         <image name="logo-escola-1x" width="26" height="26"/>
         <image name="perfil-1x" width="24" height="24"/>
+        <image name="saude1x" width="30" height="31"/>
     </resources>
 </document>

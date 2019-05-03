@@ -16,19 +16,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Section of Table view (each section is a cell)
     let sections = ["Alimentação", "Sono", "Evacuação", "Atividades", "Providenciar", "Fotos/ Vídeos"]
     
-    // Intens of Collection view
-    let itemsOfSection = [
-        ["Lanche9h", "Almoço", "Lanche14h", "Pré-Janta", "Leite9h", "Leite17h30"],
-        ["manhã","tarde"],
-        ["Xixi","Cocô"],
-        ["Blocos de encaixe", "Balões"],
-        ["Pomada/Assadura" ]
-    ]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
