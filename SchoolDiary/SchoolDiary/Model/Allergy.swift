@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum AllergyType : Hashable {
+enum AllergyType : String, Codable, Hashable {
     case medicine
     case food
     case animal
     case other
 }
 
-struct Allergy : Hashable {
+struct Allergy : Hashable, Codable {
     var type : AllergyType
     var description : String
 }

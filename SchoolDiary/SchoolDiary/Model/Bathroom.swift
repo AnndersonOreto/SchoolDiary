@@ -8,18 +8,18 @@
 
 import Foundation
 
-enum BathroomType {
+enum BathroomType : String, Codable {
     case pee
     case poop
 }
 
-enum BathroomCondition {
+enum BathroomCondition : String, Codable {
     case normal
     case altered
     case worrying
 }
 
-struct Bathroom {
+struct Bathroom : Codable {
     var type : BathroomType
     var condition : BathroomCondition
 }

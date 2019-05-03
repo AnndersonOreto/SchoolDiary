@@ -8,16 +8,21 @@
 
 import Foundation
 
-enum MedicineType {
+enum MedicineType : String, Codable {
     case drops
     case pills
     case other
 }
 
-struct Medicine {
+struct Medicine : Codable {
     var name : String
     var dose : Float
     var type : MedicineType
     var condition : String
     var time : Date
+}
+
+struct TakenMedicine : Codable {
+    var medicine : Medicine
+    var timeTaken : Date
 }

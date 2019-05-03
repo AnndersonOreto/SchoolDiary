@@ -9,7 +9,7 @@
 import Foundation
 
 // each school gets to define at which time the meals are served
-enum MealType {
+enum MealType : String, Codable {
     case lunch
     case snack
     case preDinner
@@ -34,14 +34,14 @@ enum MealType {
     }
 }
 
-enum MealQuantity {
+enum MealQuantity : String, Codable {
     case all
     case half
     case aLittle
     case nothing
 }
 
-struct Meal {
+struct Meal : Codable {
     var type : MealType
     var quantity : MealQuantity
 }

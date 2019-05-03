@@ -8,13 +8,18 @@
 
 import Foundation
 
-struct Diary {
+struct Picture : Codable {
+    var image : String
+    var description : String
+}
+
+struct Diary : Codable {
     var date : Date
     var meals : [Meal]
     var naps : [Date]
     var activities : Set<Activity>
     var bathroom : [Bathroom]
-    var medsTaken : [(Medicine, Date)]  // store the medicine taken, and the time it was taken
-    var pictures : [(String, String)]   // store the photo path and a description for it
+    var medsTaken : [TakenMedicine]  // store the medicine taken, and the time it was taken
+    var pictures : [Picture]   // store the photo path and a description for it
     var notes : String
 }

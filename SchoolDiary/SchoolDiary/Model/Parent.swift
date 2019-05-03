@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Parent : Hashable {
+struct Parent : Hashable, Codable {
     static func == (lhs: Parent, rhs: Parent) -> Bool {
         return lhs.cpf == rhs.cpf
     }
@@ -22,5 +22,6 @@ struct Parent : Hashable {
     var photo : String // TO-DO: this is probably not a string
     var cpf : Int
     var email : String
+    var password : String
     var children : [Child]
 }

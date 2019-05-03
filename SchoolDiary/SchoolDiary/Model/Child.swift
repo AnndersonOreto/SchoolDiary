@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Child {
+struct Child : Codable {
     var name : String
     var birth : Date
     var photo : String // TO-DO: this is probably not a string
