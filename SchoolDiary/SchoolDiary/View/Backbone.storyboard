@@ -163,6 +163,13 @@
                                                                     <real key="value" value="15"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="mealImage" destination="l9i-zB-fSO" id="wPP-m6-Xpw"/>
+                                                                <outlet property="mealLabel" destination="9Ua-Be-EWV" id="WC2-R9-4j5"/>
+                                                                <outlet property="mealQuantityImage" destination="cXz-9a-7gn" id="L3u-wt-Kdl"/>
+                                                                <outlet property="mealQuantityLabel" destination="ONz-XB-X7I" id="Ydd-yZ-LhH"/>
+                                                                <outlet property="mealTime" destination="JDB-6I-944" id="IOY-dF-lsI"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
@@ -190,8 +197,8 @@
                                 <rect key="frame" x="103" y="60.5" width="208" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="childName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzV-Lz-fKu">
-                                <rect key="frame" x="166" y="180.5" width="82" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="163.5" y="180.5" width="87.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

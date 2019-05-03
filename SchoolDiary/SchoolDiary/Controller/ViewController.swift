@@ -8,6 +8,15 @@
 
 import UIKit
 
+enum Section : String {
+    case meal = "Alimentação"
+    case naps = "Sono"
+    case bathroom = "Evacuação"
+    case activities = "Atividades"
+    case provide = "Providenciar"
+    case pictures = "Fotos e Vídeos"
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let cellGridView = GridTableViewCell()
@@ -17,7 +26,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var monthLabel: UILabel!
     
     //Section of Table view (each section is a cell)
-    let sections = ["Alimentação", "Sono", "Evacuação", "Atividades", "Providenciar", "Fotos/ Vídeos"]
+    let sections : [Section] = [.meal, .naps, .bathroom, .activities, .provide, .pictures]
+    
+    var child : Child!
+    var diary : Diary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +44,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return
         }
         
-        nameLabel.text = child.name
+        self.child = child
+        nameLabel.text = self.child.name
         
         guard let diary = child.diaries.first else {
             print("Diary not found.")
             return
         }
         
-        dayLabel.text = "\(diary.date.day)"
-        monthLabel.text = diary.date.monthName()
+        self.diary = diary
+        dayLabel.text = "\(self.diary.date.day)"
+        monthLabel.text = self.diary.date.monthName()
     }
     
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -68,8 +82,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let headerTitle: UILabel = UILabel(frame: CGRect(x: 60, y: 0, width: 200, height: 30))
         headerTitle.textColor = .black
         headerTitle.font = UIFont(name: "System", size: 18)
-        headerTitle.text = "Alimentação"
-//        headerTitle.backgroundColor = .red
+        headerTitle.text = Section.meal.rawValue
         
         view.addSubview(headerImageView)
         view.addSubview(headerTitle)
@@ -78,7 +91,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell =  tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
+        let cell =  tableView.dequeueReusableCell(withIdentifier: "cell") as! GridTableViewCell
+        
+        switch indexPath.row {
+        case 0:
+            cell.count = self.diary.meals.count
+            cell.section = .meal
+        case 1:
+            cell.count = self.diary.naps.count
+            cell.section = .naps
+        case 2:
+            cell.count = self.diary.bathroom.count
+            cell.section = .bathroom
+        case 3:
+            cell.count = self.diary.activities.count
+            cell.section = .activities
+        case 4:
+            cell.count = 0
+            cell.section = .provide
+        case 5:
+            cell.count = self.diary.pictures.count
+            cell.section = .pictures
+        default:
+            cell.count = 6
+            cell.section = .meal
+        }
+        
+        cell.diary = self.diary
+    
         return cell
     }
     

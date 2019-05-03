@@ -10,12 +10,12 @@ import Foundation
 
 // each school gets to define at which time the meals are served
 enum MealType : String, Codable {
-    case lunch
-    case snack
-    case preDinner
-    case milk
+    case lunch = "Almoço"
+    case snack = "Lanche"
+    case preDinner = "Pré-Janta"
+    case milk = "Leite"
     
-    func mealTime() -> Date? {
+    public func mealTime() -> Date? {
         var date = Date()
         
         // TO-DO: expose hour bindings to make them customizable by the school
@@ -35,10 +35,10 @@ enum MealType : String, Codable {
 }
 
 enum MealQuantity : String, Codable {
-    case all
-    case half
-    case aLittle
-    case nothing
+    case all = "Tudo"
+    case half = "Metade"
+    case aLittle = "Um pouco"
+    case nothing = "Recusou"
 }
 
 struct Meal : Codable {

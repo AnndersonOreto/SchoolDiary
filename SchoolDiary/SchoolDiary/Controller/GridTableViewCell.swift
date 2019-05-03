@@ -36,6 +36,9 @@ class GridTableViewCell: UITableViewCell {
         ItemTeste(name: "6"),
     ]
     
+    var count = 0
+    var section : Section!
+    var diary : Diary!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,13 +54,11 @@ class GridTableViewCell: UITableViewCell {
 
 extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return count
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "gridCell", for: indexPath)
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "gridCell", for: indexPath) as! GridCollectionViewCell
         
         cell.contentView.layer.cornerRadius = 10.0
         cell.contentView.layer.borderWidth = 3.0
@@ -70,6 +71,15 @@ extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
         cell.layer.shadowOpacity = 0.8
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+        
+        switch section as Section {
+        case .meal:
+            cell.mealLabel.text = self.diary.meals[indexPath.row].type.rawValue
+            cell.mealTime.text = "\(self.diary.meals[indexPath.row].type.mealTime()?.hour ?? 0)h" 
+            cell.mealQuantityLabel.text = self.diary.meals[indexPath.row].quantity.rawValue
+        default:
+            break
+        }
         
         return cell
     }

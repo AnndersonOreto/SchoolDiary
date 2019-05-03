@@ -9,5 +9,10 @@
 import UIKit
 
 class GridCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var mealImage: UIImageView!
+    @IBOutlet weak var mealLabel: UILabel!
+    @IBOutlet weak var mealTime: UILabel!
+    @IBOutlet weak var mealQuantityImage: UIImageView!
+    @IBOutlet weak var mealQuantityLabel: UILabel!
     
 }
