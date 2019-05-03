@@ -9,17 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
+    
     let cellGridView = GridTableViewCell()
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
     
     //Section of Table view (each section is a cell)
     let sections = ["Alimentação", "Sono", "Evacuação", "Atividades", "Providenciar", "Fotos/ Vídeos"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let _ = Storage()
         tableView.dataSource = self
         tableView.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
+        
+        guard let child = Storage.children.first else {
+            print("Child not found.")
+            return
+        }
+        
+        nameLabel.text = child.name
+        
+        guard let diary = child.diaries.first else {
+            print("Diary not found.")
+            return
+        }
+        
+        dayLabel.text = "\(diary.date.day)"
+        monthLabel.text = diary.date.monthName()
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
