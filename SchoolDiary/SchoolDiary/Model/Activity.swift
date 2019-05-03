@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum ActivityType {
+enum ActivityType : Hashable {
     case classes
     case storytelling
     case games
     case other
 }
 
-struct Activity {
+struct Activity : Hashable {
     var type : ActivityType
     var description : String
 }
