@@ -36,11 +36,14 @@ class GridTableViewCell: UITableViewCell {
         ItemTeste(name: "6"),
     ]
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionViewHeightConstraint.constant = CGFloat(130.0) * CGFloat(1 + (items.count - 1)/3)
-        backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
-        GridView.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
+        let flow: UICollectionViewFlowLayout = GridView.collectionViewLayout as! UICollectionViewFlowLayout
+        flow.sectionInset = UIEdgeInsets(top: 0, left: 13, bottom: 0, right: 13)
+        backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+        GridView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         GridView.dataSource = self
         GridView.delegate = self
     }
@@ -51,18 +54,20 @@ extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
         return items.count
     }
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "gridCell", for: indexPath)
         
-        cell.contentView.layer.cornerRadius = 2.0
-        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.cornerRadius = 10.0
+        cell.contentView.layer.borderWidth = 3.0
         cell.contentView.layer.borderColor = UIColor.clear.cgColor
         cell.contentView.layer.masksToBounds = true
         
-        cell.layer.shadowColor = UIColor.gray.cgColor
-        cell.layer.shadowOffset = CGSize(width: -2, height: 2.0)
-        cell.layer.shadowRadius = 2.0
-        cell.layer.shadowOpacity = 0.2
+        cell.layer.shadowColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
+        cell.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+        cell.layer.shadowRadius = 8.0
+        cell.layer.shadowOpacity = 0.8
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
