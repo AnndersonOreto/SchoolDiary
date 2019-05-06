@@ -109,7 +109,7 @@
                                                                             <constraint firstAttribute="height" constant="37" id="Jo6-Qh-emz"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star1x" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-9a-7gn">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starFull" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-9a-7gn">
                                                                         <rect key="frame" x="6" y="90" width="28" height="28"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="28" id="gZb-zJ-jKu"/>
@@ -327,6 +327,6 @@
         <image name="logo-escola-1x" width="26" height="26"/>
         <image name="perfil-1x" width="24" height="24"/>
         <image name="saude1x" width="30" height="31"/>
-        <image name="star1x" width="15" height="15"/>
+        <image name="starFull" width="22.5" height="22.5"/>
     </resources>
 </document>
