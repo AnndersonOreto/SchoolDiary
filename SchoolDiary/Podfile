@@ -8,4 +8,5 @@ target 'SchoolDiary' do
 #  supports_swift_versions '< 5.0'
   # Pods for SchoolDiary
     pod 'Disk', '~> 0.6.3'
+    pod 'Fakery'
 end

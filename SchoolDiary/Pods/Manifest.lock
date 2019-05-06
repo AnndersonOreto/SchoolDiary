@@ -1,16 +1,20 @@
 PODS:
   - Disk (0.6.3)
+  - Fakery (4.0.0)
 
 DEPENDENCIES:
   - Disk (~> 0.6.3)
+  - Fakery
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Disk
+    - Fakery
 
 SPEC CHECKSUMS:
   Disk: 76cccb6fed1c27cd661bbdea7b117d887c2f72e5
+  Fakery: 476f6d947de432f84703acc830a1e7166330299b
 
-PODFILE CHECKSUM: 379fe528445fd490f27a77da727a7e14c49ee68d
+PODFILE CHECKSUM: 252454b17f720010e6b4bda098aef24cd28532cc
 
 COCOAPODS: 1.6.1
