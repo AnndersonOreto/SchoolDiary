@@ -54,8 +54,16 @@ class Storage {
         let faker = Faker(locale: "en")
         
         let names = ["Aurora", "Valentina", "Enzo", "Brian", "Lucas"]
-        let tylenol = Medicine(name: "Tylenol baby", dose: 1, type: .drops, condition: "Se tiver febre acima de 37,5º", time: Date.init())
-        let maresis = Medicine(name: "Maresis", dose: 1, type: .drops, condition: "Se tiver secreção no nariz", time: Date.init())
+        let tylenol = Medicine(name: "Tylenol baby",
+                               dose: 1,
+                               type: .drops,
+                               condition: "Se tiver febre acima de 37,5º",
+                               time: Date.init())
+        let maresis = Medicine(name: "Maresis",
+                               dose: 1,
+                               type: .drops,
+                               condition: "Se tiver secreção no nariz",
+                               time: Date.init())
         
         let snack = Meal(type: .snack, quantity: .all)
         let lunch = Meal(type: .lunch, quantity: .all)
@@ -80,7 +88,8 @@ class Storage {
             var parent = Parent(name: name,
                                 birth: faker.date.birthday(18, 60),
                                 photo: faker.internet.image(),
-                                cpf: faker.number.randomInt(min: 00000000000, max: 99999999999),
+                                cpf: faker.number.randomInt(min: 00000000000,
+                                                            max: 99999999999),
                                 email: "\(name.lowercased())@example.net",
                                 password: "\(name.lowercased())123",
                                 children: [])
@@ -102,7 +111,8 @@ class Storage {
                     allergyType = AllergyType.other
                 }
                 
-                let allergy = Allergy(type: allergyType, description: faker.lorem.sentences(amount: 4))
+                let allergy = Allergy(type: allergyType,
+                                      description: faker.lorem.sentences(amount: 4))
                 
                 child.allergies.insert(allergy)
             }
