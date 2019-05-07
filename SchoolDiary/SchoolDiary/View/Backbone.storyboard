@@ -261,23 +261,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tJ-gM-gHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5749" y="-491"/>
+            <point key="canvasLocation" x="-5754" y="-568"/>
         </scene>
-        <!--Saúde-->
-        <scene sceneID="zDe-LK-P9V">
+        <!--HealthScreen-->
+        <scene sceneID="VqX-bO-F1d">
             <objects>
-                <viewController id="yaP-wp-kUT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9F9-ie-aHU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Zra-jZ-1mb"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Saúde" image="saude1x" selectedImage="saude1x" id="yUv-9n-rSh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9fe-EP-zMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="HealthScreen" id="zO7-S1-Kwv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="p3O-Cv-pgt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EV9-2N-QZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5750" y="235"/>
+            <point key="canvasLocation" x="-5770" y="27"/>
         </scene>
         <!--Agenda-->
         <scene sceneID="Sk1-9X-tgl">
@@ -293,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocu-cc-9cA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5754" y="932"/>
+            <point key="canvasLocation" x="-5755" y="940"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="imK-kN-QqH">
@@ -308,8 +302,8 @@
                         <outlet property="myTabBar" destination="8mv-uV-UJh" id="hpf-H8-kZW"/>
                         <segue destination="TAB-8h-ZJv" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
                         <segue destination="mqk-PZ-248" kind="relationship" relationship="viewControllers" id="glN-GR-mIA"/>
-                        <segue destination="yaP-wp-kUT" kind="relationship" relationship="viewControllers" id="2nF-x0-p61"/>
                         <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="LhJ-on-8JV"/>
+                        <segue destination="zO7-S1-Kwv" kind="relationship" relationship="viewControllers" id="xSu-a5-ZoE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jnt-Zd-bM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -326,7 +320,6 @@
         <image name="icon-lanche1x" width="30" height="32"/>
         <image name="logo-escola-1x" width="26" height="26"/>
         <image name="perfil-1x" width="24" height="24"/>
-        <image name="saude1x" width="30" height="31"/>
         <image name="star1x" width="15" height="15"/>
     </resources>
 </document>

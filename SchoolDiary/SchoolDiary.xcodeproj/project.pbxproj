@@ -14,6 +14,7 @@
 		2634D249227788240085F783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634D248227788240085F783 /* Assets.xcassets */; };
 		2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634D24A227788240085F783 /* LaunchScreen.storyboard */; };
 		26D72EB4227B5565001201AD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D72EB3227B5565001201AD /* LoginController.swift */; };
+		893DC4F12281FC3D00531DA0 /* HealthScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */; };
 		A97F00002278C3DA00D8700F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFF2278C3DA00D8700F /* Meal.swift */; };
 		A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00012278CDAF00D8700F /* DateExtensions.swift */; };
 		A97F00042278CE8D00D8700F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00032278CE8D00D8700F /* Activity.swift */; };
@@ -42,6 +43,7 @@
 		26D72EB3227B5565001201AD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		5A3D7E9031792CB35BBC237F /* Pods-SchoolDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolDiary.debug.xcconfig"; path = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary.debug.xcconfig"; sourceTree = "<group>"; };
 		846855418106DE1DF99C6B21 /* Pods-SchoolDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolDiary.release.xcconfig"; path = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary.release.xcconfig"; sourceTree = "<group>"; };
+		893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthScreen.storyboard; sourceTree = "<group>"; };
 		A97F00012278CDAF00D8700F /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		A97F00032278CE8D00D8700F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = SchoolDiary/Model/Activity.swift; sourceTree = SOURCE_ROOT; };
 		A97F00062278CEDB00D8700F /* Bathroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
@@ -118,9 +120,10 @@
 		26AEF4BB22778A9500C3FC03 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2634D245227788230085F783 /* Main.storyboard */,
 				2634D24A227788240085F783 /* LaunchScreen.storyboard */,
+				2634D245227788230085F783 /* Main.storyboard */,
 				C78E09422278BEE800017896 /* Backbone.storyboard */,
+				893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */,
 				2634D249227788240085F783 /* Assets.xcassets in Resources */,
 				2634D247227788230085F783 /* Main.storyboard in Resources */,
+				893DC4F12281FC3D00531DA0 /* HealthScreen.storyboard in Resources */,
 				C78E09432278BEE800017896 /* Backbone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
