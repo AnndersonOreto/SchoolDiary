@@ -15,26 +15,27 @@ class Storage {
     static var parents : [Parent] = []
     
     init() {
-        if Storage.children.isEmpty && Storage.parents.isEmpty {
+        if Disk.exists("children.json", in: .applicationSupport) &&
+           Disk.exists("parents.json", in: .applicationSupport) {
+            print("Existing database found. Loading data...")
+            Storage.load()
+        } else {
+            print("Database not found. Generating new data.")
             generateMockData(count: 7)
             Storage.save()
         }
     }
     
-    static func reload() {
-        if Disk.exists("children.json", in: .applicationSupport) {
-            do {
-                children = try Disk.retrieve("children.json", from: .applicationSupport, as: [Child].self)
-                parents = try Disk.retrieve("parents.json", from: .applicationSupport, as: [Parent].self)
-            } catch {
-                print("Could not reload database.")
-                print(error)
-            }
-            
-            print("Database reloaded.")
-        } else {
-            print("Database not found.")
+    static func load() {
+        do {
+            children = try Disk.retrieve("children.json", from: .applicationSupport, as: [Child].self)
+            parents = try Disk.retrieve("parents.json", from: .applicationSupport, as: [Parent].self)
+        } catch {
+            print("Could not load database.")
+            print(error)
         }
+        
+        print("Database loaded.")
     }
     
     static func save() {
