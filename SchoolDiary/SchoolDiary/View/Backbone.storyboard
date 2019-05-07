@@ -186,7 +186,7 @@
                                             <outlet property="collectionViewHeightConstraint" destination="ugK-Hm-oF5" id="PNP-Pz-EoI"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="88" id="led-5r-tSs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="88" id="led-5r-tSs" customClass="StatusTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="270" width="414" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="led-5r-tSs" id="DsO-8o-nFt">
@@ -196,18 +196,18 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBy-r1-d6W">
                                                     <rect key="frame" x="16" y="11" width="382" height="66"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="xixi" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-Tx-iel">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xixi" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-Tx-iel">
                                                             <rect key="frame" x="8" y="11" width="34" height="37"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="45" id="MhS-jB-TNP"/>
-                                                                <constraint firstAttribute="height" constant="45" id="fth-m3-tSq"/>
+                                                                <constraint firstAttribute="width" constant="34" id="MhS-jB-TNP"/>
+                                                                <constraint firstAttribute="height" constant="37" id="fth-m3-tSq"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coco" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-RN-l7o">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coco" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-RN-l7o">
                                                             <rect key="frame" x="199.5" y="11" width="34" height="37"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="45" id="2O1-n3-fYn"/>
-                                                                <constraint firstAttribute="height" constant="45" id="gMK-mW-gzX"/>
+                                                                <constraint firstAttribute="width" constant="34" id="2O1-n3-fYn"/>
+                                                                <constraint firstAttribute="height" constant="37" id="gMK-mW-gzX"/>
                                                             </constraints>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cut-1o-RNp">
@@ -251,7 +251,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nNc-7r-8S9">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nNc-7r-8S9">
                                                             <rect key="frame" x="307.5" y="11" width="35.5" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-4Q-Sme">
@@ -272,7 +272,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="CF0-RN-l7o" firstAttribute="leading" secondItem="Cut-1o-RNp" secondAttribute="trailing" constant="8" id="26L-Vl-EgI"/>
-                                                        <constraint firstItem="YSX-I8-xvk" firstAttribute="leading" secondItem="CF0-RN-l7o" secondAttribute="trailing" constant="8" id="3AN-GQ-N6h"/>
+                                                        <constraint firstItem="YSX-I8-xvk" firstAttribute="leading" secondItem="CF0-RN-l7o" secondAttribute="trailing" constant="19" id="3AN-GQ-N6h"/>
                                                         <constraint firstItem="Cut-1o-RNp" firstAttribute="centerY" secondItem="JBy-r1-d6W" secondAttribute="centerY" id="4Yl-UY-yZp"/>
                                                         <constraint firstItem="YSX-I8-xvk" firstAttribute="top" secondItem="JBy-r1-d6W" secondAttribute="top" constant="11" id="Sxg-f1-atG"/>
                                                         <constraint firstItem="nyY-Tx-iel" firstAttribute="top" secondItem="JBy-r1-d6W" secondAttribute="top" constant="11" id="Vjx-bW-LQ6"/>
@@ -283,7 +283,8 @@
                                                         <constraint firstItem="CF0-RN-l7o" firstAttribute="top" secondItem="JBy-r1-d6W" secondAttribute="top" constant="11" id="dR7-mU-exJ"/>
                                                         <constraint firstItem="nNc-7r-8S9" firstAttribute="leading" secondItem="YSX-I8-xvk" secondAttribute="trailing" constant="8" id="itf-db-i5e"/>
                                                         <constraint firstAttribute="bottom" secondItem="Cut-1o-RNp" secondAttribute="bottom" constant="4" id="oZ3-ph-w6I"/>
-                                                        <constraint firstItem="UCB-kn-fpM" firstAttribute="leading" secondItem="nyY-Tx-iel" secondAttribute="trailing" constant="8" id="vuR-3c-bVv"/>
+                                                        <constraint firstAttribute="height" constant="66" id="p7W-G3-kAY"/>
+                                                        <constraint firstItem="UCB-kn-fpM" firstAttribute="leading" secondItem="nyY-Tx-iel" secondAttribute="trailing" constant="19" id="vuR-3c-bVv"/>
                                                         <constraint firstItem="UCB-kn-fpM" firstAttribute="top" secondItem="JBy-r1-d6W" secondAttribute="top" constant="11" id="zVY-uE-flZ"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
@@ -300,6 +301,17 @@
                                                 <constraint firstItem="JBy-r1-d6W" firstAttribute="leading" secondItem="DsO-8o-nFt" secondAttribute="leading" constant="16" id="tHN-2B-yg8"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellView" destination="JBy-r1-d6W" id="jfY-qr-bIi"/>
+                                            <outlet property="icon1" destination="nyY-Tx-iel" id="Qo3-He-2A4"/>
+                                            <outlet property="icon2" destination="CF0-RN-l7o" id="hfY-dQ-for"/>
+                                            <outlet property="labelBlack1" destination="wBf-LB-d1S" id="8sI-Oc-E5M"/>
+                                            <outlet property="labelBlack2" destination="bLh-2d-rs2" id="8sl-ua-oIM"/>
+                                            <outlet property="labelBlack3" destination="ywX-7I-5D9" id="rPK-CM-mX2"/>
+                                            <outlet property="labelGray1" destination="vko-Mn-UM7" id="8u6-Ow-3L4"/>
+                                            <outlet property="labelGray2" destination="nm1-lR-Hhm" id="2aJ-aC-VFq"/>
+                                            <outlet property="labelGray3" destination="GzT-4Q-Sme" id="b1C-Df-26v"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

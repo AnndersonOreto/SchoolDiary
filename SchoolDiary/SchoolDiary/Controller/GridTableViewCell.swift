@@ -18,15 +18,6 @@ class GridTableViewCell: UITableViewCell {
     @IBOutlet weak var GridView: UICollectionView!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
     
-    // Intens of Collection view
-    //    let itemsOfSection = [
-    //        ["Lanche9h", "Almoço", "Lanche14h", "Pré-Janta", "Leite9h", "Leite17h30"],
-    //        ["manhã","tarde"],
-    //        ["Xixi","Cocô"],
-    //        ["Blocos de encaixe", "Balões"],
-    //        ["Pomada/Assadura" ]
-    //    ]
-    
     var items: [ItemTeste] = [
         ItemTeste(name: "1"),
         ItemTeste(name: "2"),
@@ -42,7 +33,7 @@ class GridTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        collectionViewHeightConstraint.constant = CGFloat(130.0) * CGFloat(1 + (items.count - 1)/3)
+        collectionViewHeightConstraint.constant = CGFloat(130.0) * CGFloat(1 + (items.count - 1)/3) 
         let flow: UICollectionViewFlowLayout = GridView.collectionViewLayout as! UICollectionViewFlowLayout
         flow.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
@@ -121,11 +112,7 @@ extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
                 quantityMealImage = UIImage(named: "star-nao-aceitou")!
             }
             cell.mealQuantityImage.image = quantityMealImage
-        
-        case .naps:
-            break
-            
-            
+
         default:
             break
         }
