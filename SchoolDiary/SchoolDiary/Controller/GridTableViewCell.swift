@@ -44,7 +44,7 @@ class GridTableViewCell: UITableViewCell {
         super.awakeFromNib()
         collectionViewHeightConstraint.constant = CGFloat(130.0) * CGFloat(1 + (items.count - 1)/3)
         let flow: UICollectionViewFlowLayout = GridView.collectionViewLayout as! UICollectionViewFlowLayout
-        flow.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 11)
+        flow.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         GridView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         GridView.dataSource = self
@@ -52,7 +52,22 @@ class GridTableViewCell: UITableViewCell {
     }
 }
 
-extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if collectionView.frame.size.width < 290 {
+            return CGSize(width: collectionView.frame.size.width*0.30, height: 124)
+        }
+        return CGSize(width: collectionView.frame.size.width*0.31, height: 124)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 11
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return count
     }
@@ -103,9 +118,13 @@ extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
             case .half:
                 quantityMealImage = UIImage(named: "halfStar")!
             case .nothing:
-                quantityMealImage = UIImage(named: "starFull")!
+                quantityMealImage = UIImage(named: "star-nao-aceitou")!
             }
             cell.mealQuantityImage.image = quantityMealImage
+        
+        case .naps:
+            break
+            
             
         default:
             break
