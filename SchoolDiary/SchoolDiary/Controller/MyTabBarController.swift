@@ -14,8 +14,13 @@ class MyTabBarController: UITabBarController {
     
     let selectedImage1 = UIImage(named: "diaryclicked")?.withRenderingMode(.alwaysOriginal)
     let normalImage1 = UIImage(named: "diary1x")?.withRenderingMode(.alwaysOriginal)
+    
     let selectedImage2 = UIImage(named: "messageclicked1x")?.withRenderingMode(.alwaysOriginal)
     let normalImage2 = UIImage(named: "message1x")?.withRenderingMode(.alwaysOriginal)
+    
+    let selectedImage3 = UIImage(named: "saudeclicked1x")?.withRenderingMode(.alwaysOriginal)
+    let normalImage3 = UIImage(named: "saude1x")?.withRenderingMode(.alwaysOriginal)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +34,10 @@ class MyTabBarController: UITabBarController {
         tabBarItem = self.tabBar.items![1]
         tabBarItem.selectedImage = selectedImage2
         tabBarItem.image = normalImage2
+        
+        tabBarItem = self.tabBar.items![2]
+        tabBarItem.selectedImage = selectedImage3
+        tabBarItem.image = normalImage3
         
         
         self.selectedIndex = 0

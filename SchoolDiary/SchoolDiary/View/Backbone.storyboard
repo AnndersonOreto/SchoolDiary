@@ -302,8 +302,8 @@
                         <outlet property="myTabBar" destination="8mv-uV-UJh" id="hpf-H8-kZW"/>
                         <segue destination="TAB-8h-ZJv" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
                         <segue destination="mqk-PZ-248" kind="relationship" relationship="viewControllers" id="glN-GR-mIA"/>
-                        <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="LhJ-on-8JV"/>
                         <segue destination="zO7-S1-Kwv" kind="relationship" relationship="viewControllers" id="xSu-a5-ZoE"/>
+                        <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="BBh-zI-vnN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jnt-Zd-bM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
