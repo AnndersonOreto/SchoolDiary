@@ -89,17 +89,17 @@
                                                         <constraint firstAttribute="height" constant="217.5" id="ugK-Hm-oF5"/>
                                                     </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="11" id="h6X-UA-iZ6">
-                                                        <size key="itemSize" width="108" height="124"/>
+                                                        <size key="itemSize" width="116" height="124"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gridCell" id="zIM-dI-dxy" customClass="GridCollectionViewCell" customModule="SchoolDiary" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="108" height="124"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="116" height="124"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="108" height="124"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="116" height="124"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-lanche1x" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-zB-fSO">
@@ -126,11 +126,11 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tudo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONz-XB-X7I">
-                                                                        <rect key="frame" x="37" y="98" width="34" height="16"/>
+                                                                        <rect key="frame" x="37" y="98" width="31" height="16"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="16" id="TIe-Wx-0dD"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -185,6 +185,14 @@
                                             <outlet property="GridView" destination="nde-2J-qeR" id="tzP-e8-nnM"/>
                                             <outlet property="collectionViewHeightConstraint" destination="ugK-Hm-oF5" id="XWS-59-RNp"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="132" id="led-5r-tSs" customClass="GridTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="270" width="414" height="132"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="led-5r-tSs" id="DsO-8o-nFt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="131.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

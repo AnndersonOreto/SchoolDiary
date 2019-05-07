@@ -72,14 +72,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 30))
 
-        let headerImageView = UIImageView(frame: CGRect(x: 16, y: 0, width: 33, height: 30))
+        let headerImageView = UIImageView(frame: CGRect(x: 16, y: 0, width: 25, height: 23))
         let image: UIImage = UIImage(named: "alimentacao1x")!
         headerImageView.image = image
         headerImageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         headerImageView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         
-        let headerTitle: UILabel = UILabel(frame: CGRect(x: 60, y: 0, width: 200, height: 30))
+        let headerTitle: UILabel = UILabel(frame: CGRect(x: 50, y: -3, width: 200, height: 30))
         headerTitle.textColor = .black
         headerTitle.font = UIFont(name: "System", size: 18)
         headerTitle.text = Section.meal.rawValue
@@ -116,7 +116,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.count = 6
             cell.section = .meal
         }
-        
+        cell.selectionStyle = .none
         cell.diary = self.diary
     
         return cell
