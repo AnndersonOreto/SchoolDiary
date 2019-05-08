@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var child : Child!
     var diary : Diary!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let _ = Storage()
@@ -168,13 +169,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.labelBlack1.text = "\(self.diary.naps[0].start.hour)h - \(self.diary.naps[0].end.hour)h"
             cell.labelBlack2.text = "\(self.diary.naps[1].start.hour)h - \(self.diary.naps[1].end.hour)h"
             cell.labelBlack3.isHidden = true
-            
             cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
             
+            //Shadows
+            cell.contentView.layer.cornerRadius = 10.0
+            cell.contentView.layer.borderWidth = 3.0
+            cell.contentView.layer.borderColor = UIColor.clear.cgColor
+            cell.contentView.layer.masksToBounds = true
             
-//            cell.stackLabelView.leading(to: cell.lineView)
-            
+            cell.layer.shadowColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
+            cell.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+            cell.layer.shadowRadius = 6.0
+            cell.layer.shadowOpacity = 1
+            cell.layer.masksToBounds = false
+            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+        
             return cell
+            
         }else if indexPath.section == 2{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
@@ -187,14 +198,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.labelBlack2.text = self.diary.bathroom[1].condition.rawValue
             cell.labelGray3.isHidden = true
             cell.labelBlack3.isHidden = true
-            
-//            cell.stackLabelView.leading(to: cell.icon2, offset: 12.0)
             cell.stackLabelView.leftToRight(of: cell.icon2, offset: 12.0)
             
+            //Shadows
+            cell.contentView.layer.cornerRadius = 10.0
+            cell.contentView.layer.borderWidth = 3.0
+            cell.contentView.layer.borderColor = UIColor.clear.cgColor
+            cell.contentView.layer.masksToBounds = true
+            
+            cell.layer.shadowColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
+            cell.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+            cell.layer.shadowRadius = 6.0
+            cell.layer.shadowOpacity = 1
+            cell.layer.masksToBounds = false
+            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+            
             return cell
+            
         }else if indexPath.section == 3{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
+            var typeDose: String = ""
+            
+            switch self.diary.medsTaken[indexPath.row].medicine.type{
+            case .drops:
+                typeDose = "ml"
+            case .pills:
+                typeDose = "mg"
+            case .other:
+                break
+            }
+        
             cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
             cell.icon1.image = UIImage(named: "medicamentos")
             cell.icon2.isHidden = true
@@ -202,14 +236,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.labelGray2.text = "dose"
             cell.labelGray3.text = "horário"
             cell.labelBlack1.text = self.diary.medsTaken[indexPath.row].medicine.name
-            cell.labelBlack2.text = "\(self.diary.medsTaken[indexPath.row].medicine.dose)"
+            cell.labelBlack2.text = "\(self.diary.medsTaken[indexPath.row].medicine.dose) \(typeDose)"
             cell.labelBlack3.text = "\(self.diary.medsTaken[indexPath.row].medicine.time.hour)h"
-            
             cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
             cell.stackLabelView2.leftToRight(of: cell.stackLabelView, offset: 40.0)
             
+            //Shadows
+            cell.contentView.layer.cornerRadius = 10.0
+            cell.contentView.layer.borderWidth = 3.0
+            cell.contentView.layer.borderColor = UIColor.clear.cgColor
+            cell.contentView.layer.masksToBounds = true
+            
+            cell.layer.shadowColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
+            cell.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+            cell.layer.shadowRadius = 6.0
+            cell.layer.shadowOpacity = 1
+            cell.layer.masksToBounds = false
+            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
             
             return cell
+            
         }else if indexPath.section == 4{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
@@ -235,3 +281,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 
 }
+
+
