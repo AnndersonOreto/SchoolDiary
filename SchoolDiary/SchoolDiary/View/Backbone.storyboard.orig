@@ -448,9 +448,12 @@
         <image name="icon-lanche1x" width="30" height="32"/>
         <image name="logo-escola-1x" width="26" height="26"/>
         <image name="perfil-1x" width="24" height="24"/>
+<<<<<<< HEAD
         <image name="star1x" width="15" height="15"/>
+=======
         <image name="saude1x" width="30" height="31"/>
         <image name="starFull" width="22.5" height="22.5"/>
         <image name="xixi" width="30" height="30"/>
+>>>>>>> fee0d80bf5dcd55551b544fc85130c698096b78b
     </resources>
 </document>
