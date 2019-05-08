@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TinyConstraints
 
 enum Section : String {
     case meal = "Alimentação"
@@ -92,7 +93,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             image = UIImage(named: "banheiro")!
         }else if section == 3{
             headerTitle.text = Section.medicines.rawValue
-            image = UIImage(named: "alimentacao1x")!
+            image = UIImage(named: "medicamentosSectionHeader")!
         }
         else if section == 4{
             headerTitle.text = Section.activities.rawValue
@@ -168,6 +169,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.labelGray3.isHidden = true
             cell.labelBlack3.isHidden = true
             
+//            cell.stackLabelView.leading(to: cell.lineView)
+            
             return cell
         }else if indexPath.section == 2{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
@@ -182,19 +185,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.labelGray3.isHidden = true
             cell.labelBlack3.isHidden = true
             
+//            cell.stackLabelView.leading(to: cell.icon2, offset: 12.0)
+            cell.stackLabelView.leftToRight(of: cell.icon2, offset: 12.0)
+            
             return cell
         }else if indexPath.section == 3{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
             cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
-            cell.icon1.image = UIImage(named: "xixi")
-            cell.icon2.image = UIImage(named: "coco")
-            cell.labelGray1.text = self.diary.bathroom[0].type.rawValue
-            cell.labelGray2.text = self.diary.bathroom[0].type.rawValue
-            cell.labelBlack1.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelBlack2.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelGray3.isHidden = true
-            cell.labelBlack3.isHidden = true
+            cell.icon1.image = UIImage(named: "medicamentos")
+            cell.icon2.isHidden = true
+            cell.labelGray1.text = "nome"
+            cell.labelGray2.text = "dose"
+            cell.labelGray3.text = "horário"
+            cell.labelBlack1.text = self.diary.medsTaken[indexPath.row].medicine.name
+            cell.labelBlack2.text = "\(self.diary.medsTaken[indexPath.row].medicine.dose)"
+            cell.labelBlack3.text = "\(self.diary.medsTaken[indexPath.row].medicine.time.hour)h"
+            
+            cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
+            
             
             return cell
         }else if indexPath.section == 4{

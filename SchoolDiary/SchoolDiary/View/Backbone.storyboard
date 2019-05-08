@@ -234,7 +234,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-I8-xvk">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-I8-xvk">
                                                             <rect key="frame" x="252.5" y="11" width="47" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="cocô" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm1-lR-Hhm">
@@ -251,7 +251,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nNc-7r-8S9">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nNc-7r-8S9">
                                                             <rect key="frame" x="307.5" y="11" width="35.5" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-4Q-Sme">
@@ -272,7 +272,6 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="CF0-RN-l7o" firstAttribute="leading" secondItem="Cut-1o-RNp" secondAttribute="trailing" constant="8" id="26L-Vl-EgI"/>
-                                                        <constraint firstItem="YSX-I8-xvk" firstAttribute="leading" secondItem="CF0-RN-l7o" secondAttribute="trailing" constant="19" id="3AN-GQ-N6h"/>
                                                         <constraint firstItem="Cut-1o-RNp" firstAttribute="centerY" secondItem="JBy-r1-d6W" secondAttribute="centerY" id="4Yl-UY-yZp"/>
                                                         <constraint firstItem="YSX-I8-xvk" firstAttribute="top" secondItem="JBy-r1-d6W" secondAttribute="top" constant="11" id="Sxg-f1-atG"/>
                                                         <constraint firstItem="nyY-Tx-iel" firstAttribute="top" secondItem="JBy-r1-d6W" secondAttribute="top" constant="11" id="Vjx-bW-LQ6"/>
@@ -311,6 +310,8 @@
                                             <outlet property="labelGray1" destination="vko-Mn-UM7" id="8u6-Ow-3L4"/>
                                             <outlet property="labelGray2" destination="nm1-lR-Hhm" id="2aJ-aC-VFq"/>
                                             <outlet property="labelGray3" destination="GzT-4Q-Sme" id="b1C-Df-26v"/>
+                                            <outlet property="lineView" destination="Cut-1o-RNp" id="Ode-gn-dpY"/>
+                                            <outlet property="stackLabelView" destination="YSX-I8-xvk" id="s3f-QH-ykH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
