@@ -172,17 +172,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
             
             //Shadows
-            cell.contentView.layer.cornerRadius = 10.0
-            cell.contentView.layer.borderWidth = 3.0
-            cell.contentView.layer.borderColor = UIColor.clear.cgColor
-            cell.contentView.layer.masksToBounds = true
-            
-            cell.layer.shadowColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
-            cell.layer.shadowOffset = CGSize(width: 1, height: 1.0)
-            cell.layer.shadowRadius = 6.0
-            cell.layer.shadowOpacity = 1
-            cell.layer.masksToBounds = false
-            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+            cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1) , opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+
         
             return cell
             
@@ -201,17 +192,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.stackLabelView.leftToRight(of: cell.icon2, offset: 12.0)
             
             //Shadows
-            cell.contentView.layer.cornerRadius = 10.0
-            cell.contentView.layer.borderWidth = 3.0
-            cell.contentView.layer.borderColor = UIColor.clear.cgColor
-            cell.contentView.layer.masksToBounds = true
-            
-            cell.layer.shadowColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
-            cell.layer.shadowOffset = CGSize(width: 1, height: 1.0)
-            cell.layer.shadowRadius = 6.0
-            cell.layer.shadowOpacity = 1
-            cell.layer.masksToBounds = false
-            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+            cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1), opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
             
             return cell
             
@@ -242,18 +223,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.stackLabelView2.leftToRight(of: cell.stackLabelView, offset: 40.0)
             
             //Shadows
-            cell.contentView.layer.cornerRadius = 10.0
-            cell.contentView.layer.borderWidth = 3.0
-            cell.contentView.layer.borderColor = UIColor.clear.cgColor
-            cell.contentView.layer.masksToBounds = true
-            
-            cell.layer.shadowColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
-            cell.layer.shadowOffset = CGSize(width: 1, height: 1.0)
-            cell.layer.shadowRadius = 6.0
-            cell.layer.shadowOpacity = 1
-            cell.layer.masksToBounds = false
-            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
-            
+            cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1), opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
             return cell
             
         }else if indexPath.section == 4{
