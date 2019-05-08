@@ -312,6 +312,7 @@
                                             <outlet property="labelGray3" destination="GzT-4Q-Sme" id="b1C-Df-26v"/>
                                             <outlet property="lineView" destination="Cut-1o-RNp" id="Ode-gn-dpY"/>
                                             <outlet property="stackLabelView" destination="YSX-I8-xvk" id="s3f-QH-ykH"/>
+                                            <outlet property="stackLabelView2" destination="nNc-7r-8S9" id="mT3-Nx-Tsx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

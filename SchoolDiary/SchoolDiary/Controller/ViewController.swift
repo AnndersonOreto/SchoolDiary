@@ -160,14 +160,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
             cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
-            cell.icon1.image = UIImage(named: "xixi")
-            cell.icon2.image = UIImage(named: "coco")
-            cell.labelGray1.text = self.diary.bathroom[0].type.rawValue
-            cell.labelGray2.text = self.diary.bathroom[0].type.rawValue
-            cell.labelBlack1.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelBlack2.text = self.diary.bathroom[indexPath.row].condition.rawValue
+            cell.icon1.image = UIImage(named: "sono-preenchido")
+            cell.icon2.isHidden = true
+            cell.labelGray1.text = self.diary.naps[0].napTime.rawValue
+            cell.labelGray2.text = self.diary.naps[1].napTime.rawValue
             cell.labelGray3.isHidden = true
+            cell.labelBlack1.text = "\(self.diary.naps[0].start.hour)h - \(self.diary.naps[0].end.hour)h"
+            cell.labelBlack2.text = "\(self.diary.naps[1].start.hour)h - \(self.diary.naps[1].end.hour)h"
             cell.labelBlack3.isHidden = true
+            
+            cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
+            
             
 //            cell.stackLabelView.leading(to: cell.lineView)
             
@@ -203,6 +206,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.labelBlack3.text = "\(self.diary.medsTaken[indexPath.row].medicine.time.hour)h"
             
             cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
+            cell.stackLabelView2.leftToRight(of: cell.stackLabelView, offset: 40.0)
             
             
             return cell
