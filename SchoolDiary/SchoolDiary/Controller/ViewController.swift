@@ -176,9 +176,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.icon1.image = UIImage(named: "xixi")
             cell.icon2.image = UIImage(named: "coco")
             cell.labelGray1.text = self.diary.bathroom[0].type.rawValue
-            cell.labelGray2.text = self.diary.bathroom[0].type.rawValue
-            cell.labelBlack1.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelBlack2.text = self.diary.bathroom[indexPath.row].condition.rawValue
+            cell.labelGray2.text = self.diary.bathroom[1].type.rawValue
+            cell.labelBlack1.text = self.diary.bathroom[0].condition.rawValue
+            cell.labelBlack2.text = self.diary.bathroom[1].condition.rawValue
             cell.labelGray3.isHidden = true
             cell.labelBlack3.isHidden = true
             

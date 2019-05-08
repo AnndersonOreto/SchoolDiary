@@ -39,7 +39,8 @@ class Storage {
         let lunch2 = Meal(type: .preDinner, quantity: .aLittle)
         let milk2 = Meal(type: .milk2, quantity: .nothing)
         let poop = Bathroom(type: .poop, condition: .normal)
-        var diary = Diary(date: Date.init(), meals: [snack, lunch, milk, snack2, lunch2, milk2], naps: [Date.init()], activities: Set<Activity>(), bathroom: [poop], medsTaken: [], pictures: [], notes: "A Aurora gostou muito da brincadeira dos balões hoje!")
+        let pee = Bathroom(type: .pee, condition: .worrying)
+        var diary = Diary(date: Date.init(), meals: [snack, lunch, milk, snack2, lunch2, milk2], naps: [Date.init()], activities: Set<Activity>(), bathroom: [pee, poop], medsTaken: [], pictures: [], notes: "A Aurora gostou muito da brincadeira dos balões hoje!")
         aurora.diaries.append(diary)
         
         Storage.children.append(aurora)
