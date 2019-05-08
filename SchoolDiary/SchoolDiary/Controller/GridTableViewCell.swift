@@ -83,8 +83,10 @@ extension GridTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
             cell.mealLabel.text = self.diary.meals[indexPath.row].type.rawValue
             cell.mealTime.text = "\(self.diary.meals[indexPath.row].type.mealTime()?.hour ?? 0)h" 
             cell.mealQuantityLabel.text = self.diary.meals[indexPath.row].quantity.rawValue
+            
             var image : UIImage
             var quantityMealImage: UIImage
+            
             switch self.diary.meals[indexPath.row].type{ 
             case .lunch:
                 image = UIImage(named: "refeicao1x")!

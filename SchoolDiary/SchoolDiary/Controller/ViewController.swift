@@ -71,6 +71,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 30))
@@ -81,6 +83,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let headerTitle: UILabel = UILabel(frame: CGRect(x: 50, y: -3, width: 200, height: 30))
         headerTitle.textColor = .black
         headerTitle.font = UIFont(name: "System", size: 18)
+        
         if section == 0 {
             headerTitle.text = Section.meal.rawValue
             image = UIImage(named: "alimentacao1x")!

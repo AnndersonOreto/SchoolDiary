@@ -10,4 +10,10 @@ import UIKit
 
 class GridHealthCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var measureImageView: UIImageView!
+    @IBOutlet weak var measureLabel: UILabel!
+    @IBOutlet weak var measureTextField: UITextField!
+    
+    
+    
 }
