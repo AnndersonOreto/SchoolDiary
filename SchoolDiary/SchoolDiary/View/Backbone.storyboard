@@ -386,21 +386,11 @@
                         <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="E7N-0b-SCg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Mensagens" id="j8m-Q0-MZ8"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Mensagens" id="j8m-Q0-MZ8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tJ-gM-gHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5754" y="-568"/>
-        </scene>
-        <!--HealthScreen-->
-        <scene sceneID="VqX-bO-F1d">
-            <objects>
-                <viewControllerPlaceholder storyboardName="HealthScreen" id="zO7-S1-Kwv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p3O-Cv-pgt"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EV9-2N-QZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5770" y="27"/>
         </scene>
         <!--Agenda-->
         <scene sceneID="Sk1-9X-tgl">
@@ -416,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocu-cc-9cA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5755" y="940"/>
+            <point key="canvasLocation" x="-6216" y="581"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="imK-kN-QqH">
@@ -431,13 +421,23 @@
                         <outlet property="myTabBar" destination="8mv-uV-UJh" id="hpf-H8-kZW"/>
                         <segue destination="TAB-8h-ZJv" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
                         <segue destination="mqk-PZ-248" kind="relationship" relationship="viewControllers" id="glN-GR-mIA"/>
-                        <segue destination="zO7-S1-Kwv" kind="relationship" relationship="viewControllers" id="xSu-a5-ZoE"/>
-                        <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="BBh-zI-vnN"/>
+                        <segue destination="Zxc-wA-iwf" kind="relationship" relationship="viewControllers" id="xEd-bc-kF9"/>
+                        <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="5Sv-r3-0Pd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jnt-Zd-bM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7036" y="-133"/>
+            <point key="canvasLocation" x="-7138" y="-108"/>
+        </scene>
+        <!--HealthScreen-->
+        <scene sceneID="Ycb-fo-B54">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HealthScreen" id="Zxc-wA-iwf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dsz-ub-GKm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nzj-T4-HsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5993" y="146"/>
         </scene>
     </scenes>
     <resources>
@@ -450,8 +450,6 @@
         <image name="icon-lanche1x" width="30" height="32"/>
         <image name="logo-escola-1x" width="26" height="26"/>
         <image name="perfil-1x" width="24" height="24"/>
-        <image name="star1x" width="15" height="15"/>
-        <image name="saude1x" width="30" height="31"/>
         <image name="starFull" width="22.5" height="22.5"/>
         <image name="xixi" width="30" height="30"/>
     </resources>

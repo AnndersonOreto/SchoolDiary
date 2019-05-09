@@ -55,7 +55,7 @@ extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "gridMeasureCell", for: indexPath) as! GridHealthCollectionViewCell
         
-        cell.contentView.layer.cornerRadius = 10.0
+        cell.contentView.layer.cornerRadius = 15.0
         cell.contentView.layer.borderWidth = 3.0
         cell.contentView.layer.borderColor = UIColor.clear.cgColor
         cell.contentView.layer.masksToBounds = true
@@ -69,27 +69,21 @@ extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDat
         
         switch section as Sections {
         case .measures:
-            cell.measureLabel.text = self.child.medicines[0].name
-            cell.measureImageView.image = UIImage(named: "refeicao1x")!
-            
-//            var image : UIImage
-//            var quantityMealImage: UIImage
-            
-//            switch self.diary.meals[indexPath.row].type{
-//            case .lunch:
-//                image = UIImage(named: "refeicao1x")!
-//            case .milk:
-//                image = UIImage(named: "milk1x")!
-//            case .milk2:
-//                image = UIImage(named: "milk1x")!
-//            case .snack:
-//                image = UIImage(named: "icon-lanche1x")!
-//            case .snack2:
-//                image = UIImage(named: "icon-lanche1x")!
-//            case .preDinner:
-//                image = UIImage(named: "refeicao1x")!
-//            }
-//            cell.mealImage.image = image
+            if indexPath.row == 0 {
+                cell.measureLabel.text = "Peso"
+                cell.measureImageView.image = UIImage(named: "peso")!
+                cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            } else if indexPath.row == 1 {
+                cell.measureLabel.text = "Altura"
+                cell.measureImageView.image = UIImage(named: "altura")!
+                cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            } else if indexPath.row == 2 {
+                cell.measureLabel.text = "Alergia"
+                cell.measureImageView.image = UIImage(named: "alergia")!
+                cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            } else {
+                fatalError()
+            }
             
         default:
             break

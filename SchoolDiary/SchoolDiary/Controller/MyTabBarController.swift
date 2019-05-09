@@ -27,7 +27,13 @@ class MyTabBarController: UITabBarController {
         UITabBar.appearance().tintColor = #colorLiteral(red: 0.2156862745, green: 0.2156862745, blue: 0.2156862745, alpha: 1)
         UITabBar.appearance().unselectedItemTintColor = #colorLiteral(red: 0.2156862745, green: 0.2156862745, blue: 0.2156862745, alpha: 1)
         
-        tabBarItem = self.tabBar.items![0]
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var tabBarItem = self.tabBar.items![0]
         tabBarItem.selectedImage = selectedImage1
         tabBarItem.image = normalImage1
         
@@ -39,7 +45,8 @@ class MyTabBarController: UITabBarController {
         tabBarItem.selectedImage = selectedImage3
         tabBarItem.image = normalImage3
         
-        
         self.selectedIndex = 0
+
+
     }
 }

@@ -26,7 +26,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto-crianca-1x" translatesAutoresizingMaskIntoConstraints="NO" id="8U5-QF-iyh" userLabel="childPhoto">
                                 <rect key="frame" x="150" y="60" width="114" height="120"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-T0-NiG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-T0-NiG">
                                 <rect key="frame" x="0.0" y="220" width="414" height="676"/>
                                 <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="154"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="icl-0e-XwO" id="EEd-rV-BPG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="153.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KoU-2I-yDl" userLabel="StatusHealth View">
@@ -67,7 +67,7 @@
                                                                     </imageView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="--" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eog-5a-e2r" userLabel="Measures TextField">
                                                                         <rect key="frame" x="8" y="92" width="18" height="21"/>
-                                                                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="21" id="LtN-jb-eX1"/>
                                                                         </constraints>
@@ -91,6 +91,11 @@
                                                                 <constraint firstAttribute="bottom" secondItem="eog-5a-e2r" secondAttribute="bottom" constant="19" id="or7-pa-imF"/>
                                                                 <constraint firstItem="Lsl-ib-zVa" firstAttribute="top" secondItem="WvA-BV-8yS" secondAttribute="top" constant="19" id="uLb-QK-fZ1"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <outlet property="measureImageView" destination="Lsl-ib-zVa" id="v89-hj-tWZ"/>
                                                                 <outlet property="measureLabel" destination="eYZ-0s-phn" id="ei9-fk-IEw"/>
@@ -114,8 +119,8 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MedicationCell" rowHeight="203" id="e7G-sI-fji" userLabel="medicationCell" customClass="MedicineTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="182" width="414" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e7G-sI-fji" id="7IW-74-d8a">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="202.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e7G-sI-fji" id="7IW-74-d8a">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-Dh-2xd">
@@ -201,7 +206,7 @@
                                                         </stackView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x92-TY-X8w">
                                                             <rect key="frame" x="190.5" y="8" width="1" height="174"/>
-                                                            <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="zgn-GL-fOW"/>
                                                             </constraints>
@@ -234,6 +239,7 @@
                                             <outlet property="doseLabel1" destination="1mL-gf-bY1" id="IVS-3F-TIw"/>
                                             <outlet property="horarioLabel" destination="fik-qc-xEn" id="QTs-We-1ZJ"/>
                                             <outlet property="horarioLabel1" destination="SOL-JB-0QH" id="YM6-jp-eKc"/>
+                                            <outlet property="medicineView" destination="OXx-Dh-2xd" id="T2Z-JU-Inb"/>
                                             <outlet property="nomeLabel" destination="osb-aI-ZF9" id="u50-Os-eN9"/>
                                             <outlet property="nomeLabel1" destination="r5y-S8-ncT" id="pey-Ty-zRl"/>
                                             <outlet property="titleLabel" destination="pZU-1W-jGK" id="zl2-zq-JF9"/>
@@ -294,20 +300,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zra-jZ-1mb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Saúde" image="saude1x" selectedImage="saude1x" id="yUv-9n-rSh"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Saúde" id="yUv-9n-rSh"/>
                     <connections>
                         <outlet property="nameLabel" destination="Qcc-Nb-Ye5" id="YU3-gI-Eya"/>
                         <outlet property="tableView" destination="zLA-T0-NiG" id="p9l-Ke-QWc"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-5753.6231884057979" y="233.03571428571428"/>
+            <point key="canvasLocation" x="-4987" y="269"/>
         </scene>
     </scenes>
     <resources>
         <image name="cabecalho1x" width="375" height="220"/>
         <image name="foto-crianca-1x" width="114.5" height="120"/>
         <image name="perfil-1x" width="24" height="24"/>
-        <image name="saude1x" width="30" height="31"/>
     </resources>
 </document>
