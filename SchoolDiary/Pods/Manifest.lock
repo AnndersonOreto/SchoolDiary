@@ -1,16 +1,20 @@
 PODS:
   - Disk (0.6.3)
+  - TinyConstraints (4.0.0)
 
 DEPENDENCIES:
   - Disk (~> 0.6.3)
+  - TinyConstraints
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Disk
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   Disk: 76cccb6fed1c27cd661bbdea7b117d887c2f72e5
+  TinyConstraints: 03bc091844b98c18dbaead8b1153242a42721b56
 
-PODFILE CHECKSUM: 379fe528445fd490f27a77da727a7e14c49ee68d
+PODFILE CHECKSUM: 6e2e8b6e956895ef51abda29c8cf9417a3ccf009
 
 COCOAPODS: 1.6.1

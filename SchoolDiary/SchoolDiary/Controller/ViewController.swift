@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TinyConstraints 
 
 enum Section : String {
     case meal = "Alimentação"
@@ -33,6 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var section : Section!
     var child : Child!
     var diary : Diary!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,7 +97,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             image = UIImage(named: "banheiro")!
         }else if section == 3{
             headerTitle.text = Section.medicines.rawValue
-            image = UIImage(named: "alimentacao1x")!
+            image = UIImage(named: "medicamentosSectionHeader")!
         }
         else if section == 4{
             headerTitle.text = Section.activities.rawValue
@@ -162,16 +164,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
             cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
-            cell.icon1.image = UIImage(named: "xixi")
-            cell.icon2.image = UIImage(named: "coco")
-            cell.labelGray1.text = self.diary.bathroom[0].type.rawValue
-            cell.labelGray2.text = self.diary.bathroom[0].type.rawValue
-            cell.labelBlack1.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelBlack2.text = self.diary.bathroom[indexPath.row].condition.rawValue
+            cell.icon1.image = UIImage(named: "sono-preenchido")
+            cell.icon2.isHidden = true
+            cell.labelGray1.text = self.diary.naps[0].napTime.rawValue
+            cell.labelGray2.text = self.diary.naps[1].napTime.rawValue
             cell.labelGray3.isHidden = true
+            cell.labelBlack1.text = "\(self.diary.naps[0].start.hour)h - \(self.diary.naps[0].end.hour)h"
+            cell.labelBlack2.text = "\(self.diary.naps[1].start.hour)h - \(self.diary.naps[1].end.hour)h"
             cell.labelBlack3.isHidden = true
+            cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
             
+            //Shadows
+            cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1) , opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+
+        
             return cell
+            
         }else if indexPath.section == 2{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
@@ -179,27 +187,48 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.icon1.image = UIImage(named: "xixi")
             cell.icon2.image = UIImage(named: "coco")
             cell.labelGray1.text = self.diary.bathroom[0].type.rawValue
-            cell.labelGray2.text = self.diary.bathroom[0].type.rawValue
-            cell.labelBlack1.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelBlack2.text = self.diary.bathroom[indexPath.row].condition.rawValue
+            cell.labelGray2.text = self.diary.bathroom[1].type.rawValue
+            cell.labelBlack1.text = self.diary.bathroom[0].condition.rawValue
+            cell.labelBlack2.text = self.diary.bathroom[1].condition.rawValue
             cell.labelGray3.isHidden = true
             cell.labelBlack3.isHidden = true
+            cell.stackLabelView.leftToRight(of: cell.icon2, offset: 12.0)
+            
+            //Shadows
+            cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1), opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
             
             return cell
+            
         }else if indexPath.section == 3{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
-            cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
-            cell.icon1.image = UIImage(named: "xixi")
-            cell.icon2.image = UIImage(named: "coco")
-            cell.labelGray1.text = self.diary.bathroom[0].type.rawValue
-            cell.labelGray2.text = self.diary.bathroom[0].type.rawValue
-            cell.labelBlack1.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelBlack2.text = self.diary.bathroom[indexPath.row].condition.rawValue
-            cell.labelGray3.isHidden = true
-            cell.labelBlack3.isHidden = true
+            var typeDose: String = ""
             
+            switch self.diary.medsTaken[indexPath.row].medicine.type{
+            case .drops:
+                typeDose = "ml"
+            case .pills:
+                typeDose = "mg"
+            case .other:
+                break
+            }
+        
+            cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+            cell.icon1.image = UIImage(named: "medicamentos")
+            cell.icon2.isHidden = true
+            cell.labelGray1.text = "nome"
+            cell.labelGray2.text = "dose"
+            cell.labelGray3.text = "horário"
+            cell.labelBlack1.text = self.diary.medsTaken[indexPath.row].medicine.name
+            cell.labelBlack2.text = "\(self.diary.medsTaken[indexPath.row].medicine.dose) \(typeDose)"
+            cell.labelBlack3.text = "\(self.diary.medsTaken[indexPath.row].medicine.time.hour)h"
+            cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
+            cell.stackLabelView2.leftToRight(of: cell.stackLabelView, offset: 40.0)
+            
+            //Shadows
+            cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1), opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
             return cell
+            
         }else if indexPath.section == 4{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
             
@@ -225,3 +254,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 
 }
+
+

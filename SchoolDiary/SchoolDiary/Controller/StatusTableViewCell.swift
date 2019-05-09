@@ -19,5 +19,8 @@ class StatusTableViewCell: UITableViewCell {
     @IBOutlet weak var labelBlack1: UILabel!
     @IBOutlet weak var labelBlack2: UILabel!
     @IBOutlet weak var labelBlack3: UILabel!
+    @IBOutlet weak var lineView: UIView!
+    @IBOutlet weak var stackLabelView: UIStackView!
+    @IBOutlet weak var stackLabelView2: UIStackView!
     
 }

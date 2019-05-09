@@ -7,100 +7,159 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F01BAEFECFC4BBA3AA65A2A77789DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		15A6BC1AE059622FC6EE8B5C401684E6 /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0FD399EE6D9A0247149F38F908BBDC /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		216CE88CD8595E513280EC8191DED56C /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CDB78525A2D19ED1C970605EEBFCF /* Disk+Helpers.swift */; };
-		273B487494CF17A9546D61C083A4FF74 /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72537FBD089F6050F6E16B0B30DA58 /* Disk+[UIImage].swift */; };
-		369FE59CE28A0AB605646766E43B3F64 /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C903F207CED6C8701F2A97896B62F8F2 /* Disk+InternalHelpers.swift */; };
-		41C84F960354A9214136AA334311C98D /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4882100EA12E53241B556658079BCA6 /* Disk.swift */; };
-		594A004EBE6EC64CC50E4C940C8914A4 /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BEA729B1927B2224C91DE161443D4 /* Disk+Errors.swift */; };
-		6B723205347FD86B8AFE7B597BC88039 /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6A7856E4FAF5A7001DD5FDACFE58E2 /* Disk+UIImage.swift */; };
-		6B8A2DCB59035EFC0886305FFB8E031B /* Pods-SchoolDiary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDD0942700240596CBE1BA1207EA739 /* Pods-SchoolDiary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B7957C75492B4088FDE06C0A5BC96F7 /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E61B79225B1F5F223B2F43E4A665B /* Disk+Codable.swift */; };
-		9650C6DB05E4B7218FDCEE7BA052240F /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98DC748405D6CE057C7DC6036D91F6 /* Disk+Data.swift */; };
-		96A70457682A6BDC87645E3A2A9ED6B3 /* Pods-SchoolDiary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE167688536553E66FB90414D5E6327 /* Pods-SchoolDiary-dummy.m */; };
-		A849665B2B31CAAF2014B931C0C20D04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B12F16AB6A00083542BE14FD4E43622A /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = C68EED554AB45BD5A043C3333684F9D2 /* Disk+[Data].swift */; };
-		B2AD0ED24AE50783BEEC7B275ECBE845 /* Disk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA12096B799EB260CC9CEAB9B54745A8 /* Disk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C02D5881E9848319380BB1990356BA72 /* Disk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C44618A9E054CFFFA4FBE5089194E /* Disk-dummy.m */; };
-		F5393672AD35AB2DF79E024F6FB75D27 /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65605C695EEBE6DA87226D45678EF3F /* Disk+VolumeInformation.swift */; };
+		15A6BC1AE059622FC6EE8B5C401684E6 /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B73F65DFC4638334C0BFA5C2E2F05B /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1D144340CF1839D8BCD934F13E7B2C /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A24DBA91CF6A55947D61980E3CC1C7 /* TinyConstraints-dummy.m */; };
+		216CE88CD8595E513280EC8191DED56C /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE71D57E3964A76ACFBCD443755AD4E /* Disk+Helpers.swift */; };
+		26B45733D444336011BD7CC8D89B6FE6 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97A1ECC6575FC52DFDFFDB37E461FD /* Constraints.swift */; };
+		273B487494CF17A9546D61C083A4FF74 /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F668668470D01DFBAA797A78F9A7 /* Disk+[UIImage].swift */; };
+		2D92D224F610228E0EDF42D4F1BCD39B /* Pods-SchoolDiary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE167688536553E66FB90414D5E6327 /* Pods-SchoolDiary-dummy.m */; };
+		2DF18F8AEB81FD16F6DBB238C9B89175 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		369FE59CE28A0AB605646766E43B3F64 /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60B08C9E30CDE08B1F84DC70F752008 /* Disk+InternalHelpers.swift */; };
+		41C84F960354A9214136AA334311C98D /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F334E314E552622C1DD8BA8CA61CF /* Disk.swift */; };
+		471AFED75BDF74332629C3717995E33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		594A004EBE6EC64CC50E4C940C8914A4 /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7D7E3C13862801BEBF3EC05B8B5EC /* Disk+Errors.swift */; };
+		601FFE93EDAAF8FDE736559453857777 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		6B723205347FD86B8AFE7B597BC88039 /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4C0F39A8DD1EB3F73F046A740530DA /* Disk+UIImage.swift */; };
+		7B7957C75492B4088FDE06C0A5BC96F7 /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9967179143C923BC18F34778297E87 /* Disk+Codable.swift */; };
+		82509983904F7584427E0DCBE5387206 /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B1AF7971B866BC2FF64AC0E911C1 /* TinyConstraints+superview.swift */; };
+		910D871A2C574DE9256915E29BBB000E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA789A896FD756D41F6075A9DBA6340 /* Stack.swift */; };
+		9650C6DB05E4B7218FDCEE7BA052240F /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF2243DAC3BE077E6668BADACB3F32 /* Disk+Data.swift */; };
+		B12F16AB6A00083542BE14FD4E43622A /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE5693BB01D1F3FAC5CB2129BD5D04 /* Disk+[Data].swift */; };
+		B2AD0ED24AE50783BEEC7B275ECBE845 /* Disk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 874DEA4A2703F9719F713745C8263707 /* Disk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E3D32DEA30C32E5D72B61372A70037 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48E2D81C1CCDF4521D64812779F107 /* TinyEdgeInsets.swift */; };
+		C02D5881E9848319380BB1990356BA72 /* Disk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B29A3E587B37FC8F8ADEA809D48FF6 /* Disk-dummy.m */; };
+		C2CEA8692718E904C5455B1528844BEF /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3E67E0D89B122ADE4B11A2B6140547B /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF213598D954C75F24D1B1162EDDAFB4 /* Pods-SchoolDiary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDD0942700240596CBE1BA1207EA739 /* Pods-SchoolDiary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA1AF5F6D69D9BE609E7CCAE22B766ED /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E0E01E08B3E825222EB88A0305A9D2 /* TinyConstraints.swift */; };
+		EADB285C2D58737961C57FD5BD63D784 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F5921C045CAA780409B50029A9625 /* Abstraction.swift */; };
+		F1915E2E87D4154D7AE7EC3FB9C38920 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FB29607D4811D42DA506008F6142A /* Constrainable.swift */; };
+		F5393672AD35AB2DF79E024F6FB75D27 /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0EA9489A105E8FEBF5CDB9C1AA210 /* Disk+VolumeInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A949799722010D87354600918682F5C /* PBXContainerItemProxy */ = {
+		8CDA012AFC87F8BD2CA59839B6A59972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BC5384739586103B9AD48B2F48B56AA5;
 			remoteInfo = Disk;
 		};
+		A392D08BFC2C5F943B650250A8F1D3AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D61B497696265CE1718F39FE60E5E6D;
+			remoteInfo = TinyConstraints;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		00FE5693BB01D1F3FAC5CB2129BD5D04 /* Disk+[Data].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[Data].swift"; path = "Sources/Disk+[Data].swift"; sourceTree = "<group>"; };
+		0174F0E93FFB95D4179FA52990218C7C /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		0B95C5DBBC38B4ACF5F5F93C142694D5 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24222628F1B06BD8538B0D5E1078CCC4 /* Disk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Disk-Info.plist"; sourceTree = "<group>"; };
+		2A6FB29607D4811D42DA506008F6142A /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		31B29A3E587B37FC8F8ADEA809D48FF6 /* Disk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Disk-dummy.m"; sourceTree = "<group>"; };
+		352F5921C045CAA780409B50029A9625 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
+		3CE71D57E3964A76ACFBCD443755AD4E /* Disk+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Helpers.swift"; path = "Sources/Disk+Helpers.swift"; sourceTree = "<group>"; };
 		3DDD0942700240596CBE1BA1207EA739 /* Pods-SchoolDiary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SchoolDiary-umbrella.h"; sourceTree = "<group>"; };
-		5E4700934ADEE2F861F9209B0649871E /* Disk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Disk-Info.plist"; sourceTree = "<group>"; };
+		3E4C0F39A8DD1EB3F73F046A740530DA /* Disk+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+UIImage.swift"; path = "Sources/Disk+UIImage.swift"; sourceTree = "<group>"; };
+		404A5B074FB7E0258E37F3F0D0F0CD63 /* Disk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Disk.framework; path = Disk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B0EA9489A105E8FEBF5CDB9C1AA210 /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+VolumeInformation.swift"; path = "Sources/Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
+		4D9967179143C923BC18F34778297E87 /* Disk+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Codable.swift"; path = "Sources/Disk+Codable.swift"; sourceTree = "<group>"; };
+		4FA7D7E3C13862801BEBF3EC05B8B5EC /* Disk+Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Errors.swift"; path = "Sources/Disk+Errors.swift"; sourceTree = "<group>"; };
+		5C52B1AF7971B866BC2FF64AC0E911C1 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		5C97A1ECC6575FC52DFDFFDB37E461FD /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
+		5F7F334E314E552622C1DD8BA8CA61CF /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = Sources/Disk.swift; sourceTree = "<group>"; };
 		60E2016130F30CCD77335093E4CC5A3C /* Pods-SchoolDiary-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SchoolDiary-acknowledgements.markdown"; sourceTree = "<group>"; };
 		67593191D6881D59E0561B1F22FC1471 /* Pods-SchoolDiary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SchoolDiary.modulemap"; sourceTree = "<group>"; };
-		798CDB78525A2D19ED1C970605EEBFCF /* Disk+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Helpers.swift"; path = "Sources/Disk+Helpers.swift"; sourceTree = "<group>"; };
+		6A48E2D81C1CCDF4521D64812779F107 /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
+		6E67F668668470D01DFBAA797A78F9A7 /* Disk+[UIImage].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[UIImage].swift"; path = "Sources/Disk+[UIImage].swift"; sourceTree = "<group>"; };
+		7AA239419A2C7E54F8976EF792C298C1 /* TinyConstraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.xcconfig; sourceTree = "<group>"; };
+		7B00124D5255F7DB70702CABABFA3D68 /* Disk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-prefix.pch"; sourceTree = "<group>"; };
 		825EF82E90214D18EF14B2B17A8A575F /* Pods-SchoolDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolDiary.release.xcconfig"; sourceTree = "<group>"; };
-		85DBF8C03AE6B5F7E36DC1ED11222CD0 /* Disk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Disk.modulemap; sourceTree = "<group>"; };
-		8B1BEA729B1927B2224C91DE161443D4 /* Disk+Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Errors.swift"; path = "Sources/Disk+Errors.swift"; sourceTree = "<group>"; };
+		874DEA4A2703F9719F713745C8263707 /* Disk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-umbrella.h"; sourceTree = "<group>"; };
 		8EB8148855F687AB2A51CC2D69DFB624 /* Pods-SchoolDiary-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SchoolDiary-frameworks.sh"; sourceTree = "<group>"; };
-		983C44618A9E054CFFFA4FBE5089194E /* Disk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Disk-dummy.m"; sourceTree = "<group>"; };
+		99C7C6F5EC81EE469800FE06FE42BD50 /* Disk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Disk.modulemap; sourceTree = "<group>"; };
 		9CE167688536553E66FB90414D5E6327 /* Pods-SchoolDiary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SchoolDiary-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F6A7856E4FAF5A7001DD5FDACFE58E2 /* Disk+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+UIImage.swift"; path = "Sources/Disk+UIImage.swift"; sourceTree = "<group>"; };
+		9EA18AAF37DC5FC3DAF2C5E0A0B4BFAA /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
 		9FDA83415543B75CE9CA8FFE35218252 /* Pods-SchoolDiary-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SchoolDiary-acknowledgements.plist"; sourceTree = "<group>"; };
-		AB0FD399EE6D9A0247149F38F908BBDC /* Disk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Disk.h; path = Sources/Disk.h; sourceTree = "<group>"; };
 		B7AB11D7B4306299DDBDE0BC74E2D92C /* Pods-SchoolDiary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SchoolDiary-Info.plist"; sourceTree = "<group>"; };
 		BAA338DAEEF3C9B25712571C05EF8187 /* Pods-SchoolDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolDiary.debug.xcconfig"; sourceTree = "<group>"; };
-		C4882100EA12E53241B556658079BCA6 /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = Sources/Disk.swift; sourceTree = "<group>"; };
-		C65605C695EEBE6DA87226D45678EF3F /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+VolumeInformation.swift"; path = "Sources/Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
-		C68EED554AB45BD5A043C3333684F9D2 /* Disk+[Data].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[Data].swift"; path = "Sources/Disk+[Data].swift"; sourceTree = "<group>"; };
-		C903F207CED6C8701F2A97896B62F8F2 /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+InternalHelpers.swift"; path = "Sources/Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
-		CB5E34ABC92E884B1716CC2599E12568 /* Disk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Disk.framework; path = Disk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE98DC748405D6CE057C7DC6036D91F6 /* Disk+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Data.swift"; path = "Sources/Disk+Data.swift"; sourceTree = "<group>"; };
-		CF72537FBD089F6050F6E16B0B30DA58 /* Disk+[UIImage].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[UIImage].swift"; path = "Sources/Disk+[UIImage].swift"; sourceTree = "<group>"; };
-		D11E61B79225B1F5F223B2F43E4A665B /* Disk+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Codable.swift"; path = "Sources/Disk+Codable.swift"; sourceTree = "<group>"; };
-		E244D92EBE51E7036241857FD52E694A /* Disk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Disk.xcconfig; sourceTree = "<group>"; };
-		E59C17F08FB7C63DEADB1142990E5C30 /* Pods_SchoolDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SchoolDiary.framework; path = "Pods-SchoolDiary.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA629FA5A216B920FB6ADE5734F8C984 /* Disk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-prefix.pch"; sourceTree = "<group>"; };
-		FA12096B799EB260CC9CEAB9B54745A8 /* Disk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-umbrella.h"; sourceTree = "<group>"; };
+		C088CD790A053E4424CBE23BB0F1BB27 /* Disk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Disk.xcconfig; sourceTree = "<group>"; };
+		C4E0E01E08B3E825222EB88A0305A9D2 /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		C60B08C9E30CDE08B1F84DC70F752008 /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+InternalHelpers.swift"; path = "Sources/Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
+		C7EF2243DAC3BE077E6668BADACB3F32 /* Disk+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Data.swift"; path = "Sources/Disk+Data.swift"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D08CA5D021717E36F602DBE832431CE2 /* Pods_SchoolDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SchoolDiary.framework; path = "Pods-SchoolDiary.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B73F65DFC4638334C0BFA5C2E2F05B /* Disk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Disk.h; path = Sources/Disk.h; sourceTree = "<group>"; };
+		E3E67E0D89B122ADE4B11A2B6140547B /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		EFA789A896FD756D41F6075A9DBA6340 /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		F2A24DBA91CF6A55947D61980E3CC1C7 /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		F6CE34001C61FBA830CD904FAB1E057F /* TinyConstraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinyConstraints-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1AA42B0DE246F71D70AE9C4784BC69A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471AFED75BDF74332629C3717995E33D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5100BDB4E93AD5CF3FEB20BD7B810CCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F01BAEFECFC4BBA3AA65A2A77789DAA /* Foundation.framework in Frameworks */,
+				601FFE93EDAAF8FDE736559453857777 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D8B5C95656B334DE90EB1B7174F3D7E /* Frameworks */ = {
+		7855738717FAA99652D13AE4547D4E9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A849665B2B31CAAF2014B931C0C20D04 /* Foundation.framework in Frameworks */,
+				2DF18F8AEB81FD16F6DBB238C9B89175 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		294103483A6F47942A00AF2B0D63B67C /* Support Files */ = {
+		233952AFE6D7B9AC456736DDC5E8B49C /* Disk */ = {
 			isa = PBXGroup;
 			children = (
-				85DBF8C03AE6B5F7E36DC1ED11222CD0 /* Disk.modulemap */,
-				E244D92EBE51E7036241857FD52E694A /* Disk.xcconfig */,
-				983C44618A9E054CFFFA4FBE5089194E /* Disk-dummy.m */,
-				5E4700934ADEE2F861F9209B0649871E /* Disk-Info.plist */,
-				EA629FA5A216B920FB6ADE5734F8C984 /* Disk-prefix.pch */,
-				FA12096B799EB260CC9CEAB9B54745A8 /* Disk-umbrella.h */,
+				D6B73F65DFC4638334C0BFA5C2E2F05B /* Disk.h */,
+				5F7F334E314E552622C1DD8BA8CA61CF /* Disk.swift */,
+				00FE5693BB01D1F3FAC5CB2129BD5D04 /* Disk+[Data].swift */,
+				6E67F668668470D01DFBAA797A78F9A7 /* Disk+[UIImage].swift */,
+				4D9967179143C923BC18F34778297E87 /* Disk+Codable.swift */,
+				C7EF2243DAC3BE077E6668BADACB3F32 /* Disk+Data.swift */,
+				4FA7D7E3C13862801BEBF3EC05B8B5EC /* Disk+Errors.swift */,
+				3CE71D57E3964A76ACFBCD443755AD4E /* Disk+Helpers.swift */,
+				C60B08C9E30CDE08B1F84DC70F752008 /* Disk+InternalHelpers.swift */,
+				3E4C0F39A8DD1EB3F73F046A740530DA /* Disk+UIImage.swift */,
+				48B0EA9489A105E8FEBF5CDB9C1AA210 /* Disk+VolumeInformation.swift */,
+				C714AE97F9B8DF9C6FD4A3EA5E0B5C33 /* Support Files */,
+			);
+			name = Disk;
+			path = Disk;
+			sourceTree = "<group>";
+		};
+		27B6AFF56AC1E67998E99327733B223F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0174F0E93FFB95D4179FA52990218C7C /* TinyConstraints.modulemap */,
+				7AA239419A2C7E54F8976EF792C298C1 /* TinyConstraints.xcconfig */,
+				F2A24DBA91CF6A55947D61980E3CC1C7 /* TinyConstraints-dummy.m */,
+				F6CE34001C61FBA830CD904FAB1E057F /* TinyConstraints-Info.plist */,
+				9EA18AAF37DC5FC3DAF2C5E0A0B4BFAA /* TinyConstraints-prefix.pch */,
+				E3E67E0D89B122ADE4B11A2B6140547B /* TinyConstraints-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Disk";
+			path = "../Target Support Files/TinyConstraints";
 			sourceTree = "<group>";
 		};
 		310EC793D4950107A0E7E58EF97F6004 /* Targets Support Files */ = {
@@ -111,24 +170,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		54EA6974A3B955DEA76C534C5B1D1F1C /* Disk */ = {
+		45AB3153C98969829931E03F5CBA4CDD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AB0FD399EE6D9A0247149F38F908BBDC /* Disk.h */,
-				C4882100EA12E53241B556658079BCA6 /* Disk.swift */,
-				C68EED554AB45BD5A043C3333684F9D2 /* Disk+[Data].swift */,
-				CF72537FBD089F6050F6E16B0B30DA58 /* Disk+[UIImage].swift */,
-				D11E61B79225B1F5F223B2F43E4A665B /* Disk+Codable.swift */,
-				CE98DC748405D6CE057C7DC6036D91F6 /* Disk+Data.swift */,
-				8B1BEA729B1927B2224C91DE161443D4 /* Disk+Errors.swift */,
-				798CDB78525A2D19ED1C970605EEBFCF /* Disk+Helpers.swift */,
-				C903F207CED6C8701F2A97896B62F8F2 /* Disk+InternalHelpers.swift */,
-				9F6A7856E4FAF5A7001DD5FDACFE58E2 /* Disk+UIImage.swift */,
-				C65605C695EEBE6DA87226D45678EF3F /* Disk+VolumeInformation.swift */,
-				294103483A6F47942A00AF2B0D63B67C /* Support Files */,
+				233952AFE6D7B9AC456736DDC5E8B49C /* Disk */,
+				7BE82776C98CC5FB2B05CA8CE01E9364 /* TinyConstraints */,
 			);
-			name = Disk;
-			path = Disk;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C5209A6E38079AAA815628053F2AE10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				404A5B074FB7E0258E37F3F0D0F0CD63 /* Disk.framework */,
+				D08CA5D021717E36F602DBE832431CE2 /* Pods_SchoolDiary.framework */,
+				0B95C5DBBC38B4ACF5F5F93C142694D5 /* TinyConstraints.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		60C383F4DF82EB3302D80DF78CFEAF23 /* Pods-SchoolDiary */ = {
@@ -148,29 +206,42 @@
 			path = "Target Support Files/Pods-SchoolDiary";
 			sourceTree = "<group>";
 		};
-		7AF45AE424BE400BAC99C57F8A6AEC8D /* Pods */ = {
+		7BE82776C98CC5FB2B05CA8CE01E9364 /* TinyConstraints */ = {
 			isa = PBXGroup;
 			children = (
-				54EA6974A3B955DEA76C534C5B1D1F1C /* Disk */,
+				352F5921C045CAA780409B50029A9625 /* Abstraction.swift */,
+				2A6FB29607D4811D42DA506008F6142A /* Constrainable.swift */,
+				5C97A1ECC6575FC52DFDFFDB37E461FD /* Constraints.swift */,
+				EFA789A896FD756D41F6075A9DBA6340 /* Stack.swift */,
+				C4E0E01E08B3E825222EB88A0305A9D2 /* TinyConstraints.swift */,
+				5C52B1AF7971B866BC2FF64AC0E911C1 /* TinyConstraints+superview.swift */,
+				6A48E2D81C1CCDF4521D64812779F107 /* TinyEdgeInsets.swift */,
+				27B6AFF56AC1E67998E99327733B223F /* Support Files */,
 			);
-			name = Pods;
+			name = TinyConstraints;
+			path = TinyConstraints;
 			sourceTree = "<group>";
 		};
-		82EFC0C254CB939DBEF54AAB848F0DB9 /* Products */ = {
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CB5E34ABC92E884B1716CC2599E12568 /* Disk.framework */,
-				E59C17F08FB7C63DEADB1142990E5C30 /* Pods_SchoolDiary.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C714AE97F9B8DF9C6FD4A3EA5E0B5C33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99C7C6F5EC81EE469800FE06FE42BD50 /* Disk.modulemap */,
+				C088CD790A053E4424CBE23BB0F1BB27 /* Disk.xcconfig */,
+				31B29A3E587B37FC8F8ADEA809D48FF6 /* Disk-dummy.m */,
+				24222628F1B06BD8538B0D5E1078CCC4 /* Disk-Info.plist */,
+				7B00124D5255F7DB70702CABABFA3D68 /* Disk-prefix.pch */,
+				874DEA4A2703F9719F713745C8263707 /* Disk-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Disk";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -178,8 +249,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7AF45AE424BE400BAC99C57F8A6AEC8D /* Pods */,
-				82EFC0C254CB939DBEF54AAB848F0DB9 /* Products */,
+				45AB3153C98969829931E03F5CBA4CDD /* Pods */,
+				4C5209A6E38079AAA815628053F2AE10 /* Products */,
 				310EC793D4950107A0E7E58EF97F6004 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -187,7 +258,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,11 +266,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6AC530747296795832DD4DD3181D26D8 /* Headers */ = {
+		668B4AED6C315BD3943C3F2EDE32D48E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8A2DCB59035EFC0886305FFB8E031B /* Pods-SchoolDiary-umbrella.h in Headers */,
+				C2CEA8692718E904C5455B1528844BEF /* TinyConstraints-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,26 +283,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED394F7BEE30EFA8A3EB3035AD0F7558 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF213598D954C75F24D1B1162EDDAFB4 /* Pods-SchoolDiary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1821C56F611381AE93C1FFEC7331B432 /* Pods-SchoolDiary */ = {
+		59AB38FF5B09DD17C8F85E9A7D18F4C3 /* Pods-SchoolDiary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06F53FB1DC9EC9C091CB97B17E4D4670 /* Build configuration list for PBXNativeTarget "Pods-SchoolDiary" */;
+			buildConfigurationList = 7F9152B2059826BF874F26445722FE22 /* Build configuration list for PBXNativeTarget "Pods-SchoolDiary" */;
 			buildPhases = (
-				6AC530747296795832DD4DD3181D26D8 /* Headers */,
-				01C6F9C74FB49C1BD4D9169D7543B6B4 /* Sources */,
-				8D8B5C95656B334DE90EB1B7174F3D7E /* Frameworks */,
-				B602413B6CD7DACDACFCE61434816517 /* Resources */,
+				ED394F7BEE30EFA8A3EB3035AD0F7558 /* Headers */,
+				EDD61A0EFA185711CD344C88AEB6C1DC /* Sources */,
+				7855738717FAA99652D13AE4547D4E9F /* Frameworks */,
+				2B0F9DBEB3D61D4C664A1E65FD5D7215 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				01DB37E7F4750296FA146EE5C4E48983 /* PBXTargetDependency */,
+				CD9AB94D3E94E832CC99A6B8D9EE3F95 /* PBXTargetDependency */,
+				8781CCA3C0BFB3C1334BAB536778B31E /* PBXTargetDependency */,
 			);
 			name = "Pods-SchoolDiary";
 			productName = "Pods-SchoolDiary";
-			productReference = E59C17F08FB7C63DEADB1142990E5C30 /* Pods_SchoolDiary.framework */;
+			productReference = D08CA5D021717E36F602DBE832431CE2 /* Pods_SchoolDiary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D61B497696265CE1718F39FE60E5E6D /* TinyConstraints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3402C9886702F62C1F3B2AE1C6452865 /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
+			buildPhases = (
+				668B4AED6C315BD3943C3F2EDE32D48E /* Headers */,
+				41C7F90760F5870F8D1283D26B5B9B37 /* Sources */,
+				1AA42B0DE246F71D70AE9C4784BC69A5 /* Frameworks */,
+				6E67CF6C1F0517512A63757315C505C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = 0B95C5DBBC38B4ACF5F5F93C142694D5 /* TinyConstraints.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BC5384739586103B9AD48B2F48B56AA5 /* Disk */ = {
@@ -249,7 +347,7 @@
 			);
 			name = Disk;
 			productName = Disk;
-			productReference = CB5E34ABC92E884B1716CC2599E12568 /* Disk.framework */;
+			productReference = 404A5B074FB7E0258E37F3F0D0F0CD63 /* Disk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -258,28 +356,36 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 82EFC0C254CB939DBEF54AAB848F0DB9 /* Products */;
+			productRefGroup = 4C5209A6E38079AAA815628053F2AE10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BC5384739586103B9AD48B2F48B56AA5 /* Disk */,
-				1821C56F611381AE93C1FFEC7331B432 /* Pods-SchoolDiary */,
+				59AB38FF5B09DD17C8F85E9A7D18F4C3 /* Pods-SchoolDiary */,
+				9D61B497696265CE1718F39FE60E5E6D /* TinyConstraints */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B0F9DBEB3D61D4C664A1E65FD5D7215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A11388101C6154783EE75976753D688 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,7 +393,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B602413B6CD7DACDACFCE61434816517 /* Resources */ = {
+		6E67CF6C1F0517512A63757315C505C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,11 +403,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01C6F9C74FB49C1BD4D9169D7543B6B4 /* Sources */ = {
+		41C7F90760F5870F8D1283D26B5B9B37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A70457682A6BDC87645E3A2A9ED6B3 /* Pods-SchoolDiary-dummy.m in Sources */,
+				EADB285C2D58737961C57FD5BD63D784 /* Abstraction.swift in Sources */,
+				F1915E2E87D4154D7AE7EC3FB9C38920 /* Constrainable.swift in Sources */,
+				26B45733D444336011BD7CC8D89B6FE6 /* Constraints.swift in Sources */,
+				910D871A2C574DE9256915E29BBB000E /* Stack.swift in Sources */,
+				82509983904F7584427E0DCBE5387206 /* TinyConstraints+superview.swift in Sources */,
+				1B1D144340CF1839D8BCD934F13E7B2C /* TinyConstraints-dummy.m in Sources */,
+				EA1AF5F6D69D9BE609E7CCAE22B766ED /* TinyConstraints.swift in Sources */,
+				B6E3D32DEA30C32E5D72B61372A70037 /* TinyEdgeInsets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,189 +436,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDD61A0EFA185711CD344C88AEB6C1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D92D224F610228E0EDF42D4F1BCD39B /* Pods-SchoolDiary-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		01DB37E7F4750296FA146EE5C4E48983 /* PBXTargetDependency */ = {
+		8781CCA3C0BFB3C1334BAB536778B31E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 9D61B497696265CE1718F39FE60E5E6D /* TinyConstraints */;
+			targetProxy = A392D08BFC2C5F943B650250A8F1D3AC /* PBXContainerItemProxy */;
+		};
+		CD9AB94D3E94E832CC99A6B8D9EE3F95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Disk;
 			target = BC5384739586103B9AD48B2F48B56AA5 /* Disk */;
-			targetProxy = 4A949799722010D87354600918682F5C /* PBXContainerItemProxy */;
+			targetProxy = 8CDA012AFC87F8BD2CA59839B6A59972 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		294B9AAB5909B69A066755955743D212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 825EF82E90214D18EF14B2B17A8A575F /* Pods-SchoolDiary.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		53115A8C15636E81010FE8D5FEBF7801 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E244D92EBE51E7036241857FD52E694A /* Disk.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Disk/Disk-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
-				PRODUCT_MODULE_NAME = Disk;
-				PRODUCT_NAME = Disk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8BF4A409F938A3D3B892A3FD2F460749 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAA338DAEEF3C9B25712571C05EF8187 /* Pods-SchoolDiary.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -564,14 +521,219 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
+		084BC1E73101F513708E971FC50D1584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA338DAEEF3C9B25712571C05EF8187 /* Pods-SchoolDiary.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4407C3C8C455424B0E2658E6F9414CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA239419A2C7E54F8976EF792C298C1 /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53115A8C15636E81010FE8D5FEBF7801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C088CD790A053E4424CBE23BB0F1BB27 /* Disk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Disk/Disk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
+				PRODUCT_MODULE_NAME = Disk;
+				PRODUCT_NAME = Disk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4B4D7E132979538C0C364E4961ED275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825EF82E90214D18EF14B2B17A8A575F /* Pods-SchoolDiary.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B645C241576EFF04BB3B0B16553D561C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E244D92EBE51E7036241857FD52E694A /* Disk.xcconfig */;
+			baseConfigurationReference = C088CD790A053E4424CBE23BB0F1BB27 /* Disk.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -605,14 +767,50 @@
 			};
 			name = Release;
 		};
+		C57DBD8DC38ECB85D023F12402A9AC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA239419A2C7E54F8976EF792C298C1 /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06F53FB1DC9EC9C091CB97B17E4D4670 /* Build configuration list for PBXNativeTarget "Pods-SchoolDiary" */ = {
+		3402C9886702F62C1F3B2AE1C6452865 /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BF4A409F938A3D3B892A3FD2F460749 /* Debug */,
-				294B9AAB5909B69A066755955743D212 /* Release */,
+				4407C3C8C455424B0E2658E6F9414CEC /* Debug */,
+				C57DBD8DC38ECB85D023F12402A9AC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -620,8 +818,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				916E0404255105F480DC4950B7625F7A /* Debug */,
-				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F9152B2059826BF874F26445722FE22 /* Build configuration list for PBXNativeTarget "Pods-SchoolDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084BC1E73101F513708E971FC50D1584 /* Debug */,
+				B4B4D7E132979538C0C364E4961ED275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
