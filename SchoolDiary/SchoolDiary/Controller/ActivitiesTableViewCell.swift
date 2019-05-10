@@ -78,11 +78,9 @@ extension ActivitiesTableViewCell: UICollectionViewDelegate, UICollectionViewDat
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
         var image: UIImage = UIImage(named: "baloes")!
-        
-        print(#function)
+
         switch section as Section {
         case .activities:
-            print("activities")
             cell.activitiesLabel.text = self.diary.activities[indexPath.row].description
             switch self.diary.activities[indexPath.row].type{
             case .classes:
@@ -96,7 +94,6 @@ extension ActivitiesTableViewCell: UICollectionViewDelegate, UICollectionViewDat
             }
             cell.activitiesImage.image = image
         case .provide:
-            print("provide")
             cell.activitiesLabel.text = self.diary.provide[indexPath.row].description
             cell.activitiesImage.image = UIImage(named: "pomada")
         default:

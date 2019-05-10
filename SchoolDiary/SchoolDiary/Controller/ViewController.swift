@@ -84,6 +84,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "photoInfo"{
+//            let photoInfoVC = segue.destination as? PhotoInfoViewController
+//            photoInfoVC?.recieveImage =
+//
+//        }
+//    }
+    
     @IBAction func testeReminder(_ sender: Any) {
         let reminder = EKReminder(eventStore: self.eventStore)
         
@@ -209,7 +217,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             //Shadows
             cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1) , opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
-
+            cell.selectionStyle = .none
         
             return cell
             
@@ -229,7 +237,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             //Shadows
             cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1), opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
-            
+            cell.selectionStyle = .none
             return cell
             
         }else if indexPath.section == 3{
@@ -257,7 +265,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.labelBlack3.text = "\(self.diary.medsTaken[indexPath.row].medicine.time.hour)h"
             cell.stackLabelView.leftToRight(of: cell.lineView, offset: 25.0)
             cell.stackLabelView2.leftToRight(of: cell.stackLabelView, offset: 40.0)
-            
+            cell.selectionStyle = .none
             //Shadows
             cell.cellView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1), opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
             return cell
@@ -268,22 +276,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.section = .activities
             cell.diary = diary
             cell.configure()
-
+            cell.selectionStyle = .none
             return cell
         }else if indexPath.section == 5{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "activitiesCell") as! ActivitiesTableViewCell
             cell.section = .provide
             cell.diary = diary
             cell.configure()
-            
+            cell.selectionStyle = .none
             return cell
         }else if indexPath.section == 6{
-            let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
+            let cell =  tableView.dequeueReusableCell(withIdentifier: "photosCell") as! PhotosTableViewCell
             
+            cell.section = .pictures
+            cell.diary = diary
+            cell.selectionStyle = .none
             return cell
         }else if indexPath.section == 7{
-            let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
+            let cell =  tableView.dequeueReusableCell(withIdentifier: "observationCell") as! NotesTableViewCell
             
+            cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+            cell.noteLabel.text = self.diary.notes
+            
+            //For now we fake the professor name
+            cell.professorNameLabel.text = "Professora Ana"
+            
+            
+            cell.selectionStyle = .none
             return cell
         }
         else {
