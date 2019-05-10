@@ -83,7 +83,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nde-2J-qeR">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nde-2J-qeR">
                                                     <rect key="frame" x="16" y="16" width="382" height="217.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="217.5" id="ugK-Hm-oF5"/>
@@ -186,7 +186,7 @@
                                             <outlet property="collectionViewHeightConstraint" destination="ugK-Hm-oF5" id="PNP-Pz-EoI"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="88" id="led-5r-tSs" customClass="StatusTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="88" id="led-5r-tSs" customClass="StatusTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="270" width="414" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="led-5r-tSs" id="DsO-8o-nFt">
@@ -315,8 +315,95 @@
                                             <outlet property="stackLabelView2" destination="nNc-7r-8S9" id="mT3-Nx-Tsx"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="activitiesCell" rowHeight="136" id="fzV-cW-xuy" customClass="ActivitiesTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="358" width="414" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fzV-cW-xuy" id="3bK-9A-8dV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="135.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rau-UI-sez">
+                                                    <rect key="frame" x="16" y="16" width="382" height="103.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="103.5" id="V1s-J0-b8C"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5dS-zZ-mju">
+                                                        <size key="itemSize" width="87" height="100"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="activitiesCell" id="lGl-oS-jgu" customClass="ActivitiesCollectionViewCell" customModule="SchoolDiary" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baloes" translatesAutoresizingMaskIntoConstraints="NO" id="pQY-hX-Y49">
+                                                                        <rect key="frame" x="8" y="10" width="30" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="85w-Gh-A01"/>
+                                                                            <constraint firstAttribute="width" constant="30" id="rfe-pF-saF"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balões" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HJ-9j-U2h">
+                                                                        <rect key="frame" x="8" y="50" width="71" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="7HJ-9j-U2h" secondAttribute="trailing" constant="8" id="B13-bF-7yw"/>
+                                                                <constraint firstItem="7HJ-9j-U2h" firstAttribute="leading" secondItem="lGl-oS-jgu" secondAttribute="leading" constant="8" id="DJy-6l-S1L"/>
+                                                                <constraint firstItem="pQY-hX-Y49" firstAttribute="leading" secondItem="lGl-oS-jgu" secondAttribute="leading" constant="8" id="Q70-ET-Juc"/>
+                                                                <constraint firstItem="7HJ-9j-U2h" firstAttribute="top" secondItem="pQY-hX-Y49" secondAttribute="bottom" constant="10" id="cKk-cX-rmx"/>
+                                                                <constraint firstItem="pQY-hX-Y49" firstAttribute="top" secondItem="lGl-oS-jgu" secondAttribute="top" constant="10" id="hsQ-7e-zRZ"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="activitiesImage" destination="pQY-hX-Y49" id="m4V-VG-5Yk"/>
+                                                                <outlet property="activitiesLabel" destination="7HJ-9j-U2h" id="Aqk-cx-N87"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEd-2g-B87">
+                                                    <rect key="frame" x="274" y="48" width="107" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Teste Reminder"/>
+                                                    <connections>
+                                                        <action selector="testeReminder:" destination="TAB-8h-ZJv" eventType="touchUpInside" id="Jmq-3H-4fb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Rau-UI-sez" secondAttribute="trailing" constant="16" id="GyG-Cf-0Dw"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rau-UI-sez" secondAttribute="bottom" constant="16" id="Yab-N8-8dV"/>
+                                                <constraint firstItem="Rau-UI-sez" firstAttribute="leading" secondItem="3bK-9A-8dV" secondAttribute="leading" constant="16" id="cBd-Gd-9mC"/>
+                                                <constraint firstItem="Rau-UI-sez" firstAttribute="top" secondItem="3bK-9A-8dV" secondAttribute="top" constant="16" id="d73-aU-d2I"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activitiesCollectionView" destination="Rau-UI-sez" id="8lh-jX-vXs"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsl-pu-goC">
                                 <rect key="frame" x="374" y="229" width="24" height="24"/>
@@ -442,6 +529,7 @@
     </scenes>
     <resources>
         <image name="arrow-1x" width="13" height="21"/>
+        <image name="baloes" width="30" height="30"/>
         <image name="cabecalho1x" width="375" height="220"/>
         <image name="calendar1x" width="30" height="30"/>
         <image name="calendario1x" width="24" height="24"/>
