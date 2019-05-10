@@ -247,21 +247,15 @@
             </objects>
             <point key="canvasLocation" x="-5753.6231884057979" y="-1232.8125"/>
         </scene>
-        <!--Mensagens-->
-        <scene sceneID="9Yo-vl-SnW">
+        <!--Messages-->
+        <scene sceneID="lZb-ga-4MR">
             <objects>
-                <viewController id="mqk-PZ-248" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MPU-qd-4Tb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="E7N-0b-SCg"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Mensagens" id="j8m-Q0-MZ8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6tJ-gM-gHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Messages" id="6ZZ-ls-lMR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vJL-s3-Toe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3p-ho-WqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5749" y="-491"/>
+            <point key="canvasLocation" x="-5750" y="-425"/>
         </scene>
         <!--Saúde-->
         <scene sceneID="zDe-LK-P9V">
@@ -307,7 +301,7 @@
                     <connections>
                         <outlet property="myTabBar" destination="8mv-uV-UJh" id="hpf-H8-kZW"/>
                         <segue destination="TAB-8h-ZJv" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
-                        <segue destination="mqk-PZ-248" kind="relationship" relationship="viewControllers" id="glN-GR-mIA"/>
+                        <segue destination="6ZZ-ls-lMR" kind="relationship" relationship="viewControllers" id="JcZ-Ay-mdt"/>
                         <segue destination="yaP-wp-kUT" kind="relationship" relationship="viewControllers" id="2nF-x0-p61"/>
                         <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="LhJ-on-8JV"/>
                     </connections>

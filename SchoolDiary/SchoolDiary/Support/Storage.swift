@@ -13,6 +13,7 @@ import Fakery
 class Storage {
     static var children : [Child] = []
     static var parents : [Parent] = []
+    static var notices : [Notice] = []
     
     init() {
         if Disk.exists("children.json", in: .applicationSupport) &&
@@ -30,6 +31,7 @@ class Storage {
         do {
             children = try Disk.retrieve("children.json", from: .applicationSupport, as: [Child].self)
             parents = try Disk.retrieve("parents.json", from: .applicationSupport, as: [Parent].self)
+            notices = try Disk.retrieve("notices.json", from: .applicationSupport, as: [Notice].self)
         } catch {
             print("Could not load database.")
             print(error)
@@ -42,6 +44,7 @@ class Storage {
         do {
             try Disk.save(children, to: .applicationSupport, as: "children.json")
             try Disk.save(parents, to: .applicationSupport, as: "parents.json")
+            try Disk.save(notices, to: .applicationSupport, as: "notices.json")
         } catch {
             print("Could not save database.")
             print(error)
@@ -118,7 +121,7 @@ class Storage {
             }
             
             let diary = Diary(date: Date(),
-                              meals: meals.suffix(Int.random(in: 0..<meals.count)),
+                              meals: meals.suffix(Int.random(in: 1..<meals.count)),
                               naps: [],
                               activities: Set<Activity>(),
                               bathroom: [],
@@ -129,9 +132,15 @@ class Storage {
             child.diaries.append(diary)
             child.parents.insert(parent)
             parent.children.append(child)
+
+            let notice = Notice(title: faker.lorem.word(),
+                                type: NoticeType.allCases.randomElement()!,
+                                text: faker.lorem.paragraph(),
+                                date: faker.date.between(Date.init(integerLiteral: 2019_01_01)!, Date()))
             
             Storage.children.append(child)
             Storage.parents.append(parent)
+            Storage.notices.append(notice)
         }
         
         print("Mock data generated.")
