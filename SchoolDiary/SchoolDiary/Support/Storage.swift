@@ -46,7 +46,9 @@ class Storage {
         let activity1 = Activity(type: .games, description: "Blocos de\nencaixe")
         let activity2 = Activity(type: .other, description: "Balões")
         let provide1 = Provide(description: "Pomada/ Assaduras")
-        var diary = Diary(date: Date.init(), meals: [snack, lunch, milk, snack2, lunch2, milk2], naps: [napMorning, napAfternoon], activities: [activity1, activity2], provide: [provide1], bathroom: [pee, poop], medsTaken: [medicine1], pictures: [], notes: "A Aurora gostou muito da brincadeira dos balões hoje!")
+        let picture1 = Picture(image: "brincadeira1", description: "teste")
+        let picture2 = Picture(image: "brincadeira2", description: "teste2")
+        var diary = Diary(date: Date.init(), meals: [snack, lunch, milk, snack2, lunch2, milk2], naps: [napMorning, napAfternoon], activities: [activity1, activity2], provide: [provide1], bathroom: [pee, poop], medsTaken: [medicine1], pictures: [picture1, picture2], notes: "A Aurora gostou muito da brincadeira dos balões hoje!")
         aurora.diaries.append(diary)
         
         Storage.children.append(aurora)
