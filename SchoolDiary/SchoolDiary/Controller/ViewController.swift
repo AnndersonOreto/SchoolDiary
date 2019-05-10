@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import TinyConstraints 
+import TinyConstraints
+import EventKit
 
 enum Section : String {
     case meal = "Alimentação"
@@ -34,15 +35,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var section : Section!
     var child : Child!
     var diary : Diary!
-    
+    var eventStore = EKEventStore()
+    var calendars:Array<EKCalendar> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let _ = Storage()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+        tableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         tableView.tableHeaderView?.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+        eventStore.requestAccess(to: EKEntityType.reminder, completion:
+            {(granted, error) in
+                if !granted {
+                    print("Access to store not granted")
+                }
+        })
+        
+        // you need calender's permission for the reminders as they live there
+        calendars = eventStore.calendars(for: EKEntityType.reminder)
+        
+        for calendar in calendars as [EKCalendar] {
+            print("Calendar = \(calendar.title)")
+        }
         
         guard let child = Storage.children.first else {
             print("Child not found.")
@@ -60,11 +75,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.diary = diary
         dayLabel.text = "\(self.diary.date.day)"
         monthLabel.text = self.diary.date.monthName()
+        // TO DO: FIND WHERE THIS IS BEING SET ON STORYBOARD - PROBABLY A MERGE PROBLEM
+        tableView.clipsToBounds = true
     }
     
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return sections[section]
-//    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func testeReminder(_ sender: Any) {
+        let reminder = EKReminder(eventStore: self.eventStore)
+        
+        reminder.title = "Go to the store and buy milk"
+        reminder.calendar = eventStore.defaultCalendarForNewReminders()
+        
+        do {
+            try eventStore.save(reminder,
+                                commit: true)
+        } catch let error {
+            print("Reminder failed with error \(error.localizedDescription)")
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
@@ -81,6 +113,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var image: UIImage = UIImage(named: "alimentacao1x")!
         
         let headerTitle: UILabel = UILabel(frame: CGRect(x: 50, y: -3, width: 200, height: 30))
+        
         headerTitle.textColor = .black
         headerTitle.font = UIFont(name: "System", size: 18)
         if section == 0 {
@@ -227,11 +260,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
             
         }else if indexPath.section == 4{
-            let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
+            let cell =  tableView.dequeueReusableCell(withIdentifier: "activitiesCell") as! ActivitiesTableViewCell
             
+            cell.section = .activities
+            cell.diary = diary
+            cell.configure()
+
             return cell
         }else if indexPath.section == 5{
-            let cell =  tableView.dequeueReusableCell(withIdentifier: "statusCell") as! StatusTableViewCell
+            let cell =  tableView.dequeueReusableCell(withIdentifier: "activitiesCell") as! ActivitiesTableViewCell
+            cell.section = .provide
+            cell.diary = diary
+            cell.configure()
             
             return cell
         }else if indexPath.section == 6{

@@ -28,7 +28,8 @@ struct Diary : Codable {
     var date : Date
     var meals : [Meal]
     var naps : [Nap]
-    var activities : Set<Activity>
+    var activities : [Activity]
+    var provide: [Provide]
     var bathroom : [Bathroom]
     var medsTaken : [TakenMedicine]  // store the medicine taken, and the time it was taken
     var pictures : [Picture]   // store the photo path and a description for it
