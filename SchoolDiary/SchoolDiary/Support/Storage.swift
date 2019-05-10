@@ -31,7 +31,7 @@ class Storage {
         aurora.allergies.insert(allergy)
         let tylenol = Medicine(name: "Tylenol baby", dose: 1, type: .drops, condition: "Se tiver febre acima de 37,5º", time: Date.init())
         let maresis = Medicine(name: "Maresis", dose: 1, type: .drops, condition: "Se tiver secreção no nariz", time: Date.init())
-        aurora.medicines = [tylenol, maresis]
+        aurora.medicines = [tylenol, maresis, maresis]
         let snack = Meal(type: .snack, quantity: .all)
         let lunch = Meal(type: .lunch, quantity: .all)
         let milk = Meal(type: .milk, quantity: .half)

@@ -11,7 +11,8 @@ import UIKit
 class GridHealthTableViewCell: UITableViewCell {
     @IBOutlet weak var GridView: UICollectionView!
     
-    
+//    var picker = UIPickerView()
+//    var level = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
     var section: Sections!
 
     var child: Child!
@@ -25,6 +26,8 @@ class GridHealthTableViewCell: UITableViewCell {
         GridView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         GridView.dataSource = self
         GridView.delegate = self
+//        picker.delegate = self
+//        picker.dataSource = self
     }
 
     
@@ -33,6 +36,14 @@ class GridHealthTableViewCell: UITableViewCell {
 
 
 extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        return 1
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        return level.count
+//    }
+    
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -72,14 +83,22 @@ extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDat
             if indexPath.row == 0 {
                 cell.measureLabel.text = "Peso"
                 cell.measureImageView.image = UIImage(named: "peso")!
+//                cell.id = indexPath.row
+//                cell.measureTextField.inputView = picker
+//                if cell.measureTextField.isFirstResponder {
+//                    cell.measureTextField.text = pickerView(picker, didSelectRow, inComponent: 0)
+//                }
+//                cell.measureTextField.actions(forTarget: #selector(acaoDoBotao), forControlEvent: .touchDown)
                 cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             } else if indexPath.row == 1 {
                 cell.measureLabel.text = "Altura"
                 cell.measureImageView.image = UIImage(named: "altura")!
+//                cell.id = indexPath.row
                 cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             } else if indexPath.row == 2 {
                 cell.measureLabel.text = "Alergia"
                 cell.measureImageView.image = UIImage(named: "alergia")!
+//                cell.id = indexPath.row
                 cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             } else {
                 fatalError()

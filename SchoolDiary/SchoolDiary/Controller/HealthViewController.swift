@@ -96,6 +96,9 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let headerImageView = UIImageView(frame: CGRect(x: 16, y: -6, width: 25, height: 23))
             var image: UIImage
             
+            let headerButton: UIButton = UIButton(frame: CGRect(x: (self.view.bounds.size.width) - 38, y: -6, width: 22, height: 22))
+            headerButton.setImage(UIImage(named: "adicionar-med"), for: .normal)
+            
             let headerMedicationTitle: UILabel = UILabel(frame: CGRect(x: 44, y: -10, width: 200, height: 30))
             headerMedicationTitle.textColor = #colorLiteral(red: 0.2156862745, green: 0.2156862745, blue: 0.2156862745, alpha: 1)
             headerMedicationTitle.font = UIFont(name: "System", size: 18)
@@ -110,6 +113,7 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
             headerImageView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
             
             view.addSubview(headerImageView)
+            view.addSubview(headerButton)
         }
         
         return view
@@ -131,38 +135,72 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
             return cell
 
         } else if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MedicationCell") as! MedicineTableViewCell
             
-            cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
-            
-            cell.medicineView.frame.size.height = 88
-            cell.medicineView.layer.cornerRadius = 15.0
-            cell.medicineView.layer.borderWidth = 3.0
-            cell.medicineView.layer.borderColor = UIColor.clear.cgColor
-            cell.medicineView.layer.masksToBounds = true
-            
-            cell.medicineView.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            cell.medicineView.layer.shadowOffset = CGSize(width: 1, height: 1.0)
-            cell.medicineView.layer.shadowRadius = 6.0
-            cell.medicineView.layer.shadowOpacity = 1
-            cell.medicineView.layer.masksToBounds = false
-            cell.medicineView.layer.shadowPath = UIBezierPath(roundedRect: cell.medicineView.bounds, cornerRadius: cell.medicineView.layer.cornerRadius).cgPath
-            cell.medicineView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1) , opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+            if indexPath.row == 0 || indexPath.row == 1{
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "MedicationCell2") as! MedicineTableViewCellStatic
 
-            
-            cell.nomeLabel.text = "nome"
-            cell.doseLabel.text = "dose"
-            cell.nomeLabel1.text = "teste1"
-            cell.doseLabel1.text = "teste2"
-            cell.dataInicialLabel.isHidden = true
-            cell.dataInicialLabel1.isHidden = true
-            cell.dataFinalLabel.isHidden = true
-            cell.dataFinalLabel1.isHidden = true
-            cell.horarioLabel.isHidden = true
-            cell.horarioLabel1.isHidden = true
-            
-            return cell
+                cell.selectionStyle = .none
+                if indexPath.row == 0 {
+                    cell.titleLabel.text = "Febre acima de 35,7º:"
+                } else {
+                    cell.titleLabel.text = "Secreção no nariz:"
+                }
+                
+                cell.nomeLabel.text = self.child.medicines[indexPath.row].name
+                cell.doseLabel.text = "\(self.child.medicines[indexPath.row].dose) \(self.child.medicines[indexPath.row].type.rawValue)"
+                cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
 
+                cell.medicineView.frame.size.height = 88
+                cell.medicineView.layer.cornerRadius = 15.0
+                cell.medicineView.layer.borderWidth = 3.0
+                cell.medicineView.layer.borderColor = UIColor.clear.cgColor
+                cell.medicineView.layer.masksToBounds = true
+//                if cell.isSelected {
+//                    cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+//                }
+
+                cell.medicineView.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                cell.medicineView.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+                cell.medicineView.layer.shadowRadius = 6.0
+                cell.medicineView.layer.shadowOpacity = 1
+                cell.medicineView.layer.masksToBounds = false
+                cell.medicineView.layer.shadowPath = UIBezierPath(roundedRect: cell.medicineView.bounds, cornerRadius: cell.medicineView.layer.cornerRadius).cgPath
+                cell.medicineView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1) , opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+                
+                return cell
+            } else{
+                let cell = tableView.dequeueReusableCell(withIdentifier: "MedicationCell") as! MedicineTableViewCell
+                cell.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+                cell.selectionStyle = .none
+
+                cell.medicineView.layer.cornerRadius = 15.0
+                cell.medicineView.layer.borderWidth = 3.0
+                cell.medicineView.layer.borderColor = UIColor.clear.cgColor
+                cell.medicineView.layer.masksToBounds = true
+                
+                cell.medicineView.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                cell.medicineView.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+                cell.medicineView.layer.shadowRadius = 6.0
+                cell.medicineView.layer.shadowOpacity = 1
+                cell.medicineView.layer.masksToBounds = false
+                cell.medicineView.layer.shadowPath = UIBezierPath(roundedRect: cell.medicineView.bounds, cornerRadius: cell.medicineView.layer.cornerRadius).cgPath
+                cell.medicineView.dropShadow(color: #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1) , opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+                
+                cell.titleLabel.text = "Outros:"
+                cell.nomeLabel.text = "nome"
+                cell.doseLabel.text = "dose"
+                cell.nomeLabel1.text = self.child.medicines[indexPath.row].name
+                cell.doseLabel1.text = "\(self.child.medicines[indexPath.row].dose)\(self.child.medicines[indexPath.row].type.rawValue)"
+                cell.dataInicialLabel.text = "data inicial"
+                cell.dataInicialLabel1.text = "\(self.child.medicines[indexPath.row].time.day)/\(self.child.medicines[indexPath.row].time.month)"
+                cell.dataFinalLabel.text = "data final"
+                cell.dataFinalLabel1.text = "\(self.child.medicines[indexPath.row].time.day)/\(self.child.medicines[indexPath.row].time.month)"
+                cell.horarioLabel.text = "horário"
+                cell.horarioLabel1.text = "\(self.child.medicines[indexPath.row].time.hour)h"
+    
+                return cell
+            }
         } else {
             fatalError()
         }

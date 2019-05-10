@@ -10,15 +10,8 @@ import UIKit
 
 class MedicineTableViewCellStatic: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var doseLabel: UILabel!
+    @IBOutlet weak var medicineView: UIView!
 }

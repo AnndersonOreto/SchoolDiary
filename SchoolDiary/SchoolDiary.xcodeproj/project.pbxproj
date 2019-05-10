@@ -19,6 +19,7 @@
 		897760FA22822D56006CD77E /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760F922822D56006CD77E /* HealthViewController.swift */; };
 		897760FE22822E3F006CD77E /* GridHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */; };
 		8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */; };
+		89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */; };
 		A97F00002278C3DA00D8700F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFF2278C3DA00D8700F /* Meal.swift */; };
 		A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00012278CDAF00D8700F /* DateExtensions.swift */; };
 		A97F00042278CE8D00D8700F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00032278CE8D00D8700F /* Activity.swift */; };
@@ -60,6 +61,7 @@
 		897760F922822D56006CD77E /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthTableViewCell.swift; sourceTree = "<group>"; };
 		897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthCollectionViewCell.swift; sourceTree = "<group>"; };
+		89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCellStatic.swift; sourceTree = "<group>"; };
 		A97F00012278CDAF00D8700F /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		A97F00032278CE8D00D8700F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = SchoolDiary/Model/Activity.swift; sourceTree = SOURCE_ROOT; };
 		A97F00062278CEDB00D8700F /* Bathroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */,
 				897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */,
 				8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */,
+				89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */,
 				AB59029A227BC3DE00E5000A /* MyTabBarController.swift */,
 				AB84E40F2284A1BD00C25BE2 /* ActivitiesTableViewCell.swift */,
 				AB84E4112284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift */,
@@ -346,6 +349,7 @@
 				8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */,
 				A97FFFF82278C26100D8700F /* Parent.swift in Sources */,
 				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
+				89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */,
 				8948A3D5228351DC00D1F10B /* MedicineTableViewCell.swift in Sources */,
 				AB43E4322285E6660032F4FD /* PhotosTableViewCell.swift in Sources */,
 				AB43E4382285FEEA0032F4FD /* PhotoInfoViewController.swift in Sources */,
