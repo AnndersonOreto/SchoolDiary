@@ -28,6 +28,8 @@
 		A97FFFFC2278C30500D8700F /* Allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFB2278C30500D8700F /* Allergy.swift */; };
 		A97FFFFE2278C34D00D8700F /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFD2278C34D00D8700F /* Diary.swift */; };
 		A9D23ECD2285EABD00166317 /* NoticesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23ECC2285EABD00166317 /* NoticesViewController.swift */; };
+		A9D23ECF228603A100166317 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23ECE228603A100166317 /* MessagesViewController.swift */; };
+		A9D23ED1228603FC00166317 /* MessagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */; };
 		A9D4A16C227CB86300F272A1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4A16B227CB86300F272A1 /* Storage.swift */; };
 		AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB590296227B81AA00E5000A /* GridTableViewCell.swift */; };
 		AB590299227BC03300E5000A /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB590298227BC03300E5000A /* GridCollectionViewCell.swift */; };
@@ -61,6 +63,8 @@
 		A97FFFFD2278C34D00D8700F /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Diary.swift; path = SchoolDiary/Model/Diary.swift; sourceTree = SOURCE_ROOT; };
 		A97FFFFF2278C3DA00D8700F /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = SchoolDiary/Model/Meal.swift; sourceTree = SOURCE_ROOT; };
 		A9D23ECC2285EABD00166317 /* NoticesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticesViewController.swift; sourceTree = "<group>"; };
+		A9D23ECE228603A100166317 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPageViewController.swift; sourceTree = "<group>"; };
 		A9D4A16B227CB86300F272A1 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		AB590296227B81AA00E5000A /* GridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTableViewCell.swift; sourceTree = "<group>"; };
 		AB590298227BC03300E5000A /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				AB59029A227BC3DE00E5000A /* MyTabBarController.swift */,
 				A94480A42284ABD9007A3C79 /* NoticeTableViewCell.swift */,
 				A9D23ECC2285EABD00166317 /* NoticesViewController.swift */,
+				A9D23ECE228603A100166317 /* MessagesViewController.swift */,
+				A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				A94480A62284ABD9007A3C79 /* NoticeTableViewCell.swift in Sources */,
 				A97FFFFE2278C34D00D8700F /* Diary.swift in Sources */,
 				2634D244227788230085F783 /* ViewController.swift in Sources */,
+				A9D23ED1228603FC00166317 /* MessagesPageViewController.swift in Sources */,
 				A9D4A16C227CB86300F272A1 /* Storage.swift in Sources */,
 				A97FFFF82278C26100D8700F /* Parent.swift in Sources */,
 				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
@@ -338,6 +345,7 @@
 				AB590299227BC03300E5000A /* GridCollectionViewCell.swift in Sources */,
 				2634D242227788230085F783 /* AppDelegate.swift in Sources */,
 				26D72EB4227B5565001201AD /* LoginController.swift in Sources */,
+				A9D23ECF228603A100166317 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

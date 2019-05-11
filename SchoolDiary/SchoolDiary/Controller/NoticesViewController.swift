@@ -8,8 +8,19 @@
 
 import UIKit
 
+struct NoticeSection : Comparable {
+    static func < (lhs: NoticeSection, rhs: NoticeSection) -> Bool {
+        return lhs.day < rhs.day
+    }
+    
+    var day : Date
+    var notices : [Notice] = []
+}
+
 class NoticesViewController: UIViewController {
 
+    var sections = [NoticeSection]()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,10 +34,13 @@ class NoticesViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "NoticeCell")
         tableView.rowHeight = 106
         tableView.superview?.backgroundColor = #colorLiteral(red: 0.9685191512, green: 0.9686883092, blue: 0.9685210586, alpha: 1)
-        tableView.clipsToBounds = false
-        tableView.row
+        
+        let groups = Dictionary(grouping: Storage.notices) { (notice) in
+            return notice.date.beginning(of: .day)!
+        }
+        
+        sections = groups.map(NoticeSection.init(day:notices:)).sorted().reversed()
     }
-    
 
     /*
     // MARK: - Navigation
@@ -42,22 +56,39 @@ class NoticesViewController: UIViewController {
 
 extension NoticesViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Storage.notices.count
+        return self.sections[section].notices.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
 //        let noticeDates = Storage.notices.filter
         
-        return 1
+        return self.sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = self.sections[section]
+        let date = section.day
+        
+        if date.isInToday {
+            return "Hoje"
+        } else if date.isInYesterday {
+            return "Ontem"
+        } else {
+            return date.string(withFormat: "dd/MM/yyyy")
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoticeCell") as! NoticeTableViewCell
         
-        let notice = Storage.notices[indexPath.row]
+        let section = self.sections[indexPath.section]
+        let notice = section.notices[indexPath.row]
+        
         cell.titleLabel.text = notice.title.uppercased()
         cell.typeLabel.text = notice.type.rawValue
         cell.noticeText.text = notice.text
+        
+        cell.frame = cell.contentView.frame
         
         cell.layer.cornerRadius = 15
         cell.layer.shadowRadius = 20

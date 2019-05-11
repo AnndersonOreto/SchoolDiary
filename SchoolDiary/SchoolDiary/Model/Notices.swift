@@ -20,7 +20,7 @@ enum NoticeType : String, Codable, CaseIterable {
     }
 }
 
-struct Notice : Codable {
+struct Notice : Codable, Hashable {
     var title: String
     var type: NoticeType
     var text: String
