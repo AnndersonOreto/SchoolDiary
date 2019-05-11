@@ -136,7 +136,7 @@ class Storage {
             let notice = Notice(title: faker.lorem.word(),
                                 type: NoticeType.allCases.randomElement()!,
                                 text: faker.lorem.paragraph(),
-                                date: faker.date.between(Date.init(integerLiteral: 2019_01_01)!, Date()))
+                                date: faker.date.between(Date().yesterday.yesterday.yesterday, Date()))
             
             Storage.children.append(child)
             Storage.parents.append(parent)
