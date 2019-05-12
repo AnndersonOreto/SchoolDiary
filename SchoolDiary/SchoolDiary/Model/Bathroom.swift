@@ -13,10 +13,14 @@ enum BathroomType : String, Codable {
     case poop = "coco"
 }
 
-enum BathroomCondition : String, Codable {
+enum BathroomCondition : String, Codable, CaseIterable {
     case normal = "Normal"
     case altered = "Alterado"
     case worrying = "Preocupante"
+    
+    static var allCases : [BathroomCondition] {
+        return [.normal, .altered, .worrying]
+    }
 }
 
 struct Bathroom : Codable {

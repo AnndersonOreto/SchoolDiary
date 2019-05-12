@@ -97,24 +97,8 @@ class Storage {
                                 password: "\(name.lowercased())123",
                                 children: [])
             
-            let allergyCount = Int.random(in: 0...3)
-            
-            for _ in 0..<allergyCount {
-                let allergyRandom = Int.random(in: 1...4)
-                var allergyType : AllergyType
-                
-                switch allergyRandom {
-                case 1:
-                    allergyType = AllergyType.animal
-                case 2:
-                    allergyType = AllergyType.food
-                case 3:
-                    allergyType = AllergyType.medicine
-                default:
-                    allergyType = AllergyType.other
-                }
-                
-                let allergy = Allergy(type: allergyType,
+            for _ in 0..<Int.random(in: 0...3) {
+                let allergy = Allergy(type: AllergyType.allCases.randomElement()!,
                                       description: faker.lorem.sentences(amount: 4))
                 
                 child.allergies.insert(allergy)
@@ -122,10 +106,17 @@ class Storage {
             
             let diary = Diary(date: Date(),
                               meals: meals.suffix(Int.random(in: 1..<meals.count)),
-                              naps: [],
-                              activities: Set<Activity>(),
-                              bathroom: [],
-                              medsTaken: [],
+                              naps: [
+                                Nap(napTime: .morning, start: Date().changing(.hour, value: 8)!, end: Date().changing(.hour, value: 9)!),
+                                Nap(napTime: .afternoon, start: Date().changing(.hour, value: 13)!, end: Date().changing(.hour, value: 14)!)],
+                              activities: [
+                                Activity(type: ActivityType.allCases.randomElement()!, description: faker.lorem.sentence()),
+                                Activity(type: ActivityType.allCases.randomElement()!, description: faker.lorem.sentence())],
+                              provide: [Provide(description: faker.lorem.word())],
+                              bathroom: [
+                                Bathroom(type: .pee, condition: BathroomCondition.allCases.randomElement()!),
+                                Bathroom(type: .poop, condition: BathroomCondition.allCases.randomElement()!)],
+                              medsTaken: [TakenMedicine(medicine: child.medicines.randomElement()!, timeTaken: Date().changing(.hour, value: 15)!)],
                               pictures: [],
                               notes: faker.lorem.sentence(wordsAmount: Int.random(in: 4...10)))
             

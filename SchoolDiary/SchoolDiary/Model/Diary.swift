@@ -13,9 +13,13 @@ struct Picture : Codable {
     var description : String
 }
 
-enum NapTime : String, Codable {
+enum NapTime : String, Codable, CaseIterable {
     case morning = "Manhã"
     case afternoon = "Tarde"
+    
+    static var allCases : [NapTime] {
+        return [.morning, .afternoon]
+    }
 }
 
 struct Nap : Codable {

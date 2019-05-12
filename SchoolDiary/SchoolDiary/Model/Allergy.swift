@@ -8,11 +8,15 @@
 
 import Foundation
 
-enum AllergyType : String, Codable, Hashable {
-    case medicine
-    case food
-    case animal
-    case other
+enum AllergyType : String, Codable, Hashable, CaseIterable {
+    case medicine = "Remédio"
+    case food = "Alimento"
+    case animal = "Animal"
+    case other = "Outros"
+    
+    static var allCases : [AllergyType] {
+        return [.medicine, .food, .animal, .other]
+    }
 }
 
 struct Allergy : Hashable, Codable {

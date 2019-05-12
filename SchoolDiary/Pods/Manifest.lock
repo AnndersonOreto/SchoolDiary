@@ -1,20 +1,24 @@
 PODS:
   - Disk (0.6.3)
   - Fakery (4.0.0)
+  - TinyConstraints (4.0.0)
 
 DEPENDENCIES:
   - Disk (~> 0.6.3)
   - Fakery
+  - TinyConstraints
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Disk
     - Fakery
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   Disk: 76cccb6fed1c27cd661bbdea7b117d887c2f72e5
   Fakery: 476f6d947de432f84703acc830a1e7166330299b
+  TinyConstraints: 03bc091844b98c18dbaead8b1153242a42721b56
 
-PODFILE CHECKSUM: 252454b17f720010e6b4bda098aef24cd28532cc
+PODFILE CHECKSUM: 4368d193086bc4d543b13457bbdb9eb8a96fc636
 
 COCOAPODS: 1.6.1

@@ -593,12 +593,8 @@
             <point key="canvasLocation" x="-5750" y="-425"/>
         </scene>
         <!--Saúde-->
-        <scene sceneID="zDe-LK-P9V"></scene>
-        <!--Photo Info View Controller-->
         <scene sceneID="1bp-JU-rGI">
             <objects>
-                <viewController id="yaP-wp-kUT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9F9-ie-aHU">
                 <viewController id="Xcu-gg-tUg" customClass="PhotoInfoViewController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i5p-pr-gdD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -619,7 +615,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Zra-jZ-1mb"/>
-                        <viewLayoutGuide key="safeArea" id="FhY-s1-3yF"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Saúde" image="saude1x" selectedImage="saude1x" id="yUv-9n-rSh"/>
                     <connections>
@@ -627,27 +622,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fe-EP-zMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dVk-IA-QOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5750" y="235"/>
-            <point key="canvasLocation" x="-4830" y="-1233"/>
+            <point key="canvasLocation" x="-5042" y="-1233"/>
         </scene>
-        <!--Mensagens>
-        <scene sceneID="9Yo-vl-SnW">
-            <objects>
-                <viewController id="mqk-PZ-248" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MPU-qd-4Tb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="E7N-0b-SCg"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Mensagens" id="j8m-Q0-MZ8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6tJ-gM-gHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5754" y="-568"/>
-        </scene-->
         <!--Agenda-->
         <scene sceneID="Sk1-9X-tgl">
             <objects>
@@ -662,7 +639,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocu-cc-9cA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6216" y="581"/>
+            <point key="canvasLocation" x="-6829" y="649"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="imK-kN-QqH">
@@ -707,6 +684,7 @@
         <image name="icon-lanche1x" width="30" height="32"/>
         <image name="logo-escola-1x" width="26" height="26"/>
         <image name="perfil-1x" width="24" height="24"/>
+        <image name="saude1x" width="30" height="31"/>
         <image name="starFull" width="22.5" height="22.5"/>
         <image name="xixi" width="30" height="30"/>
     </resources>

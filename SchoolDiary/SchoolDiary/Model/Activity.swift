@@ -8,11 +8,15 @@
 
 import Foundation
 
-enum ActivityType : String, Codable, Hashable {
-    case classes
-    case storytelling
-    case games
-    case other
+enum ActivityType : String, Codable, Hashable, CaseIterable {
+    case classes = "Aula"
+    case storytelling = "Histórias"
+    case games = "Brincadeiras"
+    case other = "Outras"
+    
+    static var allCases : [ActivityType] {
+        return [.classes, .storytelling, .games, .other]
+    }
 }
 
 struct Activity : Hashable, Codable {
