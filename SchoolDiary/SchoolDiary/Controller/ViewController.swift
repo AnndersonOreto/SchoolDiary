@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var schoolLabel: UILabel!
     
     //Section of Table view (each section is a cell)
     let sections : [Section] = [.meal, .naps, .bathroom, .medicines, .activities, .provide, .pictures, .observation]
@@ -43,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let _ = Storage()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        tableView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         tableView.tableHeaderView?.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         eventStore.requestAccess(to: EKEntityType.reminder, completion:
             {(granted, error) in
@@ -66,6 +67,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.child = child
         nameLabel.text = self.child.name
+        
+        schoolLabel.text = "Escola Unicórnio"
         
         guard let diary = child.diaries.first else {
             print("Diary not found.")
