@@ -9,9 +9,9 @@
 import Foundation
 
 enum MedicineType : String, Codable {
-    case drops
-    case pills
-    case other
+    case drops = "ml"
+    case pills = "mg"
+    case other = ""
 }
 
 struct Medicine : Codable {

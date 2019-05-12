@@ -18,6 +18,12 @@
 		A94480A32284A89E007A3C79 /* Notices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94480A22284A89E007A3C79 /* Notices.swift */; };
 		A94480A62284ABD9007A3C79 /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94480A42284ABD9007A3C79 /* NoticeTableViewCell.swift */; };
 		A94480A72284ABD9007A3C79 /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */; };
+		893DC4F12281FC3D00531DA0 /* HealthScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */; };
+		8948A3D5228351DC00D1F10B /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */; };
+		897760FA22822D56006CD77E /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760F922822D56006CD77E /* HealthViewController.swift */; };
+		897760FE22822E3F006CD77E /* GridHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */; };
+		8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */; };
+		89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */; };
 		A97F00002278C3DA00D8700F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFF2278C3DA00D8700F /* Meal.swift */; };
 		A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00012278CDAF00D8700F /* DateExtensions.swift */; };
 		A97F00042278CE8D00D8700F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00032278CE8D00D8700F /* Activity.swift */; };
@@ -31,10 +37,18 @@
 		A9D23ECF228603A100166317 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23ECE228603A100166317 /* MessagesViewController.swift */; };
 		A9D23ED1228603FC00166317 /* MessagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */; };
 		A9D4A16C227CB86300F272A1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4A16B227CB86300F272A1 /* Storage.swift */; };
+		AB43E4322285E6660032F4FD /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E4312285E6660032F4FD /* PhotosTableViewCell.swift */; };
+		AB43E4342285E85B0032F4FD /* PhothoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E4332285E85B0032F4FD /* PhothoCollectionViewCell.swift */; };
+		AB43E4362285F4410032F4FD /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E4352285F4410032F4FD /* NotesTableViewCell.swift */; };
+		AB43E4382285FEEA0032F4FD /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E4372285FEEA0032F4FD /* PhotoInfoViewController.swift */; };
+		AB4B6D7E22820A2500CB3DE7 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B6D7D22820A2500CB3DE7 /* StatusTableViewCell.swift */; };
 		AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB590296227B81AA00E5000A /* GridTableViewCell.swift */; };
 		AB590299227BC03300E5000A /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB590298227BC03300E5000A /* GridCollectionViewCell.swift */; };
 		AB59029B227BC3DE00E5000A /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59029A227BC3DE00E5000A /* MyTabBarController.swift */; };
 		AB6FB3912278C4F0008FBD30 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6FB3902278C4F0008FBD30 /* UIView.swift */; };
+		AB84E4102284A1BD00C25BE2 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84E40F2284A1BD00C25BE2 /* ActivitiesTableViewCell.swift */; };
+		AB84E4122284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84E4112284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift */; };
+		AB84E4142284C1B300C25BE2 /* Provide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84E4132284C1B200C25BE2 /* Provide.swift */; };
 		C78E09432278BEE800017896 /* Backbone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78E09422278BEE800017896 /* Backbone.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +67,12 @@
 		A94480A22284A89E007A3C79 /* Notices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notices.swift; sourceTree = "<group>"; };
 		A94480A42284ABD9007A3C79 /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
 		A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
+		893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthScreen.storyboard; sourceTree = "<group>"; };
+		8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		897760F922822D56006CD77E /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthTableViewCell.swift; sourceTree = "<group>"; };
+		897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthCollectionViewCell.swift; sourceTree = "<group>"; };
+		89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCellStatic.swift; sourceTree = "<group>"; };
 		A97F00012278CDAF00D8700F /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		A97F00032278CE8D00D8700F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = SchoolDiary/Model/Activity.swift; sourceTree = SOURCE_ROOT; };
 		A97F00062278CEDB00D8700F /* Bathroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
@@ -66,10 +86,18 @@
 		A9D23ECE228603A100166317 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPageViewController.swift; sourceTree = "<group>"; };
 		A9D4A16B227CB86300F272A1 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		AB43E4312285E6660032F4FD /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		AB43E4332285E85B0032F4FD /* PhothoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhothoCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB43E4352285F4410032F4FD /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		AB43E4372285FEEA0032F4FD /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
+		AB4B6D7D22820A2500CB3DE7 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 		AB590296227B81AA00E5000A /* GridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTableViewCell.swift; sourceTree = "<group>"; };
 		AB590298227BC03300E5000A /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB59029A227BC3DE00E5000A /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		AB6FB3902278C4F0008FBD30 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AB84E40F2284A1BD00C25BE2 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		AB84E4112284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB84E4132284C1B200C25BE2 /* Provide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provide.swift; sourceTree = "<group>"; };
 		C78E09422278BEE800017896 /* Backbone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Backbone.storyboard; sourceTree = "<group>"; };
 		E153CB35D2EFCA3D50C6B4D1 /* Pods_SchoolDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,15 +148,27 @@
 		26AEF4BA22778A6F00C3FC03 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2634D243227788230085F783 /* ViewController.swift */,
 				26D72EB3227B5565001201AD /* LoginController.swift */,
+				2634D243227788230085F783 /* ViewController.swift */,
 				AB590296227B81AA00E5000A /* GridTableViewCell.swift */,
 				AB590298227BC03300E5000A /* GridCollectionViewCell.swift */,
+				AB4B6D7D22820A2500CB3DE7 /* StatusTableViewCell.swift */,
+				897760F922822D56006CD77E /* HealthViewController.swift */,
+				897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */,
+				897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */,
+				8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */,
+				89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */,
 				AB59029A227BC3DE00E5000A /* MyTabBarController.swift */,
 				A94480A42284ABD9007A3C79 /* NoticeTableViewCell.swift */,
 				A9D23ECC2285EABD00166317 /* NoticesViewController.swift */,
 				A9D23ECE228603A100166317 /* MessagesViewController.swift */,
 				A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */,
+				AB84E40F2284A1BD00C25BE2 /* ActivitiesTableViewCell.swift */,
+				AB84E4112284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift */,
+				AB43E4312285E6660032F4FD /* PhotosTableViewCell.swift */,
+				AB43E4332285E85B0032F4FD /* PhothoCollectionViewCell.swift */,
+				AB43E4352285F4410032F4FD /* NotesTableViewCell.swift */,
+				AB43E4372285FEEA0032F4FD /* PhotoInfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,11 +176,12 @@
 		26AEF4BB22778A9500C3FC03 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2634D245227788230085F783 /* Main.storyboard */,
 				2634D24A227788240085F783 /* LaunchScreen.storyboard */,
+				2634D245227788230085F783 /* Main.storyboard */,
 				C78E09422278BEE800017896 /* Backbone.storyboard */,
 				A94480A02284A1F2007A3C79 /* Messages.storyboard */,
 				A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */,
+				893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +208,7 @@
 				A97F00032278CE8D00D8700F /* Activity.swift */,
 				A97F00062278CEDB00D8700F /* Bathroom.swift */,
 				A94480A22284A89E007A3C79 /* Notices.swift */,
+				AB84E4132284C1B200C25BE2 /* Provide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +303,7 @@
 				2634D249227788240085F783 /* Assets.xcassets in Resources */,
 				2634D247227788230085F783 /* Main.storyboard in Resources */,
 				A94480A12284A1F2007A3C79 /* Messages.storyboard in Resources */,
+				893DC4F12281FC3D00531DA0 /* HealthScreen.storyboard in Resources */,
 				C78E09432278BEE800017896 /* Backbone.storyboard in Resources */,
 				A94480A72284ABD9007A3C79 /* NoticeTableViewCell.xib in Resources */,
 			);
@@ -330,22 +373,35 @@
 				2634D244227788230085F783 /* ViewController.swift in Sources */,
 				A9D23ED1228603FC00166317 /* MessagesPageViewController.swift in Sources */,
 				A9D4A16C227CB86300F272A1 /* Storage.swift in Sources */,
+				8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */,
 				A97FFFF82278C26100D8700F /* Parent.swift in Sources */,
 				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
+				89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */,
+				8948A3D5228351DC00D1F10B /* MedicineTableViewCell.swift in Sources */,
+				AB43E4322285E6660032F4FD /* PhotosTableViewCell.swift in Sources */,
+				AB43E4382285FEEA0032F4FD /* PhotoInfoViewController.swift in Sources */,
 				A97F00072278CEDB00D8700F /* Bathroom.swift in Sources */,
 				A97F00002278C3DA00D8700F /* Meal.swift in Sources */,
 				A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */,
 				2634D242227788230085F783 /* AppDelegate.swift in Sources */,
 				A97FFFFC2278C30500D8700F /* Allergy.swift in Sources */,
+				AB4B6D7E22820A2500CB3DE7 /* StatusTableViewCell.swift in Sources */,
 				A97FFFF62278C1AE00D8700F /* Child.swift in Sources */,
 				AB6FB3912278C4F0008FBD30 /* UIView.swift in Sources */,
+				AB43E4362285F4410032F4FD /* NotesTableViewCell.swift in Sources */,
 				AB59029B227BC3DE00E5000A /* MyTabBarController.swift in Sources */,
+				897760FE22822E3F006CD77E /* GridHealthTableViewCell.swift in Sources */,
+				897760FA22822D56006CD77E /* HealthViewController.swift in Sources */,
 				AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */,
 				2634D244227788230085F783 /* ViewController.swift in Sources */,
 				AB590299227BC03300E5000A /* GridCollectionViewCell.swift in Sources */,
 				2634D242227788230085F783 /* AppDelegate.swift in Sources */,
+				AB84E4102284A1BD00C25BE2 /* ActivitiesTableViewCell.swift in Sources */,
 				26D72EB4227B5565001201AD /* LoginController.swift in Sources */,
 				A9D23ECF228603A100166317 /* MessagesViewController.swift in Sources */,
+				AB84E4142284C1B300C25BE2 /* Provide.swift in Sources */,
+				AB43E4342285E85B0032F4FD /* PhothoCollectionViewCell.swift in Sources */,
+				AB84E4122284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
