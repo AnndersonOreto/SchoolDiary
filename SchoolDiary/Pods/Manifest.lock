@@ -1,24 +1,32 @@
 PODS:
   - Disk (0.6.3)
   - Fakery (4.0.0)
+  - InputBarAccessoryView (4.2.2)
+  - MessageKit (3.0.0):
+    - InputBarAccessoryView (~> 4.2.2)
   - TinyConstraints (4.0.0)
 
 DEPENDENCIES:
   - Disk (~> 0.6.3)
   - Fakery
+  - MessageKit
   - TinyConstraints
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Disk
     - Fakery
+    - InputBarAccessoryView
+    - MessageKit
     - TinyConstraints
 
 SPEC CHECKSUMS:
   Disk: 76cccb6fed1c27cd661bbdea7b117d887c2f72e5
   Fakery: 476f6d947de432f84703acc830a1e7166330299b
+  InputBarAccessoryView: 2b937602598e2fab3149f37f51dd7ad795653812
+  MessageKit: e892a9ca49ebe6d82684d3a93ad84021fa23e2c6
   TinyConstraints: 03bc091844b98c18dbaead8b1153242a42721b56
 
-PODFILE CHECKSUM: 4368d193086bc4d543b13457bbdb9eb8a96fc636
+PODFILE CHECKSUM: 615a0d22f8ba8ea09566a6dabbc9314c984605d4
 
 COCOAPODS: 1.6.1
