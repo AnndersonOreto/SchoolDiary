@@ -95,6 +95,10 @@ class Storage {
                                                             max: 99999999999),
                                 email: "\(name.lowercased())@example.net",
                                 password: "\(name.lowercased())123",
+                                invoices: [Invoice(month: Date(),
+                                                   total: 599.90,
+                                                   situation: .unpaid,
+                                                   barcode: 0055050050505)],
                                 children: [])
             
             for _ in 0..<Int.random(in: 0...3) {

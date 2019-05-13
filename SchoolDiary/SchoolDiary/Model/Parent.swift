@@ -23,5 +23,6 @@ struct Parent : Hashable, Codable {
     var cpf : Int
     var email : String
     var password : String
+    var invoices : [Invoice]
     var children : [Child]
 }
