@@ -87,19 +87,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "photoInfo"{
-//            let photoInfoVC = segue.destination as? PhotoInfoViewController
-//            photoInfoVC?.recieveImage =
-//
-//        }
-//    }
     
-    @IBAction func testeReminder(_ sender: Any) {
+    @IBAction func reminderButton(_ sender: Any) {
         let reminder = EKReminder(eventStore: self.eventStore)
         
-        reminder.title = "Go to the store and buy milk"
-        reminder.calendar = eventStore.defaultCalendarForNewReminders()
+        for i in 0..<diary.provide.count{
+            reminder.title = self.diary.provide[i].description
+            reminder.calendar = eventStore.defaultCalendarForNewReminders()
+        }
         
         do {
             try eventStore.save(reminder,
@@ -126,6 +121,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var image: UIImage = UIImage(named: "alimentacao1x")!
         
         let headerTitle: UILabel = UILabel(frame: CGRect(x: 50, y: -3, width: 200, height: 30))
+
         
         headerTitle.textColor = .black
         headerTitle.font = UIFont(name: "System", size: 18)
@@ -150,6 +146,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         else if section == 5{
             headerTitle.text = Section.provide.rawValue
             image = UIImage(named: "providenciar")!
+            let headerButton: UIButton = UIButton(frame: CGRect(x: (self.view.bounds.size.width) - 113, y: -3, width: 98, height: 30))
+            let icon = UIImage(named: "icon-more")!
+            headerButton.setTitle("ADICIONAR\nLEMBRETE", for: .normal)
+            headerButton.backgroundColor = #colorLiteral(red: 0.8941176471, green: 0.6392156863, blue: 0.631372549, alpha: 1)
+            headerButton.titleLabel?.font = .systemFont(ofSize: 10)
+            headerButton.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+            headerButton.setImage(icon, for: .normal)
+            headerButton.imageView?.contentMode = .scaleAspectFit
+            headerButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: headerButton.frame.width - headerButton.imageView!.frame.width - 8)
+
+            headerButton.layer.cornerRadius = 15
+            headerButton.addTarget(self, action: #selector(reminderButton), for: .touchUpInside)
+            view.addSubview(headerButton)
+            
         }
         else if section == 6{
             headerTitle.text = Section.pictures.rawValue
