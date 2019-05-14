@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Hoje-->
+        <!--View Controller-->
         <scene sceneID="SJQ-hO-laE">
             <objects>
                 <viewController id="TAB-8h-ZJv" customClass="ViewController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -563,7 +563,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oFW-Ps-hJe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hoje" id="209-6L-r0N" customClass="TabBarItem" customModule="SchoolDiary" customModuleProvider="target"/>
+                    <navigationItem key="navigationItem" id="T1C-yi-vcb"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="dayLabel" destination="vvn-AA-Hyk" id="HwZ-gc-wc7"/>
                         <outlet property="monthLabel" destination="zOz-FD-v5v" id="vJL-Ko-Pyb"/>
@@ -575,15 +576,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5t-RO-qvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5753.6231884057979" y="-1232.8125"/>
+            <point key="canvasLocation" x="-4843.4782608695659" y="-1232.8125"/>
         </scene>
         <!--ProfileStoryboard-->
         <scene sceneID="MO4-kV-knn">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProfileStoryboard" id="jgf-BC-myw" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ProfileStoryboard" id="jgf-BC-myw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aol-NJ-rbq"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncz-L0-LxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4787" y="-1494"/>
+            <point key="canvasLocation" x="-3878.2608695652175" y="-1494.6428571428571"/>
         </scene>
         <!--Messages-->
         <scene sceneID="lZb-ga-4MR">
@@ -626,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fe-EP-zMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4586" y="-846"/>
+            <point key="canvasLocation" x="-3676.811594202899" y="-846.42857142857144"/>
         </scene>
         <!--Agenda-->
         <scene sceneID="Sk1-9X-tgl">
@@ -648,6 +651,7 @@
         <scene sceneID="imK-kN-QqH">
             <objects>
                 <tabBarController id="ri0-SB-s2a" customClass="MyTabBarController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="61b-GE-kg3"/>
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8mv-uV-UJh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -655,7 +659,7 @@
                     </tabBar>
                     <connections>
                         <outlet property="myTabBar" destination="8mv-uV-UJh" id="hpf-H8-kZW"/>
-                        <segue destination="TAB-8h-ZJv" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
+                        <segue destination="7NH-pD-Pzu" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
                         <segue destination="6ZZ-ls-lMR" kind="relationship" relationship="viewControllers" id="JcZ-Ay-mdt"/>
                         <segue destination="Zxc-wA-iwf" kind="relationship" relationship="viewControllers" id="xEd-bc-kF9"/>
                         <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="5Sv-r3-0Pd"/>
@@ -675,6 +679,28 @@
             </objects>
             <point key="canvasLocation" x="-5753" y="157"/>
         </scene>
+        <!--Hoje-->
+        <scene sceneID="jJX-v9-3gK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7NH-pD-Pzu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hoje" id="209-6L-r0N" customClass="TabBarItem" customModule="SchoolDiary" customModuleProvider="target"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="It3-48-DMn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Exe-VF-waF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="TAB-8h-ZJv" kind="relationship" relationship="rootViewController" id="Nhq-CC-ijQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eab-Es-cJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5753.6231884057979" y="-1232.8125"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow-1x" width="13" height="21"/>
@@ -691,4 +717,5 @@
         <image name="starFull" width="22.5" height="22.5"/>
         <image name="xixi" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="0.74509803921568629" green="0.72156862745098038" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

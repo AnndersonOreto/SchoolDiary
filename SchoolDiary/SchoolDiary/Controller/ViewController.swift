@@ -65,6 +65,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return
         }
         
+        self.navigationController?.navigationItem.backBarButtonItem?.title = ""
+        
         self.child = child
         nameLabel.text = self.child.name
         
@@ -82,6 +84,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.clipsToBounds = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true    
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -322,7 +327,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             fatalError()
         }
     }
- 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+    }
 
 
 }

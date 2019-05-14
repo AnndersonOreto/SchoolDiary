@@ -9,9 +9,9 @@
 import Foundation
 
 enum InvoiceSituation : String, Codable, CaseIterable {
-    case paid = "Pago"
-    case unpaid = "Em aberto"
-    case debt = "Em atraso"
+    case paid = "pago"
+    case unpaid = "pendente"
+    case debt = "em atraso"
     
     static var allCases : [InvoiceSituation] {
         return [.paid, .unpaid, .debt]

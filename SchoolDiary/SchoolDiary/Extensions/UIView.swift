@@ -30,6 +30,8 @@ extension UIView{
         layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
         layer.shouldRasterize = true
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
+        
+        
     }
 }
 

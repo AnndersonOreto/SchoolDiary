@@ -52,6 +52,8 @@
 		AB84E4102284A1BD00C25BE2 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84E40F2284A1BD00C25BE2 /* ActivitiesTableViewCell.swift */; };
 		AB84E4122284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84E4112284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift */; };
 		AB84E4142284C1B300C25BE2 /* Provide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84E4132284C1B200C25BE2 /* Provide.swift */; };
+		ABA6A2F5228B5593006D38E7 /* FinanceiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6A2F4228B5593006D38E7 /* FinanceiroViewController.swift */; };
+		ABA6A2F7228B6332006D38E7 /* FinanceiroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6A2F6228B6332006D38E7 /* FinanceiroTableViewCell.swift */; };
 		C78E09432278BEE800017896 /* Backbone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78E09422278BEE800017896 /* Backbone.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,8 @@
 		AB84E40F2284A1BD00C25BE2 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
 		AB84E4112284A43A00C25BE2 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB84E4132284C1B200C25BE2 /* Provide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provide.swift; sourceTree = "<group>"; };
+		ABA6A2F4228B5593006D38E7 /* FinanceiroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceiroViewController.swift; sourceTree = "<group>"; };
+		ABA6A2F6228B6332006D38E7 /* FinanceiroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceiroTableViewCell.swift; sourceTree = "<group>"; };
 		C78E09422278BEE800017896 /* Backbone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Backbone.storyboard; sourceTree = "<group>"; };
 		E153CB35D2EFCA3D50C6B4D1 /* Pods_SchoolDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,6 +180,8 @@
 				AB43E4352285F4410032F4FD /* NotesTableViewCell.swift */,
 				AB43E4372285FEEA0032F4FD /* PhotoInfoViewController.swift */,
 				AB295C58228B289100234A1A /* ProfileViewController.swift */,
+				ABA6A2F4228B5593006D38E7 /* FinanceiroViewController.swift */,
+				ABA6A2F6228B6332006D38E7 /* FinanceiroTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A97F00042278CE8D00D8700F /* Activity.swift in Sources */,
+				ABA6A2F7228B6332006D38E7 /* FinanceiroTableViewCell.swift in Sources */,
 				A94480A32284A89E007A3C79 /* Notices.swift in Sources */,
 				A9D23ECD2285EABD00166317 /* NoticesViewController.swift in Sources */,
 				A94480A62284ABD9007A3C79 /* NoticeTableViewCell.swift in Sources */,
@@ -391,6 +398,7 @@
 				A9E4FB9F2289F73A0068E876 /* Invoice.swift in Sources */,
 				89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */,
 				8948A3D5228351DC00D1F10B /* MedicineTableViewCell.swift in Sources */,
+				ABA6A2F5228B5593006D38E7 /* FinanceiroViewController.swift in Sources */,
 				AB43E4322285E6660032F4FD /* PhotosTableViewCell.swift in Sources */,
 				AB43E4382285FEEA0032F4FD /* PhotoInfoViewController.swift in Sources */,
 				A97F00072278CEDB00D8700F /* Bathroom.swift in Sources */,
