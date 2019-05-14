@@ -37,6 +37,8 @@
 		A9D23ECF228603A100166317 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23ECE228603A100166317 /* MessagesViewController.swift */; };
 		A9D23ED1228603FC00166317 /* MessagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */; };
 		A9D4A16C227CB86300F272A1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4A16B227CB86300F272A1 /* Storage.swift */; };
+		AB295C59228B289100234A1A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB295C58228B289100234A1A /* ProfileViewController.swift */; };
+		AB295C5B228B28C400234A1A /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB295C5A228B28C400234A1A /* ProfileStoryboard.storyboard */; };
 		AB43E4322285E6660032F4FD /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E4312285E6660032F4FD /* PhotosTableViewCell.swift */; };
 		AB43E4342285E85B0032F4FD /* PhothoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E4332285E85B0032F4FD /* PhothoCollectionViewCell.swift */; };
 		AB43E4362285F4410032F4FD /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E4352285F4410032F4FD /* NotesTableViewCell.swift */; };
@@ -86,6 +88,8 @@
 		A9D23ECE228603A100166317 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		A9D23ED0228603FC00166317 /* MessagesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPageViewController.swift; sourceTree = "<group>"; };
 		A9D4A16B227CB86300F272A1 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		AB295C58228B289100234A1A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AB295C5A228B28C400234A1A /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		AB43E4312285E6660032F4FD /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
 		AB43E4332285E85B0032F4FD /* PhothoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhothoCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB43E4352285F4410032F4FD /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				AB43E4332285E85B0032F4FD /* PhothoCollectionViewCell.swift */,
 				AB43E4352285F4410032F4FD /* NotesTableViewCell.swift */,
 				AB43E4372285FEEA0032F4FD /* PhotoInfoViewController.swift */,
+				AB295C58228B289100234A1A /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				A94480A02284A1F2007A3C79 /* Messages.storyboard */,
 				A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */,
 				893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */,
+				AB295C5A228B28C400234A1A /* ProfileStoryboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				2634D247227788230085F783 /* Main.storyboard in Resources */,
 				A94480A12284A1F2007A3C79 /* Messages.storyboard in Resources */,
 				893DC4F12281FC3D00531DA0 /* HealthScreen.storyboard in Resources */,
+				AB295C5B228B28C400234A1A /* ProfileStoryboard.storyboard in Resources */,
 				C78E09432278BEE800017896 /* Backbone.storyboard in Resources */,
 				A94480A72284ABD9007A3C79 /* NoticeTableViewCell.xib in Resources */,
 			);
@@ -395,6 +402,7 @@
 				897760FE22822E3F006CD77E /* GridHealthTableViewCell.swift in Sources */,
 				897760FA22822D56006CD77E /* HealthViewController.swift in Sources */,
 				AB590297227B81AA00E5000A /* GridTableViewCell.swift in Sources */,
+				AB295C59228B289100234A1A /* ProfileViewController.swift in Sources */,
 				2634D244227788230085F783 /* ViewController.swift in Sources */,
 				AB590299227BC03300E5000A /* GridCollectionViewCell.swift in Sources */,
 				2634D242227788230085F783 /* AppDelegate.swift in Sources */,
