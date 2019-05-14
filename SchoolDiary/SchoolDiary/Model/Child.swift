@@ -18,4 +18,5 @@ struct Child : Codable {
     var medicines : [Medicine]
     var allergies : Set<Allergy>
     var diaries : [Diary]
+    var relatives : [Relative]
 }

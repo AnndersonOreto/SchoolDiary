@@ -84,7 +84,8 @@ class Storage {
                               parents: Set<Parent>(),
                               medicines: [tylenol, maresis],
                               allergies: Set<Allergy>(),
-                              diaries: [])
+                              diaries: [],
+                              relatives: [])
             
             let name = faker.name.firstName()
             
@@ -94,7 +95,13 @@ class Storage {
                                 cpf: faker.number.randomInt(min: 00000000000,
                                                             max: 99999999999),
                                 email: "\(name.lowercased())@example.net",
+                                phone: faker.phoneNumber.cellPhone(),
+                                relationship: .parent,
                                 password: "\(name.lowercased())123",
+                                invoices: [Invoice(month: Date(),
+                                                   total: 599.90,
+                                                   situation: .unpaid,
+                                                   barcode: 0055050050505)],
                                 children: [])
             
             for _ in 0..<Int.random(in: 0...3) {
