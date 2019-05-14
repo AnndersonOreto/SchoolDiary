@@ -24,6 +24,7 @@
 		A94480A32284A89E007A3C79 /* Notices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94480A22284A89E007A3C79 /* Notices.swift */; };
 		A94480A62284ABD9007A3C79 /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94480A42284ABD9007A3C79 /* NoticeTableViewCell.swift */; };
 		A94480A72284ABD9007A3C79 /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */; };
+		A97CB785228B47AB009DFD9E /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CB784228B47AB009DFD9E /* Chat.swift */; };
 		A97F00002278C3DA00D8700F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FFFFF2278C3DA00D8700F /* Meal.swift */; };
 		A97F00022278CDAF00D8700F /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00012278CDAF00D8700F /* DateExtensions.swift */; };
 		A97F00042278CE8D00D8700F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F00032278CE8D00D8700F /* Activity.swift */; };
@@ -74,6 +75,7 @@
 		A94480A22284A89E007A3C79 /* Notices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notices.swift; sourceTree = "<group>"; };
 		A94480A42284ABD9007A3C79 /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
 		A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
+		A97CB784228B47AB009DFD9E /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		A97F00012278CDAF00D8700F /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		A97F00032278CE8D00D8700F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = SchoolDiary/Model/Activity.swift; sourceTree = SOURCE_ROOT; };
 		A97F00062278CEDB00D8700F /* Bathroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				A94480A22284A89E007A3C79 /* Notices.swift */,
 				AB84E4132284C1B200C25BE2 /* Provide.swift */,
 				A9E4FB9E2289F73A0068E876 /* Invoice.swift */,
+				A97CB784228B47AB009DFD9E /* Chat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
 				A9E4FB9F2289F73A0068E876 /* Invoice.swift in Sources */,
 				89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */,
+				A97CB785228B47AB009DFD9E /* Chat.swift in Sources */,
 				8948A3D5228351DC00D1F10B /* MedicineTableViewCell.swift in Sources */,
 				AB43E4322285E6660032F4FD /* PhotosTableViewCell.swift in Sources */,
 				AB43E4382285FEEA0032F4FD /* PhotoInfoViewController.swift in Sources */,
