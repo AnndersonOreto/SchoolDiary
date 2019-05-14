@@ -54,6 +54,7 @@
 		AB84E4142284C1B300C25BE2 /* Provide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84E4132284C1B200C25BE2 /* Provide.swift */; };
 		ABA6A2F5228B5593006D38E7 /* FinanceiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6A2F4228B5593006D38E7 /* FinanceiroViewController.swift */; };
 		ABA6A2F7228B6332006D38E7 /* FinanceiroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6A2F6228B6332006D38E7 /* FinanceiroTableViewCell.swift */; };
+		ABA6A2F9228B7661006D38E7 /* DetailInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6A2F8228B7661006D38E7 /* DetailInvoiceViewController.swift */; };
 		C78E09432278BEE800017896 /* Backbone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78E09422278BEE800017896 /* Backbone.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		AB84E4132284C1B200C25BE2 /* Provide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provide.swift; sourceTree = "<group>"; };
 		ABA6A2F4228B5593006D38E7 /* FinanceiroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceiroViewController.swift; sourceTree = "<group>"; };
 		ABA6A2F6228B6332006D38E7 /* FinanceiroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceiroTableViewCell.swift; sourceTree = "<group>"; };
+		ABA6A2F8228B7661006D38E7 /* DetailInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInvoiceViewController.swift; sourceTree = "<group>"; };
 		C78E09422278BEE800017896 /* Backbone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Backbone.storyboard; sourceTree = "<group>"; };
 		E153CB35D2EFCA3D50C6B4D1 /* Pods_SchoolDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 				AB295C58228B289100234A1A /* ProfileViewController.swift */,
 				ABA6A2F4228B5593006D38E7 /* FinanceiroViewController.swift */,
 				ABA6A2F6228B6332006D38E7 /* FinanceiroTableViewCell.swift */,
+				ABA6A2F8228B7661006D38E7 /* DetailInvoiceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				2634D244227788230085F783 /* ViewController.swift in Sources */,
 				A9D23ED1228603FC00166317 /* MessagesPageViewController.swift in Sources */,
 				A9D4A16C227CB86300F272A1 /* Storage.swift in Sources */,
+				ABA6A2F9228B7661006D38E7 /* DetailInvoiceViewController.swift in Sources */,
 				8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */,
 				A97FFFF82278C26100D8700F /* Parent.swift in Sources */,
 				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
