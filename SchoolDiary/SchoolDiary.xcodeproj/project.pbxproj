@@ -19,6 +19,8 @@
 		897760FA22822D56006CD77E /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760F922822D56006CD77E /* HealthViewController.swift */; };
 		897760FE22822E3F006CD77E /* GridHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */; };
 		8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */; };
+		89CD38B2228B651400D5E5AC /* AlergiaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CD38B1228B651400D5E5AC /* AlergiaView.xib */; };
+		89CD38B4228B652400D5E5AC /* AlergiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD38B3228B652400D5E5AC /* AlergiaView.swift */; };
 		89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */; };
 		A94480A12284A1F2007A3C79 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94480A02284A1F2007A3C79 /* Messages.storyboard */; };
 		A94480A32284A89E007A3C79 /* Notices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94480A22284A89E007A3C79 /* Notices.swift */; };
@@ -68,6 +70,8 @@
 		897760F922822D56006CD77E /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthTableViewCell.swift; sourceTree = "<group>"; };
 		897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthCollectionViewCell.swift; sourceTree = "<group>"; };
+		89CD38B1228B651400D5E5AC /* AlergiaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlergiaView.xib; sourceTree = "<group>"; };
+		89CD38B3228B652400D5E5AC /* AlergiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlergiaView.swift; path = ../View/AlergiaView.swift; sourceTree = "<group>"; };
 		89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCellStatic.swift; sourceTree = "<group>"; };
 		A94480A02284A1F2007A3C79 /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		A94480A22284A89E007A3C79 /* Notices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notices.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */,
 				89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */,
 				AB59029A227BC3DE00E5000A /* MyTabBarController.swift */,
+				89CD38B3228B652400D5E5AC /* AlergiaView.swift */,
 				A94480A42284ABD9007A3C79 /* NoticeTableViewCell.swift */,
 				A9D23ECC2285EABD00166317 /* NoticesViewController.swift */,
 				A9D23ECE228603A100166317 /* MessagesViewController.swift */,
@@ -182,6 +187,7 @@
 				A94480A02284A1F2007A3C79 /* Messages.storyboard */,
 				A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */,
 				893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */,
+				89CD38B1228B651400D5E5AC /* AlergiaView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CD38B2228B651400D5E5AC /* AlergiaView.xib in Resources */,
 				2634D24C227788240085F783 /* LaunchScreen.storyboard in Resources */,
 				2634D249227788240085F783 /* Assets.xcassets in Resources */,
 				2634D247227788230085F783 /* Main.storyboard in Resources */,
@@ -389,6 +396,7 @@
 				A97FFFFC2278C30500D8700F /* Allergy.swift in Sources */,
 				AB4B6D7E22820A2500CB3DE7 /* StatusTableViewCell.swift in Sources */,
 				A97FFFF62278C1AE00D8700F /* Child.swift in Sources */,
+				89CD38B4228B652400D5E5AC /* AlergiaView.swift in Sources */,
 				AB6FB3912278C4F0008FBD30 /* UIView.swift in Sources */,
 				AB43E4362285F4410032F4FD /* NotesTableViewCell.swift in Sources */,
 				AB59029B227BC3DE00E5000A /* MyTabBarController.swift in Sources */,

@@ -19,8 +19,7 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    
-    
+
     let section: [Sections] = [.measures, .medicines]
     var child: Child!
     
@@ -41,8 +40,6 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.child = child
         nameLabel.text = self.child.name
-        
-
         
     }
     

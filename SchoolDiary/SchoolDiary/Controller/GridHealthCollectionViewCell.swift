@@ -11,6 +11,11 @@ import UIKit
 class GridHealthCollectionViewCell: UICollectionViewCell {
     
     var picker = UIPickerView()
+    
+
+    var alergia: UIView = AlergiaView(frame: CGRect(x: 0, y: 0, width: 414, height: 896))
+    
+    
     var integerPart = Array(0...100)
     var decimalPart = [".0", ".1", ".2",".3",".4",".5",".6",".7",".8",".9"]
 
@@ -30,10 +35,16 @@ class GridHealthCollectionViewCell: UICollectionViewCell {
             picker.delegate = self
             measureTextField.inputView = picker
             self.createToolBar()
+        } else {
+//            alergia.backgroundColor = UIColor.gray.withAlphaComponent(0.4)
+            measureTextField.inputView = alergia
         }
         
         id2 = GridHealthCollectionViewCell.id
         GridHealthCollectionViewCell.id += 1
+        
+        
+        
     }
 
 
@@ -90,10 +101,7 @@ extension GridHealthCollectionViewCell: UIPickerViewDelegate, UIPickerViewDataSo
     func createToolBar() {
         picker.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         
-//        let screenSize: CGRect = UIScreen.main.bounds
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
-//        var customView = GridHealthTableViewCell(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height))
-//
+
         if measureTextField.inputAccessoryView == nil {
             let toolBar = UIToolbar()
             toolBar.barStyle = .default
@@ -123,6 +131,7 @@ extension GridHealthCollectionViewCell: UIPickerViewDelegate, UIPickerViewDataSo
             
             if GridHealthCollectionViewCell.id == 0 {
                 // create the title for the weight measure
+                
                 titleForMeasureEditing.text = "Editar peso"
                 let toolBarTitle = UIBarButtonItem(customView: titleForMeasureEditing)
                 toolBar.setItems([cancelButton, spaceButton,toolBarTitle, spaceButton, doneButton], animated: true)
