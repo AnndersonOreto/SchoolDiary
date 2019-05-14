@@ -107,11 +107,11 @@
                                 <color key="backgroundColor" red="0.96861571069999997" green="0.96862143280000002" blue="0.96863609549999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.43529411759999997" green="0.74901960779999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoticeCell" rowHeight="106" id="IwU-iH-ru2" customClass="NoticeTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="106"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoticeCell" rowHeight="116" id="IwU-iH-ru2" customClass="NoticeTableViewCell" customModule="SchoolDiary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IwU-iH-ru2" id="N2l-4T-Fh6">
-                                            <rect key="frame" x="16" y="0.0" width="382" height="106"/>
+                                            <rect key="frame" x="16" y="0.0" width="382" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
