@@ -90,5 +90,24 @@ class FinanceiroViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Mensalidades/Taxas"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "infoInvoice", let detailVC = segue.destination as? DetailInvoiceViewController, let selectedInfo = sender as? DetailInvoiceViewController.DetailInvoice{
+            detailVC.detail = selectedInfo
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let parentInfo = childParent
+        let invoiceInfo = childParent.invoices[indexPath.row]
+        
+        
+        self.performSegue(withIdentifier: "infoInvoice", sender: DetailInvoiceViewController.DetailInvoice(parentChild: parentInfo, invoice: invoiceInfo))
+    }
+    
 }
+
 
