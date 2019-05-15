@@ -8,10 +8,12 @@
 
 import UIKit
 
-class MessagesViewController: UIViewController {
+class MessagesListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    weak var chatDelegate : ChatDelegate?
     var chats: [Chat] = []
+    var myself : Contact!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,8 @@ class MessagesViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 76
+        
+//        chatDelegate = self.presentingViewController as! MessagesPageViewController
     }
     
     func setupChats() {
@@ -69,6 +73,8 @@ class MessagesViewController: UIViewController {
         
         chats.append(anaChat)
         chats.append(micheleChat)
+        
+        self.myself = myself
     }
     
     /*
@@ -83,11 +89,11 @@ class MessagesViewController: UIViewController {
 
 }
 
-extension MessagesViewController: UITableViewDelegate {
+extension MessagesListViewController: UITableViewDelegate {
     
 }
 
-extension MessagesViewController: UITableViewDataSource {
+extension MessagesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chats.count
     }
@@ -104,5 +110,7 @@ extension MessagesViewController: UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chatDelegate?.didSelectChat(sender: self, chat: (chats[indexPath.row], myself))
+    }
 }

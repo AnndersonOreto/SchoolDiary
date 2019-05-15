@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="tintColor" red="0.43529411759999997" green="0.74901960779999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="q66-qq-MTj" kind="embed" id="OEn-Mo-ePR"/>
+                                    <segue destination="q66-qq-MTj" kind="embed" identifier="EmbedChats" id="OEn-Mo-ePR"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -68,11 +68,29 @@
                         <outlet property="messagesContainer" destination="2Zj-aM-PZl" id="6Rv-uP-oUq"/>
                         <outlet property="noticesContainer" destination="woU-xP-R0X" id="nqu-LC-i6T"/>
                         <outlet property="paneSelector" destination="Sxb-LH-sKV" id="zP6-vd-428"/>
+                        <segue destination="hJn-ky-LiW" kind="show" identifier="ShowChat" id="g30-Hu-9KZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vdm-JA-4gO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960.86956521739137" y="166.74107142857142"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="D7f-fW-4m4">
+            <objects>
+                <viewController id="hJn-ky-LiW" customClass="ChatViewController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNO-ha-M8D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96861571073532104" green="0.96862143278121948" blue="0.96863609552383423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.43682426210000003" green="0.74997788669999998" blue="0.65489870309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="7yZ-De-p3M"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pqs-Et-a5H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDT-oj-CGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="167"/>
         </scene>
         <!--Mensagens-->
         <scene sceneID="1xL-jW-LUs">
@@ -84,6 +102,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jyH-xH-f5o">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.43682426210000003" green="0.74997788669999998" blue="0.65489870309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -145,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="626" y="901"/>
         </scene>
-        <!--Messages View Controller-->
+        <!--Messages List View Controller-->
         <scene sceneID="Aik-Mo-49C">
             <objects>
-                <viewController id="q66-qq-MTj" customClass="MessagesViewController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q66-qq-MTj" customClass="MessagesListViewController" customModule="SchoolDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zgK-gf-ZZU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,16 +185,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MOH-7k-lOf">
-                                                    <rect key="frame" x="20" y="18" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="16" width="35.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3KO-6m-Le3">
-                                                    <rect key="frame" x="20" y="41.5" width="33" height="14.5"/>
+                                                    <rect key="frame" x="20" y="39.5" width="39.5" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
