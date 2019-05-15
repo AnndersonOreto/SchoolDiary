@@ -31,6 +31,18 @@ extension UIView{
         layer.shouldRasterize = true
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
+    
+    var parentViewController: UIViewController? {
+        if let nextResponder = self.next as? UIViewController {
+            return nextResponder
+        } else if let nextResponder = self.next as? UIView {
+            return nextResponder.parentViewController
+        } else {
+            return nil
+        }
+    }
+    
 }
+
 
 

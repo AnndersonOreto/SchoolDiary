@@ -34,9 +34,6 @@ class GridHealthTableViewCell: UITableViewCell {
 
 
 extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
-    
-
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if collectionView.frame.size.width < 290 {
@@ -58,6 +55,7 @@ extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "gridMeasureCell", for: indexPath) as! GridHealthCollectionViewCell
         
+        
         cell.contentView.layer.cornerRadius = 15.0
         cell.contentView.layer.borderWidth = 3.0
         cell.contentView.layer.borderColor = UIColor.clear.cgColor
@@ -71,7 +69,9 @@ extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDat
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
         switch section as Sections {
+            
         case .measures:
+            cell.child = child
             if indexPath.row == 0 {
                 cell.measureLabel.text = "Peso"
                 cell.measureImageView.image = UIImage(named: "peso")!
@@ -86,7 +86,7 @@ extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDat
                 cell.measureLabel.text = "Alergia"
                 cell.measureImageView.image = UIImage(named: "alergia")!
                 cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-                
+
             } else {
                 fatalError()
             }
@@ -97,7 +97,5 @@ extension GridHealthTableViewCell: UICollectionViewDelegate, UICollectionViewDat
         
         return cell
     }
-    
-    
 
 }
