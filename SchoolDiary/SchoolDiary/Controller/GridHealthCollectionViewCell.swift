@@ -7,14 +7,12 @@
 //
 
 import UIKit
+import TinyConstraints
 
 class GridHealthCollectionViewCell: UICollectionViewCell {
     
     var picker = UIPickerView()
-    
-
-    var alergia: UIView = AlergiaView(frame: CGRect(x: 0, y: 0, width: 414, height: 896))
-    
+    var child: Child!
     
     var integerPart = Array(0...100)
     var decimalPart = [".0", ".1", ".2",".3",".4",".5",".6",".7",".8",".9"]
@@ -35,23 +33,51 @@ class GridHealthCollectionViewCell: UICollectionViewCell {
             picker.delegate = self
             measureTextField.inputView = picker
             self.createToolBar()
-        } else {
-//            alergia.backgroundColor = UIColor.gray.withAlphaComponent(0.4)
-            measureTextField.inputView = alergia
         }
         
         id2 = GridHealthCollectionViewCell.id
         GridHealthCollectionViewCell.id += 1
         
-        
+        measureTextField.delegate = self
         
     }
 
 
-    // Func responsible for allow any change in the UIPicker
+    // Func responsible for allow any change in the Allergic Section
     @IBAction func textFieldEditingDidChange(_ sender: Any) {
-        
+        if id2 == 2{
+            measureTextField.text = "\(child.allergies.count)"
+
+        }
     }
+    
+
+}
+
+extension GridHealthCollectionViewCell: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if id2 == 2 {
+            
+            (parentViewController as? HealthViewController)?.alergia.isHidden = false
+            
+            (self.parentViewController as? HealthViewController)?.alergia.keyboardHeight.constant = 0
+            (self.parentViewController as? HealthViewController)?.view.layoutIfNeeded()
+            
+            
+            //animation of the allergic view
+            UIView.animate(withDuration: 0.25, animations: {
+                (self.parentViewController as? HealthViewController)?.alergia.keyboardHeight.constant = 335
+                (self.parentViewController as? HealthViewController)?.view.layoutIfNeeded()
+            }) { (_) in
+                (self.parentViewController as? HealthViewController)?.alergia.alergiasTextField.becomeFirstResponder()
+            }
+            
+
+            (parentViewController as? HealthViewController)?.tabBarController?.tabBar.isHidden = true
+            
+        }
+    } 
     
 }
 
