@@ -104,6 +104,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         do {
             try eventStore.save(reminder,
                                 commit: true)
+            
+            let alertController = UIAlertController(title: "O lembrete foi adicionado com sucesso.", message: "", preferredStyle: .alert)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                alertController.dismiss(animated: true, completion: nil)
+            }
         } catch let error {
             print("Reminder failed with error \(error.localizedDescription)")
         }
