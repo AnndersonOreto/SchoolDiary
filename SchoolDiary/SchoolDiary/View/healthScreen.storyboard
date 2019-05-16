@@ -403,7 +403,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zra-jZ-1mb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Saúde" id="yUv-9n-rSh"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Saúde" selectedImage="saudeclicked1x" id="yUv-9n-rSh"/>
                     <connections>
                         <outlet property="nameLabel" destination="Qcc-Nb-Ye5" id="YU3-gI-Eya"/>
                         <outlet property="tableView" destination="zLA-T0-NiG" id="p9l-Ke-QWc"/>
@@ -418,5 +418,6 @@
         <image name="cabecalho1x" width="375" height="220"/>
         <image name="foto-crianca-1x" width="114.5" height="120"/>
         <image name="perfil-1x" width="24" height="24"/>
+        <image name="saudeclicked1x" width="30" height="31"/>
     </resources>
 </document>
