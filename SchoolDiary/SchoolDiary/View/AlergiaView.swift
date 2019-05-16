@@ -46,6 +46,11 @@ class AlergiaView: UIView {
         obsTextView.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         obsTextView.delegate = self
         
+        alergiasTextField.delegate = self
+        
+        
+        
+        
     }
     
     
@@ -98,12 +103,32 @@ class AlergiaView: UIView {
         endEditing(true)
     }
     
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        if (self.parentViewController as? HealthViewController)?.alergia.keyboardHeight.constant != 0 {
+            UIView.animate(withDuration: 0.25, animations: {
+                (self.parentViewController as? HealthViewController)?.alergia.keyboardHeight.constant = 0
+                (self.parentViewController as? HealthViewController)?.view.layoutIfNeeded()
+            })
+        }
+        
+            
+    
+        
+        endEditing(true)
+    }
 
 }
 
 extension AlergiaView: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
+        
+        
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            (self.parentViewController as? HealthViewController)?.alergia.keyboardHeight.constant = 335
+            (self.parentViewController as? HealthViewController)?.view.layoutIfNeeded()
+        })
         
         obsTextView.text = ""
         obsTextView.textColor = #colorLiteral(red: 0.2156862745, green: 0.2156862745, blue: 0.2156862745, alpha: 1)
@@ -113,5 +138,13 @@ extension AlergiaView: UITextViewDelegate {
 }
 
 
-
+extension AlergiaView: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.25, animations: {
+            (self.parentViewController as? HealthViewController)?.alergia.keyboardHeight.constant = 335
+            (self.parentViewController as? HealthViewController)?.view.layoutIfNeeded()
+        })
+    }
+}
 
