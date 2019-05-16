@@ -112,7 +112,7 @@ class Storage {
             }
             
             let diary = Diary(date: Date(),
-                              meals: meals.suffix(Int.random(in: 1..<meals.count)),
+                              meals: meals.suffix(Int.random(in: 0..<meals.count)),
                               naps: [
                                 Nap(napTime: .morning, start: Date().changing(.hour, value: 8)!, end: Date().changing(.hour, value: 9)!),
                                 Nap(napTime: .afternoon, start: Date().changing(.hour, value: 13)!, end: Date().changing(.hour, value: 14)!)],
