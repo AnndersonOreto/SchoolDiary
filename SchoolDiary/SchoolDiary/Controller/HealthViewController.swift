@@ -89,7 +89,21 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
             headerAgeTitle.textColor = #colorLiteral(red: 0.5921568627, green: 0.5921568627, blue: 0.5921568627, alpha: 1)
             headerAgeTitle.font = UIFont(name: "System-bold", size: 14)
             
-            headerAgeTitle.text = "\(2019 - child.birth.year) anos e \(child.birth.month > 5 ? 7 + child.birth.month : 5 - child.birth.month) meses"
+            var years = Date().year - child.birth.year
+            var months = Date().month - child.birth.month
+            
+            if months == 0 {
+                headerAgeTitle.text = "\(years) anos"
+            } else if months < 0 {
+                months = months + 12
+                years = years - 1
+                headerAgeTitle.text = "\(years) anos e \(months) meses"
+            } else if months == 1 {
+                headerAgeTitle.text = "\(years) anos e \(months) mês"
+            } else {
+                headerAgeTitle.text = "\(years) anos e \(months) meses"
+            }
+            
             headerBirthDateTitle.text = "\(child.birth.day)/\(child.birth.month)/\(child.birth.year)"
             
             image = UIImage(named: "aniversario")!
