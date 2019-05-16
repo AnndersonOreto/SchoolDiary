@@ -22,7 +22,7 @@ class Storage {
             Storage.load()
         } else {
             print("Database not found. Generating new data.")
-            generateMockData(count: 7)
+            generateMockData(count: 5)
             Storage.save()
         }
     }
@@ -56,7 +56,10 @@ class Storage {
     func generateMockData(count: Int) {
         let faker = Faker(locale: "en")
         
-        let names = ["Aurora", "Valentina", "Enzo", "Brian", "Lucas"]
+        let childNames = ["Aurora", "Valentina", "Enzo", "Brian", "Lucas"]
+        let motherNames = ["Helena", "Luiza", "Ana", "Beatriz", "Carla"]
+        let fatherNames = ["André", "Marcelo", "Gilmar", "Clayton", "Renan"]
+        
         let tylenol = Medicine(name: "Tylenol baby",
                                dose: 1,
                                type: .drops,
@@ -72,13 +75,40 @@ class Storage {
         let lunch = Meal(type: .lunch, quantity: .all)
         let milk = Meal(type: .milk, quantity: .half)
         let preDinner = Meal(type: .preDinner, quantity: .aLittle)
-        
         let meals = [snack, lunch, milk, preDinner]
         
+        let allergyDescriptions = [
+            "Alergia ao leite",
+            "Alergia a penicilina",
+            "Alergia a abelhas",
+            "Rinite alérgica"
+        ]
+        
+        let activities = [
+            "Aula de música",
+            "Contos infantis",
+            "Brincadeira de balões",
+            "Piquenique"
+        ]
+        
+        let notes = [
+            "#### gostou muito da brincadeira de balões hoje. ☺️\nAté amanhã!",
+            "#### interagiu bastante com os coleguinhas! 😁",
+            "#### estava um amor hoje!! 🥰"
+        ]
+        
+        let notices = [
+            ("Uniforme", "Os pedidos de uniforme feitos até o dia 02 de Abril estão prontos para retirada na Secretaria da Escola.", NoticeType.secretary),
+            ("Cardápio", "A nutricionista da escola fez alterações no cardápio das turmas do Berçário e Maternal conforme orientações do Ministério da Saúde." , NoticeType.health),
+            ("Calendário", "O Dia das Mães contará com uma comemoração na escolinha! Venha prestigiar a apresentação musical das crianças 😊" , NoticeType.administrative),
+            ("Mensalidade", "A mensalidade referente ao mês de Maio já encontra-se disponível para pagamento, e pode ser encontrada no seu perfil." , NoticeType.finance),
+            ("Aula de Inglês", "A aula de inglês da próxima semana contará com uma atividade lúdica musical. Traga uma música para seu filho mostrar à turma!" , NoticeType.pedagogy)
+        ]
+        
         for i in 0..<count {
-            var child = Child(name: names[i%5],
+            var child = Child(name: childNames[i%5],
                               birth: faker.date.birthday(1, 6),
-                              photo: faker.internet.image(),
+                              photo: "child",
                               weight: faker.number.randomFloat(min: 8, max: 15),
                               height: faker.number.randomFloat(min: 60, max: 130),
                               parents: Set<Parent>(),
@@ -87,28 +117,79 @@ class Storage {
                               diaries: [],
                               relatives: [])
             
-            let name = faker.name.firstName()
+            let motherName = motherNames[i % motherNames.count]
+            let fatherName = fatherNames[i % fatherNames.count]
             
-            var parent = Parent(name: name,
+            var mother = Parent(name: motherName,
                                 birth: faker.date.birthday(18, 60),
-                                photo: faker.internet.image(),
-                                cpf: faker.number.randomInt(min: 00000000000,
+                                photo: "helena",
+                                cpf: faker.number.randomInt(min: 11111111111,
                                                             max: 99999999999),
-                                email: "\(name.lowercased())@example.net",
+                                email: "\(motherName.lowercased())@example.net",
                                 phone: faker.phoneNumber.cellPhone(),
                                 relationship: .parent,
-                                password: "\(name.lowercased())123",
+                                password: "\(motherName.lowercased())123",
                                 invoices: [Invoice(month: Date(),
                                                    total: 599.90,
                                                    situation: .unpaid,
-                                                   barcode: 0055050050505)],
+                                                   barcode: faker.number.randomInt(min: 1111111111111111,
+                                                                                   max: 9999999999999999))],
                                 children: [])
             
+            var father = Parent(name: fatherName,
+                                birth: faker.date.birthday(18, 60),
+                                photo: "helena",
+                                cpf: faker.number.randomInt(min: 11111111111,
+                                                            max: 99999999999),
+                                email: "\(fatherName.lowercased())@example.net",
+                                phone: faker.phoneNumber.cellPhone(),
+                                relationship: .parent,
+                                password: "\(fatherName.lowercased())123",
+                                invoices: [Invoice(month: Date(),
+                                                   total: 599.90,
+                                                   situation: .unpaid,
+                                                   barcode: faker.number.randomInt(min: 1111111111111111,
+                                                                                   max: 9999999999999999))],
+                                children: [])
+            
+            var childActivities : [Activity] = []
+            
             for _ in 0..<Int.random(in: 0...3) {
-                let allergy = Allergy(type: AllergyType.allCases.randomElement()!,
-                                      description: faker.lorem.sentences(amount: 4))
+                let allergyType = AllergyType.allCases.randomElement()!
+                var allergyDescription : String
+                
+                switch allergyType {
+                case .food:
+                    allergyDescription = allergyDescriptions[0]
+                case .medicine:
+                    allergyDescription = allergyDescriptions[1]
+                case .animal:
+                    allergyDescription = allergyDescriptions[2]
+                case .other:
+                    allergyDescription = allergyDescriptions[3]
+                }
+                
+                let allergy = Allergy(type: allergyType,
+                                      description: allergyDescription)
                 
                 child.allergies.insert(allergy)
+                
+                let activityType = ActivityType.allCases.randomElement()!
+                var activityDescription : String
+                
+                switch activityType {
+                case .classes:
+                    activityDescription = activities[0]
+                case .storytelling:
+                    activityDescription = activities[1]
+                case .games:
+                    activityDescription = activities[2]
+                case .other:
+                    activityDescription = activities[3]
+                }
+                
+                let activity = Activity(type: activityType, description: activityDescription)
+                childActivities.append(activity)
             }
             
             let diary = Diary(date: Date(),
@@ -116,28 +197,30 @@ class Storage {
                               naps: [
                                 Nap(napTime: .morning, start: Date().changing(.hour, value: 8)!, end: Date().changing(.hour, value: 9)!),
                                 Nap(napTime: .afternoon, start: Date().changing(.hour, value: 13)!, end: Date().changing(.hour, value: 14)!)],
-                              activities: [
-                                Activity(type: ActivityType.allCases.randomElement()!, description: faker.lorem.sentence()),
-                                Activity(type: ActivityType.allCases.randomElement()!, description: faker.lorem.sentence())],
-                              provide: [Provide(description: faker.lorem.word())],
+                              activities: childActivities,
+                              provide: [Provide(description: "Pomada (assaduras)")],
                               bathroom: [
                                 Bathroom(type: .pee, condition: BathroomCondition.allCases.randomElement()!),
                                 Bathroom(type: .poop, condition: BathroomCondition.allCases.randomElement()!)],
                               medsTaken: [TakenMedicine(medicine: child.medicines.randomElement()!, timeTaken: Date().changing(.hour, value: 15)!)],
                               pictures: [],
-                              notes: faker.lorem.sentence(wordsAmount: Int.random(in: 4...10)))
+                              notes: notes.randomElement()!)
             
             child.diaries.append(diary)
-            child.parents.insert(parent)
-            parent.children.append(child)
-
-            let notice = Notice(title: faker.lorem.word(),
-                                type: NoticeType.allCases.randomElement()!,
-                                text: faker.lorem.paragraph(),
+            child.parents.insert(mother)
+            child.parents.insert(father)
+            mother.children.append(child)
+            father.children.append(child)
+            
+            let randomNotice = notices[i % notices.count]
+            let notice = Notice(title: randomNotice.0,
+                                type: randomNotice.2,
+                                text: randomNotice.1,
                                 date: faker.date.between(Date().yesterday.yesterday.yesterday, Date()))
             
             Storage.children.append(child)
-            Storage.parents.append(parent)
+            Storage.parents.append(mother)
+            Storage.parents.append(father)
             Storage.notices.append(notice)
         }
         
