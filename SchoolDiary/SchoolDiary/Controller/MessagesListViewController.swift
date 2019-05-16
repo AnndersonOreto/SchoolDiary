@@ -112,5 +112,6 @@ extension MessagesListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chatDelegate?.didSelectChat(sender: self, chat: (chats[indexPath.row], myself))
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
