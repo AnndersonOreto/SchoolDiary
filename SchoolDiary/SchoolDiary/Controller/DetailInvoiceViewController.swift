@@ -79,5 +79,13 @@ class DetailInvoiceViewController: UIViewController {
     }
     @IBAction func copyBarCode(_ sender: UIButton) {
         UIPasteboard.general.string = "\(detail.invoice.barcode)"
+        
+        let alertController = UIAlertController(title: "Código de barras copiado.", message: "", preferredStyle: .alert)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            alertController.dismiss(animated: true, completion: nil)
+        }
     }
 }
