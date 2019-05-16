@@ -29,12 +29,13 @@ class DetailInvoiceViewController: UIViewController {
     @IBOutlet weak var descriptionInvoiceDateLabel: UILabel!
     @IBOutlet weak var barCodeLabel: UILabel!
     @IBOutlet weak var barCodeImageView: UIImageView!
+    @IBOutlet weak var parentNameHeader: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        parentsNameLabel.text = "\(detail.parentChild.name)"
+        parentNameHeader.text = detail.parentChild.name
         
         var monthWritten = ""
         switch detail.invoice.month.month {

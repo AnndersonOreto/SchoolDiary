@@ -437,6 +437,7 @@
                         <viewLayoutGuide key="safeArea" id="wcB-Vf-7hz"/>
                     </view>
                     <connections>
+                        <outlet property="headerLabel" destination="2S2-hY-SCG" id="GKL-UM-6iI"/>
                         <outlet property="securityTableView" destination="AEJ-L1-XUp" id="Jbu-ya-Nsz"/>
                     </connections>
                 </viewController>
@@ -866,7 +867,7 @@
                         <outlet property="headerMonthlyPayment" destination="5rr-cn-HHE" id="z57-vf-GpA"/>
                         <outlet property="invoiceValueLabel" destination="j2z-34-Hni" id="Hv8-mK-SWz"/>
                         <outlet property="maturityLabel" destination="I4x-fQ-uTv" id="pi0-gU-tAI"/>
-                        <outlet property="parentNameLabel" destination="zlA-hD-IzX" id="z4K-YY-zFU"/>
+                        <outlet property="parentNameHeader" destination="zlA-hD-IzX" id="ZcW-G8-XUi"/>
                         <outlet property="parentsCpfLabel" destination="CnU-Aj-sqO" id="9DN-Xf-Ccj"/>
                         <outlet property="parentsNameLabel" destination="mUG-Gp-LpX" id="MOM-4T-8gr"/>
                         <outlet property="totalValueInvoiceLabel" destination="Nxm-KH-fqr" id="UOg-0p-0Kf"/>
