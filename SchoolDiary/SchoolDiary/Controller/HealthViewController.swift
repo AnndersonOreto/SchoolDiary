@@ -20,10 +20,15 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var nameLabel: UILabel!
     
     
-    
+//    var alergia = AlergiaView(frame: CGRect(x: 0, y: 0, width: 414, height: 896))
+    var alergia: AlergiaView!
+
     let section: [Sections] = [.measures, .medicines]
     var child: Child!
     
+    override func viewDidLayoutSubviews() {
+        alergia.frame = view.frame
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +37,8 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.delegate = self
         tableView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         tableView.tableHeaderView?.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+        
+        alergia = AlergiaView(frame: view.frame)
         
         guard let child = Storage.children.first else {
             print("Child not found.")
@@ -42,7 +49,11 @@ class HealthViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.child = child
         nameLabel.text = self.child.name
         
-
+        alergia.backgroundColor = UIColor(white: 0.0, alpha: 0.8)
+        view.addSubview(alergia)
+        alergia.edgesToSuperview()
+        alergia.isHidden = true
+        alergia.child = child
         
     }
     
