@@ -21,6 +21,9 @@ class MyTabBarController: UITabBarController {
     let selectedImage3 = UIImage(named: "saudeclicked1x")?.withRenderingMode(.alwaysOriginal)
     let normalImage3 = UIImage(named: "saude1x")?.withRenderingMode(.alwaysOriginal)
     
+    let selectedImage4 = UIImage(named: "calendarioselect")?.withRenderingMode(.alwaysOriginal)
+    let normalImage4 = UIImage(named: "calendar1x")?.withRenderingMode(.alwaysOriginal)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,10 @@ class MyTabBarController: UITabBarController {
         tabBarItem = self.tabBar.items![2]
         tabBarItem.selectedImage = selectedImage3
         tabBarItem.image = normalImage3
+        
+        tabBarItem = self.tabBar.items![3]
+        tabBarItem.selectedImage = selectedImage4
+        tabBarItem.image = normalImage4
         
         self.selectedIndex = 0
 

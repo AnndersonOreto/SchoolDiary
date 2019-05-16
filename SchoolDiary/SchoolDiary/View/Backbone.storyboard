@@ -518,7 +518,7 @@
                                 </userDefinedRuntimeAttributes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsl-pu-goC">
-                                <rect key="frame" x="374" y="229" width="24" height="24"/>
+                                <rect key="frame" x="368" y="226" width="30" height="30"/>
                                 <state key="normal" image="calendario1x"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto-crianca-1x" translatesAutoresizingMaskIntoConstraints="NO" id="Vj1-jF-bi3" userLabel="childPhoto">
@@ -631,21 +631,47 @@
             </objects>
             <point key="canvasLocation" x="-3676.811594202899" y="-846.42857142857144"/>
         </scene>
-        <!--Agenda-->
+        <!--Calendário-->
         <scene sceneID="Sk1-9X-tgl">
             <objects>
                 <viewController id="dHi-tM-dku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sc9-2W-B2i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="april" translatesAutoresizingMaskIntoConstraints="NO" id="05i-ZK-nxi">
+                                <rect key="frame" x="0.0" y="151" width="414.00000000000006" height="339"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="9kP-FE-8iH"/>
+                                    <constraint firstAttribute="height" constant="339" id="u4H-dd-6mT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="may" translatesAutoresizingMaskIntoConstraints="NO" id="5hp-O2-USA">
+                                <rect key="frame" x="0.0" y="511" width="414" height="339"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="NtJ-d2-kwc"/>
+                                    <constraint firstAttribute="width" constant="414" id="Wuf-yu-dwC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="339" id="YeD-ii-cpl"/>
+                                    <constraint firstAttribute="height" constant="339" id="Z6C-mu-fGF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9999879002571106" green="0.99999362230300903" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5hp-O2-USA" firstAttribute="top" secondItem="05i-ZK-nxi" secondAttribute="bottom" constant="21" id="XMN-Wn-yua"/>
+                            <constraint firstItem="5hp-O2-USA" firstAttribute="leading" secondItem="OgE-aJ-jng" secondAttribute="leading" id="do4-3H-r82"/>
+                            <constraint firstItem="5hp-O2-USA" firstAttribute="trailing" secondItem="OgE-aJ-jng" secondAttribute="trailing" id="ng9-zC-CPI"/>
+                            <constraint firstItem="OgE-aJ-jng" firstAttribute="trailing" secondItem="05i-ZK-nxi" secondAttribute="trailing" id="ohz-mn-pie"/>
+                            <constraint firstItem="05i-ZK-nxi" firstAttribute="top" secondItem="OgE-aJ-jng" secondAttribute="top" constant="11" id="sTt-64-dWN"/>
+                            <constraint firstItem="05i-ZK-nxi" firstAttribute="leading" secondItem="OgE-aJ-jng" secondAttribute="leading" id="sgn-Ye-vRg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OgE-aJ-jng"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="Agenda" image="calendar1x" selectedImage="calendar1x" id="NBt-2o-Ae9"/>
+                    <navigationItem key="navigationItem" title="Calendário" id="gsM-8w-0V8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocu-cc-9cA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5754" y="913"/>
+            <point key="canvasLocation" x="-4844.927536231884" y="912.72321428571422"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="imK-kN-QqH">
@@ -662,7 +688,7 @@
                         <segue destination="7NH-pD-Pzu" kind="relationship" relationship="viewControllers" id="X6u-Ni-UXc"/>
                         <segue destination="6ZZ-ls-lMR" kind="relationship" relationship="viewControllers" id="JcZ-Ay-mdt"/>
                         <segue destination="Zxc-wA-iwf" kind="relationship" relationship="viewControllers" id="xEd-bc-kF9"/>
-                        <segue destination="dHi-tM-dku" kind="relationship" relationship="viewControllers" id="5Sv-r3-0Pd"/>
+                        <segue destination="8Vf-ms-w9K" kind="relationship" relationship="viewControllers" id="5Sv-r3-0Pd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jnt-Zd-bM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -701,17 +727,38 @@
             </objects>
             <point key="canvasLocation" x="-5753.6231884057979" y="-1232.8125"/>
         </scene>
+        <!--Calendário-->
+        <scene sceneID="O1t-k9-qxp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Vf-ms-w9K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" title="Calendário" image="calendar1x" selectedImage="calendar1x" id="NBt-2o-Ae9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BoQ-y4-DBY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dHi-tM-dku" kind="relationship" relationship="rootViewController" id="Rg2-Ci-J2D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gni-T2-Ny1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5755.072463768116" y="912.72321428571422"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="april" width="374" height="339"/>
         <image name="arrow-1x" width="13" height="21"/>
         <image name="baloes" width="30" height="30"/>
         <image name="cabecalho1x" width="375" height="220"/>
         <image name="calendar1x" width="30" height="30"/>
-        <image name="calendario1x" width="24" height="24"/>
+        <image name="calendario1x" width="30" height="30"/>
         <image name="coco" width="30" height="30"/>
         <image name="foto-crianca-1x" width="114.5" height="120"/>
         <image name="icon-lanche1x" width="30" height="32"/>
         <image name="logo-escola-1x" width="26" height="26"/>
+        <image name="may" width="375" height="294"/>
         <image name="perfil-1x" width="24" height="24"/>
         <image name="saude1x" width="30" height="31"/>
         <image name="starFull" width="22.5" height="22.5"/>

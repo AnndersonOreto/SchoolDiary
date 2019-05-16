@@ -77,20 +77,20 @@ extension ActivitiesTableViewCell: UICollectionViewDelegate, UICollectionViewDat
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
-        var image: UIImage = UIImage(named: "baloes")!
+        var image: UIImage
 
         switch section as Section {
         case .activities:
             cell.activitiesLabel.text = self.diary.activities[indexPath.row].description
             switch self.diary.activities[indexPath.row].type{
             case .classes:
-                break
-            case .storytelling:
-                break
-            case .games:
                 image = UIImage(named: "blocos")!
+            case .storytelling:
+                image = UIImage(named: "diaryclicked")!
+            case .games:
+                image = UIImage(named: "baloes")!
             case .other:
-                break
+                image = UIImage(named: "saudeclicked1x")!
             }
             cell.activitiesImage.image = image
         case .provide:

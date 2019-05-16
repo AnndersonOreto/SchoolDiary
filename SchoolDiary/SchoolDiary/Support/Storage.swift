@@ -85,10 +85,10 @@ class Storage {
         ]
         
         let activities = [
-            "Aula de música",
-            "Contos infantis",
-            "Brincadeira de balões",
-            "Piquenique"
+            Activity(type: .classes, description: "Aula de música"),
+            Activity(type: .storytelling, description: "Contos infantis"),
+            Activity(type: .games, description: "Brincadeira de balões"),
+            Activity(type: .other, description: "Piquenique")
         ]
         
         let notes = [
@@ -152,10 +152,10 @@ class Storage {
                                                                                    max: 9999999999999999))],
                                 children: [])
             
-            var childActivities : [Activity] = []
+//            var childActivities : [Activity] = []
             
-            for _ in 0..<Int.random(in: 0...3) {
-                let allergyType = AllergyType.allCases.randomElement()!
+            for _ in 0..<Int.random(in: 1...3) {
+                let allergyType = AllergyType.allCases[i % AllergyType.allCases.count]
                 var allergyDescription : String
                 
                 switch allergyType {
@@ -174,37 +174,37 @@ class Storage {
                 
                 child.allergies.insert(allergy)
                 
-                let activityType = ActivityType.allCases.randomElement()!
-                var activityDescription : String
-                
-                switch activityType {
-                case .classes:
-                    activityDescription = activities[0]
-                case .storytelling:
-                    activityDescription = activities[1]
-                case .games:
-                    activityDescription = activities[2]
-                case .other:
-                    activityDescription = activities[3]
-                }
-                
-                let activity = Activity(type: activityType, description: activityDescription)
-                childActivities.append(activity)
+//                let activityType = ActivityType.allCases[i % ActivityType.allCases.count]
+//                var activityDescription : String
+//
+//                switch activityType {
+//                case .classes:
+//                    activityDescription = activities[0]
+//                case .storytelling:
+//                    activityDescription = activities[1]
+//                case .games:
+//                    activityDescription = activities[2]
+//                case .other:
+//                    activityDescription = activities[3]
+//                }
+//
+//                let activity = Activity(type: activityType, description: activityDescription)
+//                childActivities.append(activity)
             }
             
             let diary = Diary(date: Date(),
-                              meals: meals.suffix(Int.random(in: 0..<meals.count)),
+                              meals: meals,
                               naps: [
                                 Nap(napTime: .morning, start: Date().changing(.hour, value: 8)!, end: Date().changing(.hour, value: 9)!),
                                 Nap(napTime: .afternoon, start: Date().changing(.hour, value: 13)!, end: Date().changing(.hour, value: 14)!)],
-                              activities: childActivities,
+                              activities: activities.suffix(Int.random(in: 1...activities.count)),
                               provide: [Provide(description: "Pomada (assaduras)")],
                               bathroom: [
                                 Bathroom(type: .pee, condition: BathroomCondition.allCases.randomElement()!),
                                 Bathroom(type: .poop, condition: BathroomCondition.allCases.randomElement()!)],
                               medsTaken: [TakenMedicine(medicine: child.medicines.randomElement()!, timeTaken: Date().changing(.hour, value: 15)!)],
                               pictures: [],
-                              notes: notes.randomElement()!)
+                              notes: notes.randomElement()!.replacingOccurrences(of: "####", with: child.name))
             
             child.diaries.append(diary)
             child.parents.insert(mother)
