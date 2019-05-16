@@ -354,13 +354,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbm-Xb-HG5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="32"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saúde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blK-RC-oWu">
-                                        <rect key="frame" x="23" y="7" width="48.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvG-37-3fj">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvG-37-3fj">
                                         <rect key="frame" x="374" y="4" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="NXf-TK-fc8"/>
@@ -368,13 +362,19 @@
                                         </constraints>
                                         <state key="normal" image="perfil-1x"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saúde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blK-RC-oWu">
+                                        <rect key="frame" x="183" y="6" width="48.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="blK-RC-oWu" firstAttribute="centerX" secondItem="dbm-Xb-HG5" secondAttribute="centerX" id="L6z-9O-c4T"/>
                                     <constraint firstAttribute="bottom" secondItem="FvG-37-3fj" secondAttribute="bottom" constant="4" id="TXI-vw-CU9"/>
                                     <constraint firstAttribute="height" constant="32" id="ak1-X0-RPG"/>
-                                    <constraint firstAttribute="bottom" secondItem="blK-RC-oWu" secondAttribute="bottom" constant="4" id="mRb-vN-0Rv"/>
+                                    <constraint firstItem="blK-RC-oWu" firstAttribute="centerY" secondItem="dbm-Xb-HG5" secondAttribute="centerY" id="cet-8r-vrA"/>
                                     <constraint firstAttribute="trailing" secondItem="FvG-37-3fj" secondAttribute="trailing" constant="16" id="pZV-zM-xqD"/>
-                                    <constraint firstItem="blK-RC-oWu" firstAttribute="leading" secondItem="dbm-Xb-HG5" secondAttribute="leading" constant="23" id="tpM-Nw-LPE"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="childName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcc-Nb-Ye5" userLabel="Name Label">

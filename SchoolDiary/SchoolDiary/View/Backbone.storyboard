@@ -640,7 +640,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="april" translatesAutoresizingMaskIntoConstraints="NO" id="05i-ZK-nxi">
-                                <rect key="frame" x="0.0" y="151" width="414.00000000000006" height="339"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="339"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="9kP-FE-8iH"/>
                                     <constraint firstAttribute="height" constant="339" id="u4H-dd-6mT"/>
