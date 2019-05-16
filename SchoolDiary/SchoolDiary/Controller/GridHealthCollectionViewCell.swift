@@ -40,7 +40,9 @@ class GridHealthCollectionViewCell: UICollectionViewCell {
         
         measureTextField.delegate = self
         
+        
     }
+    
 
 
     // Func responsible for allow any change in the Allergic Section
@@ -75,6 +77,12 @@ extension GridHealthCollectionViewCell: UITextFieldDelegate {
             
 
             (parentViewController as? HealthViewController)?.tabBarController?.tabBar.isHidden = true
+            
+            
+            
+            
+            
+            
             
         }
     } 
