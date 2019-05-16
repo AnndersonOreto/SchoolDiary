@@ -47,14 +47,9 @@ class AlergiaView: UIView {
         obsTextView.delegate = self
         
         alergiasTextField.delegate = self
-        
-        
-        
+
         
     }
-    
-    
-    
     
     
     

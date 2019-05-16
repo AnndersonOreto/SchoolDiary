@@ -16,6 +16,8 @@
 		26D72EB4227B5565001201AD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D72EB3227B5565001201AD /* LoginController.swift */; };
 		893DC4F12281FC3D00531DA0 /* HealthScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */; };
 		8948A3D5228351DC00D1F10B /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */; };
+		896E09F2228DDBEF00DE0687 /* EditarMedicamentos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896E09F1228DDBEF00DE0687 /* EditarMedicamentos.xib */; };
+		896E09F4228DE6B200DE0687 /* MedicamentosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896E09F3228DE6B200DE0687 /* MedicamentosView.swift */; };
 		897760FA22822D56006CD77E /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760F922822D56006CD77E /* HealthViewController.swift */; };
 		897760FE22822E3F006CD77E /* GridHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */; };
 		8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */; };
@@ -67,6 +69,8 @@
 		846855418106DE1DF99C6B21 /* Pods-SchoolDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolDiary.release.xcconfig"; path = "Target Support Files/Pods-SchoolDiary/Pods-SchoolDiary.release.xcconfig"; sourceTree = "<group>"; };
 		893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthScreen.storyboard; sourceTree = "<group>"; };
 		8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		896E09F1228DDBEF00DE0687 /* EditarMedicamentos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditarMedicamentos.xib; sourceTree = "<group>"; };
+		896E09F3228DE6B200DE0687 /* MedicamentosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentosView.swift; sourceTree = "<group>"; };
 		897760F922822D56006CD77E /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthTableViewCell.swift; sourceTree = "<group>"; };
 		897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHealthCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				897760FD22822E3F006CD77E /* GridHealthTableViewCell.swift */,
 				897760FF22822E65006CD77E /* GridHealthCollectionViewCell.swift */,
 				89CD38B3228B652400D5E5AC /* AlergiaView.swift */,
+				896E09F3228DE6B200DE0687 /* MedicamentosView.swift */,
 				8948A3D4228351DC00D1F10B /* MedicineTableViewCell.swift */,
 				89E3717E2285E4D600B40104 /* MedicineTableViewCellStatic.swift */,
 				AB59029A227BC3DE00E5000A /* MyTabBarController.swift */,
@@ -188,6 +193,7 @@
 				A94480A52284ABD9007A3C79 /* NoticeTableViewCell.xib */,
 				893DC4F02281FC3D00531DA0 /* HealthScreen.storyboard */,
 				89CD38B1228B651400D5E5AC /* AlergiaView.xib */,
+				896E09F1228DDBEF00DE0687 /* EditarMedicamentos.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				893DC4F12281FC3D00531DA0 /* HealthScreen.storyboard in Resources */,
 				C78E09432278BEE800017896 /* Backbone.storyboard in Resources */,
 				A94480A72284ABD9007A3C79 /* NoticeTableViewCell.xib in Resources */,
+				896E09F2228DDBEF00DE0687 /* EditarMedicamentos.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +390,7 @@
 				A9D23ED1228603FC00166317 /* MessagesPageViewController.swift in Sources */,
 				A9D4A16C227CB86300F272A1 /* Storage.swift in Sources */,
 				8977610022822E65006CD77E /* GridHealthCollectionViewCell.swift in Sources */,
+				896E09F4228DE6B200DE0687 /* MedicamentosView.swift in Sources */,
 				A97FFFF82278C26100D8700F /* Parent.swift in Sources */,
 				A97FFFFA2278C2AE00D8700F /* Medicine.swift in Sources */,
 				89E3717F2285E4D600B40104 /* MedicineTableViewCellStatic.swift in Sources */,
