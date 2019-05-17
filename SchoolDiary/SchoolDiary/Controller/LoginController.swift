@@ -19,8 +19,8 @@ class LoginController: UIViewController {
     }
     
     @IBAction func submitButton(_ sender: UIButton) {
-        let login = "teste1@teste1.com"
-        let password = "teste1"
+        let login = Storage.parents.first?.email
+        let password = Storage.parents.first?.password
         
         if nameTextField.text == login && passwordTextField.text == password {
             performSegue(withIdentifier: "goToBackbone", sender: sender)

@@ -24,7 +24,6 @@ class ChatViewController: MessagesViewController {
         
         
     }
-    
 
     /*
     // MARK: - Navigation
@@ -89,3 +88,10 @@ extension ChatViewController: MessagesDisplayDelegate {
     }
 }
 
+//extension ChatViewController: MessageInputBarDelegate {
+//    private func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
+//        let message = Message(sender: myself!, sentDate: Date(), text: text)
+//        messages.append(message)
+//    }
+//
+//}

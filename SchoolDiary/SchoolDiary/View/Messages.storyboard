@@ -62,7 +62,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Df0-ng-3fN"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RxF-is-sqq"/>
+                    <navigationItem key="navigationItem" id="RxF-is-sqq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="fN2-bH-sqs"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="messagesContainer" destination="2Zj-aM-PZl" id="6Rv-uP-oUq"/>

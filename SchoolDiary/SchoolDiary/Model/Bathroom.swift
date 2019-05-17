@@ -9,8 +9,8 @@
 import Foundation
 
 enum BathroomType : String, Codable {
-    case pee = "xixi"
-    case poop = "coco"
+    case pee = "Xixi"
+    case poop = "Cocô"
 }
 
 enum BathroomCondition : String, Codable, CaseIterable {
