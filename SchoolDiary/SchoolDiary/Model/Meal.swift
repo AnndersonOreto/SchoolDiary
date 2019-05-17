@@ -12,8 +12,10 @@ import Foundation
 enum MealType : String, Codable {
     case lunch = "Almoço"
     case snack = "Lanche"
+    case snack2 = "Lanche "
     case preDinner = "Pré-Janta"
     case milk = "Leite"
+    case milk2 = "Leite "
     
     public func mealTime() -> Date? {
         var date = Date()
@@ -21,13 +23,17 @@ enum MealType : String, Codable {
         // TO-DO: expose hour bindings to make them customizable by the school
         switch self {
         case .lunch:
-            date.hour = 12
+            date.hour = 11
         case .snack:
-            date.hour = 15
+            date.hour = 9
+        case .snack2:
+            date.hour = 14
         case .preDinner:
             date.hour = 17
         case .milk:
-            return nil
+            date.hour = 12
+        case .milk2:
+            date.hour = 18
         }
         
         return date
@@ -37,7 +43,7 @@ enum MealType : String, Codable {
 enum MealQuantity : String, Codable {
     case all = "Tudo"
     case half = "Metade"
-    case aLittle = "Um pouco"
+    case aLittle = "Pouco"
     case nothing = "Recusou"
 }
 

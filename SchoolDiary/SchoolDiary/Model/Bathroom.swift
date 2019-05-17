@@ -9,14 +9,18 @@
 import Foundation
 
 enum BathroomType : String, Codable {
-    case pee
-    case poop
+    case pee = "Xixi"
+    case poop = "Cocô"
 }
 
-enum BathroomCondition : String, Codable {
-    case normal
-    case altered
-    case worrying
+enum BathroomCondition : String, Codable, CaseIterable {
+    case normal = "Normal"
+    case altered = "Alterado"
+    case worrying = "Preocupante"
+    
+    static var allCases : [BathroomCondition] {
+        return [.normal, .altered, .worrying]
+    }
 }
 
 struct Bathroom : Codable {
